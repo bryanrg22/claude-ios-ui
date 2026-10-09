@@ -1,0 +1,3487 @@
+{
+  "schemaVersion": 1,
+  "capturedDate": "2026-10-07",
+  "timeZone": "America/Los_Angeles",
+  "referenceSource": "Installed apps inspected through iPhone Mirroring, supplemented by user-supplied direct iPhone screenshots. Portable filenames only; private source images excluded from distribution.",
+  "referenceMediaRedistributable": false,
+  "configuration": {
+    "iosVersion": {
+      "value": null,
+      "status": "unknown"
+    },
+    "device": {
+      "value": "iPhone 15 Pro",
+      "status": "supplied-context-not-runtime-verified"
+    },
+    "locale": {
+      "value": null,
+      "status": "unknown"
+    },
+    "textSize": {
+      "value": null,
+      "status": "unknown"
+    },
+    "displayZoom": {
+      "value": null,
+      "status": "unknown"
+    },
+    "mirroringWindowPixels": {
+      "value": [
+        820,
+        1796
+      ],
+      "status": "observed"
+    },
+    "mirroredContentPixels": {
+      "value": [
+        786,
+        1704
+      ],
+      "status": "observed"
+    },
+    "softwareKeyboardVisible": {
+      "value": false,
+      "status": "observed-during-initial-capture"
+    }
+  },
+  "evidenceMeaning": "capture-available means a file was inventoried, not that the skeleton matches it or every interaction was observed.",
+  "distributionStatus": "Unpublished final known-scope snapshot 20261008-132836; all remaining gaps are deferred TODO, no exact/full-app parity claim",
+  "privateArchive": {
+    "relativeLocation": "private/reference-images/2026-10-07",
+    "gitIgnored": true,
+    "excludedFromExports": true,
+    "distribution": "local-only; source captures may contain personal information",
+    "inventoryCheckpoint": {
+      "date": "2026-10-08",
+      "mirroringAndMotionFilesSynced": 265,
+      "nativePhonePngsSynced": 9,
+      "copyVerification": "SHA-256 compared for every synced source/destination pair",
+      "motionTimingSidecarPreserved": true,
+      "gitIgnoreVerified": true,
+      "notes": "Session archive date retained 2026-10-07; continued after midnight. Counts describe .png filenames, including JPEG-encoded Mirroring captures. Includes separate video-analysis frames; local checkpoint, not public assets.",
+      "userJpegsSynced": 3,
+      "pngNamedFileCount": 337,
+      "mirroringPngNamedFilesSynced": 255
+    }
+  },
+  "captureSources": [
+    {
+      "id": "iphone-mirroring",
+      "kind": "desktop-window-capture",
+      "windowPixels": [
+        820,
+        1796
+      ],
+      "contentPixels": [
+        786,
+        1704
+      ],
+      "contentPoints": [
+        393,
+        852
+      ],
+      "notes": "Initial window/content dimensions only. Later captures use a resized Mirroring window; per-file capturePixelDimensions records actual PNG geometry. Initial software keyboard hidden; not equivalent to native screenshot pixels."
+    },
+    {
+      "id": "direct-iphone-user-camera",
+      "kind": "native-iphone-screenshot",
+      "pixels": [
+        1179,
+        2556
+      ],
+      "scale": 3,
+      "points": [
+        393,
+        852
+      ],
+      "dimensionsStatus": "verified-PNG-IHDR-for-all-nine-files",
+      "scaleStatus": "supplied-by-reference-collector",
+      "capturedDate": null,
+      "receivedDate": "2026-10-07",
+      "notes": "Preferred geometric reference for camera states. Exact capture times not inspected; private original PNGs are not redistributed."
+    }
+  ],
+  "waveformReference": {
+    "guide": "WAVEFORM_REFERENCE.md",
+    "dictationBarMaximum": "unmeasured-both-apps",
+    "chatgptTalkingRecording": {
+      "stableLargeDiameterPixels": [
+        494,
+        654
+      ],
+      "sampledStartupDiameterPixels": 674,
+      "compactDiameterPixels": [
+        208,
+        272
+      ],
+      "approximateSamplingSeconds": 0.085,
+      "hardCapEstablished": false,
+      "amplitudeMappingEstablished": false,
+      "source": "private/video-talking derived measurements; raw footage excluded"
+    },
+    "claudeSpeakingGeometry": "unmeasured",
+    "desktopStillPeak": "50px in one frame only; not iOS evidence"
+  },
+  "assetReference": "ASSET_REFERENCE.md: official general typography/brand/platform resources; native per-screen fonts and custom icon mappings remain unverified.",
+  "routeCoverage": "ROUTE_COVERAGE.md",
+  "lastUpdatedDate": "2026-10-08",
+  "systemSurfaceCoverage": {
+    "homeWidgets": "12 original gallery variants captured and inspected (ChatGPT9, Claude3); native WidgetKit extensions implemented, simulator gallery/route checks and final generic builds passed.",
+    "lockScreenLiveActivities": "Lock Screen surface still uncaptured; no custom ActivityKit implementation proven",
+    "dynamicIsland": "Dot compact and expanded native/system call surfaces captured and inspected; selected mute white/red reference included. Underlying framework not proven; CallKit is the research-backed candidate, not confirmed vendor implementation.",
+    "dotCallPanel": "Expanded/minimized in-app Calling, connected timers and failure captured; separate from system Dynamic Island and widget gallery.",
+    "widgetGalleryLimitations": [
+      "Original-account gallery session added/rearranged no widgets; native skeleton widgets were installed/tested only in simulators",
+      "Codex loaded usage appearance unknown; only placeholder bars captured",
+      "Tall Codex tasks family unsupported/unconfirmed in installed SDK",
+      "Original app configuration/tap outcomes and alternate appearances unverified"
+    ]
+  },
+  "metadataCorrection": {
+    "date": "2026-10-08",
+    "description": "Replaced invalid PNG-offset dimension readings for JPEG-encoded .png Mirroring captures with decoded image-header dimensions. Original capture bytes preserved.",
+    "correctedDimensionEntries": 193
+  },
+  "phase2": {
+    "status": "Final known-scope snapshot independently validated; investigation stopped",
+    "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+    "inspectedFiles": 125,
+    "previousValidatedSnapshot": "exports/2026-10-08-040338",
+    "exportStatus": "final independent tests, generic app/widget builds and packaging checks passed",
+    "observations": "New captures do not supersede previous version metadata. Geometry is desktop Mirroring capture; exact animation timing and private content redistribution are not established.",
+    "validation": {
+      "chatgptStateTests": {
+        "passed": 153,
+        "suites": 23,
+        "evidence": "chatgpt-table-state.log"
+      },
+      "workStateReview": "Stop retry host seam added; current question/draft retention, removed question/option pruning and extreme index bounds tested. Native motion and VoiceOver/Dynamic Type not measured.",
+      "uiStatus": "Final affected scoped UI passed; no final all-route suite or exact parity claim",
+      "exportStatus": "passed final known-scope snapshot",
+      "chatgptUI": {
+        "status": "3 of 3 passed",
+        "durationSeconds": 54.227,
+        "evidence": "chatgpt-phase2-art-qa.xcresult",
+        "flows": {
+          "ExploreSites": 10.481,
+          "ImagesWork": 23.216,
+          "Projects": 20.53
+        }
+      },
+      "chatgptFinalUI": {
+        "sites": {
+          "passed": true,
+          "seconds": 14.788,
+          "evidence": "chatgpt-phase2-search-qa.xcresult",
+          "bundleStatus": "mixed; Sites passed, Projects failed in this bundle and passed later"
+        },
+        "projects": {
+          "passed": true,
+          "seconds": 35.433,
+          "evidence": "chatgpt-phase2-project-settled-qa.xcresult"
+        },
+        "imagesWork": {
+          "passed": true,
+          "seconds": 23.703,
+          "evidence": "chatgpt-phase2-hero-qa.xcresult"
+        }
+      },
+      "chatgptGenericBuild": {
+        "passed": true,
+        "evidence": "chatgpt-final-generic.log",
+        "scope": "app and WidgetKit extension"
+      },
+      "claudeStateTests": {
+        "passed": 127,
+        "suites": 2,
+        "evidence": "claude-table-unit.log"
+      },
+      "claudeUI": {
+        "settingsProfile": {
+          "passed": true,
+          "seconds": 75.823,
+          "evidence": "claude-settings-ui-r4.xcresult"
+        },
+        "announcementDismissals": {
+          "passed": true,
+          "seconds": 19.154,
+          "evidence": "claude-settings-ui-r3.xcresult",
+          "bundleStatus": "mixed; separate Settings flow failed then was corrected in r4"
+        },
+        "cumulativeDistinctFlows": 34,
+        "allRerunTogether": false,
+        "subpages": {
+          "passed": true,
+          "flows": 3,
+          "seconds": 79.086,
+          "evidence": "claude-settings-subpages-ui.xcresult"
+        },
+        "finalAffectedSubpages": {
+          "passed": true,
+          "flows": 2,
+          "seconds": 56.553,
+          "evidence": "claude-settings-subpages-r3.xcresult",
+          "scope": "Notifications and Privacy; prior Time and focus pass retained"
+        },
+        "billingUsage": {
+          "passedCases": {
+            "billingSeconds": 22.658,
+            "usageSeconds": 27.502
+          },
+          "evidence": "claude-billing-shared-ui.xcresult",
+          "bundleStatus": "mixed; Shared accessibility assertion failed and passed in subsequent corrected run"
+        },
+        "sharedLinks": {
+          "passed": true,
+          "seconds": 21.742,
+          "evidence": "claude-shared-ui-final.xcresult"
+        },
+        "codePreferences": {
+          "passed": true,
+          "seconds": 50.856,
+          "evidence": "claude-code-preferences-ui.xcresult",
+          "stateTestsAtCheckpoint": 102
+        },
+        "finalMemoryConnectors": {
+          "passed": true,
+          "flows": 2,
+          "seconds": 83.188,
+          "memorySeconds": 49.683,
+          "connectorsSeconds": 33.505,
+          "evidence": "claude-settings-final-ui.xcresult"
+        }
+      },
+      "claudeGenericBuild": {
+        "status": "build-for-testing passed; independent generic build pending",
+        "evidence": "claude-table-build.log"
+      },
+      "chatgptAboutUI": {
+        "passed": true,
+        "seconds": 25.919,
+        "evidence": "chatgpt-settings-about-qa.xcresult",
+        "scope": "About route/metadata/legal intents/dark-light; original About dark appearance inferred, not separately captured"
+      },
+      "chatgptPreferencesUI": {
+        "passed": true,
+        "seconds": 36.654,
+        "evidence": "chatgpt-preferences-framed-qa.xcresult"
+      },
+      "finalKnownScopeUI": {
+        "chatgpt": {
+          "tableSeconds": 27.285,
+          "tableEvidence": "chatgpt-table-copy-qa.xcresult",
+          "markdownSeconds": 14.19,
+          "imageSeconds": 27.002,
+          "copyEvidence": "chatgpt-copy-final-qa.xcresult",
+          "previousVoiceSeconds": 22.663,
+          "previousVoiceEvidence": "chatgpt-priority-qa.xcresult"
+        },
+        "claude": {
+          "markdownSeconds": 68.248,
+          "markdownEvidence": "claude-table-markdown-verified.xcresult",
+          "videoSeconds": 58.549,
+          "chatSeconds": 10.507,
+          "regressionEvidence": "claude-table-final-ui.xcresult",
+          "regressionBundleStatus": "mixed; two stale Markdown scroll assertions corrected in subsequent passing rerun",
+          "cumulativeDistinctFlows": 35,
+          "allRerunTogether": false
+        }
+      }
+    },
+    "stillCaptureCount": 92,
+    "partialRelaunchFrameCount": 33,
+    "relaunchCapture": {
+      "status": "partial failed attempt; no announcement replay",
+      "archivedFrames": "000-032",
+      "excludedFrames": "033-038: phone viewport progressively cropped offscreen",
+      "failure": "ScreenCaptureKit -3811 reported by collector",
+      "timingStatus": "No timestamp sidecar; launch duration, easing and announcement motion unmeasured",
+      "inspection": "All39 decoded; sequence contact sheet reviewed, representative full images inspected"
+    },
+    "priorityValidation": {
+      "status": "final source frozen; see finalKnownScopeUI",
+      "stateCounts": {
+        "chatgpt": 153,
+        "claude": 127
+      }
+    },
+    "excludedMislabelledCapture": {
+      "filename": "claude-markdown-heading-quote-light.png",
+      "reason": "Collector confirmed duplicate code/table viewport after ignored scroll; excluded, not heading/quote evidence"
+    }
+  },
+  "activeScope": {
+    "status": "Final known-scope source frozen; phone investigation stopped; all remaining gaps deferred TODO",
+    "included": [
+      "existing media presentation",
+      "text formatting",
+      "captured voice states",
+      "icons",
+      "light/dark appearance",
+      "reference-measured animations"
+    ],
+    "deferredTODO": [
+      "remaining feature pages",
+      "additional system surfaces",
+      "Claude speaking waveform capture/reconstruction"
+    ],
+    "historicalIndependentSnapshot": "exports/2026-10-08-120705"
+  },
+  "independentExport": {
+    "snapshot": "exports/2026-10-08-132836",
+    "stateTests": {
+      "chatgpt": 153,
+      "claude": 127
+    },
+    "appAndWidgetArchitectures": [
+      "arm64",
+      "x86_64"
+    ],
+    "scope": "Frozen known-scope source; complete pure tests and generic builds outside parent; no all-route simulator UI rerun",
+    "privateFileHashMatches": 0
+  },
+  "app": {
+    "name": "Claude",
+    "version": {
+      "value": "1.261002.20 (37091698851)",
+      "status": "observed-in-app",
+      "evidence": "claude-version.png"
+    },
+    "evidence": [
+      {
+        "filename": "IMG_6701.PNG",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "direct-iphone-user-camera",
+        "pixelDimensions": [
+          1179,
+          2556
+        ],
+        "pixelDimensionsStatus": "verified-PNG-IHDR",
+        "scale": 3,
+        "logicalDimensions": [
+          393,
+          852
+        ],
+        "stateFamily": "camera",
+        "private": true,
+        "detectedMediaFormat": "PNG",
+        "dimensionsVerification": "decoded-image-header"
+      },
+      {
+        "filename": "claude-appearance-dark.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "57cfaa51bce1a9d2289ec26b95148a9e4cee9d38abedde8e78e2aefae196cc6c"
+      },
+      {
+        "filename": "claude-appearance-light.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "9d74e31e9b97294d0cc0ba4dda562b0d199c94cbcab3d505a42115e4b796cc85"
+      },
+      {
+        "filename": "claude-artifact-document.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "artifacts",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "8b0b575f613e2d9726e5d2418ebb1b7e59c8ede5240226d77c1a9414e908213f"
+      },
+      {
+        "filename": "claude-artifact-filter.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "artifacts",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "53359e2855a453cdffeb5c441bd23e8d92f0cec6f49e32522582a05f0d3c8073"
+      },
+      {
+        "filename": "claude-artifact-tabs.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "artifacts",
+        "inspectionNote": "Collector verified this is the unchanged document viewer, not evidence of a Tab 1 menu or tab-switching destination.",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "bff60cf8b24a52177f3f1815d24a284ba2b66a19ba445f58c31415182640128a"
+      },
+      {
+        "filename": "claude-artifacts.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "artifacts",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f8a3b095a2c520f49aca0c7061d15b586a689f24cac06ac2eaea295f5f893077"
+      },
+      {
+        "filename": "claude-attachments.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6bc46c614173a29e713c8baf42de019127192f8443376c58a9552fee67ddfcda"
+      },
+      {
+        "filename": "claude-code-add-device.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "547bdd20b35a92d97c7981904ecf6a0537624bc72114474757bb81951a079693"
+      },
+      {
+        "filename": "claude-code-attachments.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "80809baa3622e81a6e71d21e1dfcb4c684084fe9127bc572e6829c227c5da96b"
+      },
+      {
+        "filename": "claude-code-branches.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d0fcf6fe3f81e8b54d2595793b1cac283c5ce1ee4aab826353b2da75eacea2fb"
+      },
+      {
+        "filename": "claude-code-connector-tools.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "4d71bc563244d0c968bd0634c715e4355eeef9569c54d0755a44ab3ded78a36a"
+      },
+      {
+        "filename": "claude-code-connectors.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6ad25b9319d9cbe1d503fa795be747944ffe70327b440e25238e3a8b9a5bf9b5"
+      },
+      {
+        "filename": "claude-code-effort-chooser.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "92bc471a72b4b7735dabf90c97dae8766aeca0a48db7cedd7de741f19af349f6"
+      },
+      {
+        "filename": "claude-code-environment-create.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "da011bf0075b257f4de88edd849a29bf8e2fc27ddd08d26755300070a2966d8a"
+      },
+      {
+        "filename": "claude-code-environments.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "e8e90915afae8427d25da5f71cbe884c84bc02f948589266ec37cf7660dd7306"
+      },
+      {
+        "filename": "claude-code-filter.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "da00dd8f11e45718223f631f98deb6f109591467947c2999de6ad2317c93f56a"
+      },
+      {
+        "filename": "claude-code-home.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a7d24c07312ebe7620b07a431ab8e0d396ea799dfb40561850689f51ec6eabea"
+      },
+      {
+        "filename": "claude-code-model-chooser.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7d30554b79ae6007a86fc9306f9fc28ddd5bf62143696ab8b0f4ec8746674208"
+      },
+      {
+        "filename": "claude-code-network-options.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f831273b445a8c1daeced433f3e467cbbcd9569db920f179e872b6d908bfb502"
+      },
+      {
+        "filename": "claude-code-new-routine.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d9d968cc9518d9415baccadc34082794be2849fced256b4b6a2951d9f5e43b67"
+      },
+      {
+        "filename": "claude-code-new-session.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "2dbf3bbba105e40e4911ee4846ef84596b3668cc3ff4163363c2542c5aa1c140"
+      },
+      {
+        "filename": "claude-code-permission.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "e01da4b290db43e7ec5f48466ecf804c140f945d3d7106e887f6bee680124c18"
+      },
+      {
+        "filename": "claude-code-repositories.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "08b5669217d1c212b08ad422b8e1f6a1a4d437f9dd205811ee85a6705ce1e08c"
+      },
+      {
+        "filename": "claude-code-repository-list.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "467fb3a235a8016f0e4b3ad908970cb845f2375f51e1d13d24b1701dfa67fc9b"
+      },
+      {
+        "filename": "claude-code-routine-manual-bottom.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "fcee0b7abca0b857182426f7a4c729d0e85b1c5a39bd1f678a640209221c50f5"
+      },
+      {
+        "filename": "claude-code-routine-manual.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "1ad7a170c8c1a76f17109e163bbfd66bf276683cf8430f6a8c3debcf595183ff"
+      },
+      {
+        "filename": "claude-code-routine-repeat-menu.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "2fec93c81f52dc2477df917d412fbf8e5710a70b7f21c8a27935f8a6f960233f"
+      },
+      {
+        "filename": "claude-code-routine-schedule.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "0a73a5aa38565db41fe4515a1c19f181f95e194a879d7d34a93a92c9f4144f94"
+      },
+      {
+        "filename": "claude-code-routines-empty.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "070d69d4df38df38e1ec72abbb924896243efc832f653a31bbde13ba18ce8d73"
+      },
+      {
+        "filename": "claude-code-routines-filter.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "claude-code-routines",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "599f01077bfad6a8f5fd914977da154ae10cda05a8c8da6e6d5a21addb2ccf24"
+      },
+      {
+        "filename": "claude-code-tool-permission.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "614c08e5e9ae5889770123e36c7dc4e99659267428893a848940bb780db1cf85"
+      },
+      {
+        "filename": "claude-complete.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f8a634e38751ff2c1abbcf7a696d276737bfd7f3f09019648fe1d88da1986c84"
+      },
+      {
+        "filename": "claude-composer-max-confirmed.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c4bd415524d9916e7bdf458a6f521df38d3f3964ca2f5f364852ebe56762e2a9"
+      },
+      {
+        "filename": "claude-composer-max.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7553f985d60f7057ff370de6ccd356dd80d0cf87c695e81ebf34555d016eee03"
+      },
+      {
+        "filename": "claude-composer-six-lines.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "64f1b2cb3e7af5d89b2c27c6537a692583d556dab63527d64aa89101edeb28fe"
+      },
+      {
+        "filename": "claude-copy.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "266c94cde049c1a2d4d6443a22d5bb1f8231c5af0bede0947851893f8e0237c1"
+      },
+      {
+        "filename": "claude-devices-connected.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6f3d77b017e30ba8e64d0a0980d3fd4725ebd9f1943c089c3a082e6bbf1f606c"
+      },
+      {
+        "filename": "claude-devices.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "00ad00bbbc8e604e8231e1a142a805449dc2dec1dab7d12cb12ec4f8ed1aa705"
+      },
+      {
+        "filename": "claude-dictation-no-audio.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "00a6d4d5cda54245dcdcb9cee04f63f46262d14e9daafed9a41023d806ebb824"
+      },
+      {
+        "filename": "claude-dictation-reply-silent.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "71f35eb9d16f9f33c4a25433e8ad1d5742d0454bef170ab74cbc74c7f763e378"
+      },
+      {
+        "filename": "claude-dispatch-loading.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "abb1fbf957295f290aac1cbca569c8946d6bc72b09c4f52396647721dac0df06"
+      },
+      {
+        "filename": "claude-dispatch-online.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "b3edf9fcf2b2ba08d6521951879a8ee5b076ca3b1c50c7b7c20010990bf3c3ab"
+      },
+      {
+        "filename": "claude-edit.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "506708ae35749bc3e92d4f9831a7ae2caf805803f759b00c36f550996f38a1d4"
+      },
+      {
+        "filename": "claude-effort.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5417e634f77ba588b0bff3b193a0707b2904f160d5577a6d30e34e27598d3f01"
+      },
+      {
+        "filename": "claude-expanded-code-viewer.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "markdown-code-viewer",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c8ea8e0438c273884067ed5e19e4ffa4b6ceb1f5a2cd21d78ecea03412b1e9c6",
+        "inspectionNote": "Collected by live-reference agent; inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-feedback-categories.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7c511788cb6f9b295bad4e2a3c9a75510648f6c6e087613d75eb57fd43099657"
+      },
+      {
+        "filename": "claude-full-photos-picker.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7abf874667d2432cc14a850a06a509f6b60bcbfaadc9d2e694b3d5ed56522b76",
+        "inspectionNote": "Source native Photos picker includes video thumbnails. Full system picker remains distinct from the inline recent-photo panel."
+      },
+      {
+        "filename": "claude-home-light.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3cb710aa3e4850b1adfebec542094d640e0c14ff1f2fa1dd4a923aa44762276e"
+      },
+      {
+        "filename": "claude-home.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "93d5127c10a17158e28b6cc6245863c462e229bcc99d92d44db9f2d08e712a27"
+      },
+      {
+        "filename": "claude-image-composer.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5e4b92a9a0746250ae5740a6d68ecbbe16ee20c4bbc42da06db1718898f372aa",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-image-sent-bubble.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "b239744bb8339321d7a3d739073942dc68b0349e8957fae5ffb40a4fb90bb472",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-incognito-light.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "85c217f85e60149fb75125f75ea24c01a55d4f294c09211f71a1833a70ea3f46"
+      },
+      {
+        "filename": "claude-manage-devices-account-bottom.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "cdcb18e31eeb8df9fa2d0209a142b278bae96e457135b3325b5858df53b70aa0"
+      },
+      {
+        "filename": "claude-manage-devices-account.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "73beeecff5cdcae246e9d23eaf2fae87077f8c4ae885407a41f5e0ded1075f2f"
+      },
+      {
+        "filename": "claude-manage-devices-loading.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "78490ef6401939ff8e83f4a7bb634d0c19565601b50484c759d805c0a2ccf131"
+      },
+      {
+        "filename": "claude-markdown-code-table.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "markdown",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d3517344b3f60b702f57707ecc53a66d81ed6a6d0e8fb04768ff1df77a2265da",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-markdown-heading-image.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "markdown",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "bbf1f8fd27209b1a73d265c789abf1f1823e0b1c4e2684381cfcbd552dfb6463",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-markdown-heading-quote-list.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "markdown",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6c41106726fc10d00c1692929d322f2961055c1e3a76a3d427ac9227e2f9835a",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-models-light.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "fc71ae152d01ba7531ed8069b42cb1ed213bc4290db7e24d9859733508c18e40"
+      },
+      {
+        "filename": "claude-models.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3fd138e8de8c956cfe46afacda761de7bf45809bf9d527511bb1a80edf37ba12"
+      },
+      {
+        "filename": "claude-negative-feedback.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "80f8de1739d50198911a71198f6aaccb6239ab7fcb039ff848374979e2b4acf8"
+      },
+      {
+        "filename": "claude-new-project.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "49e847531757acda6aea9165712a889d845424f39c4ee7616921627f5603f0b9"
+      },
+      {
+        "filename": "claude-permission.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "8f40da4aa3c2079ea887f3773fed9e5702fb6e3cae84bffe2eadcbe94ccaf24a"
+      },
+      {
+        "filename": "claude-photos-recent-picker.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3aaeb238da97e965b9a6c32add786987e7d04001dbfb95eb0737ed9b16fb90ee",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-photos-recent-selected.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "13886a31d1979706041db126a6293d9ad21d7966bbd4f598f2e8a0d94e6d071d",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-positive-feedback.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "de0e70482d164524f3001f3417d3431a92b36b74dee93f811818bec120dcd298"
+      },
+      {
+        "filename": "claude-project-context.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "325b02463bf44077fc2e8b153120bdfe16c9f5ae428b5b8ddd555398eb572f10"
+      },
+      {
+        "filename": "claude-project-drive-picker.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "91d0c2f508a7a4f2490fd6981554d3f30be3f0f4e6e521780ebec8cf3ca7e240"
+      },
+      {
+        "filename": "claude-project-environment.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "ca8ef4277b78f74fb3bb024329bf948a1ca398bcb52976c205c2215703018544"
+      },
+      {
+        "filename": "claude-project-filter.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5beb122b62b8741249054a5f44b5533b905638a054af5dc42771130a89c510a2"
+      },
+      {
+        "filename": "claude-project-icons.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6372c53c40af12492f660ad6c4646bfbdcf1a6f59c1c31141b03ee15e9d48869"
+      },
+      {
+        "filename": "claude-project-name-draft.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7fcbe06d7c59a4f9d22074ad46332d2ff887f81363cc91fddf246a68400230be"
+      },
+      {
+        "filename": "claude-project-setup.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c49fa6af87bb83eb47103a9e1245e94c75a06ce9b10c29c3858d276f76d094e8"
+      },
+      {
+        "filename": "claude-projects.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "stateFamily": "projects",
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "db78259878a4585ad429695ae2228349fc0da6197edea25f1f839b27e1e4bb06"
+      },
+      {
+        "filename": "claude-sending.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "2d7ba7ad172f947f32e0f91e27341892fecf3f1fe5edc304bf36feb8f905a2e5"
+      },
+      {
+        "filename": "claude-sent-image-long-press.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "0044e43fbff81c1379d60cefdcb25875aa314d1e99f5a074ba79b33766569889",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-sent-image-viewer-controls-hidden.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "40611563fd183ca1cad22669bf9ca095099a9a3b0c66a1769d49f5767f605bff",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-sent-image-viewer.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "media",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "aa1800bea571290d9801ec35e3e00a8102de7c47268f5435fb3a06562ec22a8a",
+        "inspectionNote": "Collected by live-reference agent; private original retained locally. Inventory alone does not establish visual parity."
+      },
+      {
+        "filename": "claude-settings.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "9f6f627838424bcb371eece6138753cad4cf268102425e99c581ea001a9aa94b"
+      },
+      {
+        "filename": "claude-sidebar-light.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "09218dce94565b0af3f0df90917490dbe6cadc6da7814eb853800f720e965e58"
+      },
+      {
+        "filename": "claude-sidebar.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "9d398933a00bdda9da74fd7ae1008bcc587202516ce54f2bc0064d507814d9b4"
+      },
+      {
+        "filename": "claude-typed.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "382c8634c5767c75d1718ce4aa197996fc1babb73b78b702f3c7bbb21dbc21a1"
+      },
+      {
+        "filename": "claude-user-context.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3b6258845edc6b22eaa6cfbce66796c801838f9b26188588184347800c750a52"
+      },
+      {
+        "filename": "claude-version.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "8170fefea3ea6aa52e9249a9886dcd2c8d773c98bd93bfbc84e05d510cc1afc1"
+      },
+      {
+        "filename": "claude-video-attachment-result.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "be726d2b76f2e04feaaba0c079412309fe78ded63611a328c8fb25418fb0d164",
+        "inspectionNote": "Composer attachment is approximately80-point poster without a duration badge."
+      },
+      {
+        "filename": "claude-video-download-share-sheet.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "aad29ac1091f66d9fb43c870e220c0a247490e3a69b6f9cfe0d311502e4f2911",
+        "inspectionNote": "Download opens the native share sheet; personal recipients remain private. Skeleton emits a host intent; native sharing integration remains host-owned."
+      },
+      {
+        "filename": "claude-video-file-long-press.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "9149cbc3f6e33478bc890d1201b6934c807886d78b2df938aaf57e25706ec0b5",
+        "inspectionNote": "Sent file hold menu contains Copy filename only."
+      },
+      {
+        "filename": "claude-video-file-menu.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "25595e65f5de9ed34b87f990b481d6f4b04ddcf8ff5f603c4e50add204914454",
+        "inspectionNote": "Filename viewer ellipsis menu contains Download only."
+      },
+      {
+        "filename": "claude-video-file-viewer.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "e2aa3c3f1574abcbd7ffd09f8cd3315544e53ac531917deae0de91d0cf3d1a8e",
+        "inspectionNote": "Sheet viewer with material filename header, Close and ellipsis, status retained. Movie pixels are embedded content, not call controls."
+      },
+      {
+        "filename": "claude-video-native-picker-selected.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "9462af88328b8a0d1565f196dbde79700fdc7d84ffb93fa7c791636b7cc6b7a2",
+        "inspectionNote": "Source permits selecting the reference clip. This does not establish a custom video editing screen."
+      },
+      {
+        "filename": "claude-video-playback-controls.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a199da48dd5a1877855e3ade0e865033e86dc746d9dce0aa39a26b209a703357",
+        "inspectionNote": "Misnamed capture: final movie frame only. No play/pause, timeline or transport controls were revealed after tap."
+      },
+      {
+        "filename": "claude-video-sent-result.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "private": true,
+        "source": "iphone-mirroring",
+        "stateFamily": "video-file",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c81e63a65c172bc694ccb58d03bddd75cbf3b232cc791d3f0bdac996b8e0778a",
+        "inspectionNote": "Sent attachment becomes approximately140x140-point file card with gray file glyph placeholder, middle-truncated filename and MP4 footer."
+      },
+      {
+        "filename": "claude-voice-ended.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6dba960883065c8ba9fe5c14885f554e71304ed7a008318a7c8d5872b049a1d6"
+      },
+      {
+        "filename": "claude-voice-idle.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a189d71eece9beb747e70bde465e2e21847c78c9bc11c580b245693bfa35af65"
+      },
+      {
+        "filename": "claude-voice-models.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "424d4d98a063ec7a755ef512b8b8e7a343148311e925a124b4c9039071664592"
+      },
+      {
+        "filename": "claude-voice-settings.png",
+        "status": "capture-available",
+        "implementationComparison": "unverified",
+        "source": "iphone-mirroring",
+        "capturePixelDimensions": [
+          636,
+          1402
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d8578e8cfc7f85a4e01a4f875a6e7314d29d3a9561725ffe6353d81b3ec3201a"
+      },
+      {
+        "filename": "claude-widget-code-small.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "source": "iphone-mirroring",
+        "private": true,
+        "stateFamily": "system-widget-gallery",
+        "inspectionNote": "Gallery preview visually inspected; no widget added and no tap/configuration behavior verified.",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "62ce8af275c0b4bfab7c3e37f92e529ac9b2043ac057e51c7133fc2c2856bc5c"
+      },
+      {
+        "filename": "claude-widget-quick-actions-medium.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "source": "iphone-mirroring",
+        "private": true,
+        "stateFamily": "system-widget-gallery",
+        "inspectionNote": "Gallery preview visually inspected; no widget added and no tap/configuration behavior verified.",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "dd63b82991a47b7ae863c8627c35e70e9a9292d29c32bb11b07779b55d92f5a6"
+      },
+      {
+        "filename": "claude-widget-quick-actions-small.png",
+        "status": "capture-available",
+        "implementationComparison": "pending",
+        "source": "iphone-mirroring",
+        "private": true,
+        "stateFamily": "system-widget-gallery",
+        "inspectionNote": "Gallery preview visually inspected; no widget added and no tap/configuration behavior verified.",
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "1e42e270fdb9e4264e34589519588c207b63760f60a8aea01a2727672518d262"
+      },
+      {
+        "filename": "phase2/claude-profile-menu.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "4df8d946c2f5294069d169463b69304239e873f9b17f84f67a6b64ae825609f1",
+        "inspectionNote": "Settings parent account/list layout, not a separate profile menu. Personal account content remains private and must be replaced with fictional host data."
+      },
+      {
+        "filename": "phase2/claude-settings-profile.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "ccf4045a342203a46a3b38d2ffa292ebe0484e83f194faa0bf37dbd8206243cf",
+        "inspectionNote": "Profile form: initials avatar, Edit photo, Full name/Nickname rows, Instructions field, guidelines link and Delete account. Save/check shown; no mutation or deletion outcome established."
+      },
+      {
+        "filename": "phase2/claude-work-announcement.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3a93d57c3cc0dcb2276bb61bd448d7efc3067cef00de477a3fc180132090d6ea",
+        "inspectionNote": "Feature announcement sheet about merged Chat and Cowork: blue illustration region, feature text and Got it; a single still does not establish illustration animation."
+      },
+      {
+        "filename": "phase2/claude-profile-instructions.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "75a2aaa03731a6fc749df2c620b20fb80fd0e6d4babe711f3815cf608b79b6d5",
+        "inspectionNote": "Instructions sheet with multiline editor, Close and check controls; no saved-change outcome established by this reference."
+      },
+      {
+        "filename": "phase2/claude-profile-photo-menu.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "53eeebf8a27a95d2899da53e21760b01c613c54d6714d6752817188d5e36bb64",
+        "inspectionNote": "Edit photo native menu: Choose an avatar, View photo library, Take a photo. Account content is private."
+      },
+      {
+        "filename": "phase2/claude-profile-avatar-chooser.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "242b0cfe1ca0b2f2f5783e91ab8533cc60f4656e27fb19fdd6128b2fe266a34e",
+        "inspectionNote": "Choose an avatar sheet with selected preview, Shuffle, four-column colored symbol grid and Close/check. Full catalog and saved-selection aftermath unverified."
+      },
+      {
+        "filename": "phase2/claude-settings-info.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3b820ece2cbc9c75a841eab83730c9a13f6db9d29ba9bdef6448877074fbc7eb",
+        "inspectionNote": "Info menu confirms Claude v1.261002.20 (37091698851), Usage Policy, Consumer Terms, Privacy Policy, Licenses and Help & Support. Link destinations not opened."
+      },
+      {
+        "filename": "phase2/claude-settings-notifications.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "86bbcd5bfdb678708925e6cdc53ec856804e895d4ff33523ac9d20f309c1f84c",
+        "inspectionNote": "Grouped notification toggles all enabled: Replies, Scheduled tasks, Research complete, Code and project updates, Code permission requests, Dispatch messages and Product updates. Toggle aftermath unobserved."
+      },
+      {
+        "filename": "phase2/claude-settings-bottom.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "80b329bb85a90456ac1d9220fc16f64f97021b5105bf9af7592f114196c12889",
+        "inspectionNote": "Partial scroll of parent Settings showing account rows and start of App group; filename does not establish the bottom."
+      },
+      {
+        "filename": "phase2/claude-settings-footer.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "b3ece534a699b1f78fe269f1326f901ec7ddaf65895d34db85ba526c4cfaa196",
+        "inspectionNote": "Further parent Settings viewport through partially visible Haptic feedback row; terminal footer not established."
+      },
+      {
+        "filename": "phase2/claude-settings-footer-end.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7777d24b4c38d631391fe8965ea385690a60e1c60fa39e2b015853a88ed657a5",
+        "inspectionNote": "Same visible Settings viewport as footer capture; despite filename, no terminal endpoint or additional rows established."
+      },
+      {
+        "filename": "phase2/claude-settings-privacy.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "07905f41cd51b81cbfe9d9e9b3be1ccc853afcffdd3508bd6a254e7a1151a7e7",
+        "inspectionNote": "Privacy page with data-privacy information/links and enabled Help improve our AI models toggle. Consent mutation not performed; link outcomes not established."
+      },
+      {
+        "filename": "phase2/claude-settings-time-focus.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "fa7dd4e71dd0a13c79f9f592fbad7aaddd5d6c9f588da3e9dbb4aca70c00f443",
+        "inspectionNote": "Time and focus page with break reminder selectors and seven quiet-hours day circles. This is the initially captured page, not proof of a loading state."
+      },
+      {
+        "filename": "phase2/claude-settings-time-focus-loaded.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "28ebd068dd57f33495df0a3102f4db38c1195fb548a23a788d41caffa0f64989",
+        "inspectionNote": "Same Time and focus layout after waiting; both break selectors show unset dashes. No distinct loading state established."
+      },
+      {
+        "filename": "phase2/claude-settings-time-focus-interval-menu.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7ab5d7925d024bda8ad7cbf9caef477a931eb86f49e133678bd5e81f84a2d46f",
+        "inspectionNote": "Hour selector sheet shows unset dash checked and options1hr through12hr."
+      },
+      {
+        "filename": "phase2/claude-settings-time-focus-interval-scrolled.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5f055d1b6b25578420634798326adc968d4b25f58ff57dc0a47bdd4b2b17b51d",
+        "inspectionNote": "Same visible hour choices after scroll attempt; no additional range or changed selection established."
+      },
+      {
+        "filename": "phase2/claude-settings-time-focus-minute-menu.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5afc5d2ac5dc4f6e3a5f480aff3471d2a11328c4a206831ae8f2d209ad0454ac",
+        "inspectionNote": "Minute selector sheet shows unset dash checked and15/30/45min choices. No change selected in reference."
+      },
+      {
+        "filename": "phase2/claude-settings-usage.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "2a8cfcb599d713c0adcc694710c41db3fd42bf59a5608e6152724d5281714f52",
+        "inspectionNote": "Usage page with current-session and two weekly bars, credits toggle, balance and credit-lot cards; personal quantities must be replaced with host-supplied or fictional values."
+      },
+      {
+        "filename": "phase2/claude-settings-usage-footer.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "478f43776c885b63170803aed259cb9707166198f26b91eb8a6ec60f35f56d13",
+        "inspectionNote": "Usage lower viewport exposes credit-lot rows and explanatory link; no purchase or credit toggle action performed."
+      },
+      {
+        "filename": "phase2/claude-settings-usage-end.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7c2d9961b5c9d60403fa3ae34c70fa0497dbb7677a96d0e8f9b298a270d1047e",
+        "inspectionNote": "Lower Usage viewport includes Buy usage credits row beneath credit-lot list; purchase destination unobserved."
+      },
+      {
+        "filename": "phase2/claude-settings-usage-info.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "4e24f90e59c3de6bdfc25a32d47b853bf947cca084ef068389cf07aeebbbb2d7",
+        "inspectionNote": "Usage info opens native browser sheet at official Claude Support article How do usage and length limits work; browser content is distinct from native Usage layout."
+      },
+      {
+        "filename": "phase2/claude-settings-billing.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d7e22a4c846807031657a1e1134ed8a99dced7faebbdf020ee70f28ec22e929f",
+        "inspectionNote": "Billing grouped account-plan row plus Manage subscription and Restore purchases. Account plan is private; no purchase action performed."
+      },
+      {
+        "filename": "phase2/claude-settings-billing-manage.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "0ca6b1a6d31003b88dee673eb9f0abd7ff65cb0797e12aad1459d8b8d6967268",
+        "inspectionNote": "Website-origin subscription notice with Manage on claude.ai and OK. External management destination not opened."
+      },
+      {
+        "filename": "phase2/claude-settings-capabilities.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "426280f38f9c9f90332371191d70e0543e8b9776570f213376e33fdb24b53548",
+        "inspectionNote": "Capabilities grouped rows with disabled-on Artifacts dependency, Inline visualizations, Code execution/file creation and flagged-message model switching; no toggle change performed."
+      },
+      {
+        "filename": "phase2/claude-settings-capabilities-memory.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "bf35edb5fc4ea1257f7dad284b34c6132d10a1aadcc98ebecb076a24d6b42145",
+        "inspectionNote": "Scrolled Capabilities shows model-switch row and Memory group. Consent and memory toggles are source state, not authorization to change them."
+      },
+      {
+        "filename": "phase2/claude-settings-capabilities-bottom.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "59dfc655651fce013dcab7b7a3afaaa8c7536c82caa2c6e8afc6280771be8c34",
+        "inspectionNote": "Lower Capabilities view includes Search/reference chats, Generate memory, sensitive-topics toggle and Memory files row; no mutation outcome established."
+      },
+      {
+        "filename": "phase2/claude-settings-code.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "cd719d0380e1d0506993b91d45d3d1989422bbcfd760c0f1eb8fd273c64fe821",
+        "inspectionNote": "Claude Code preferences: text-size slider, Transcript font, Code font and Wrap long lines. Slider limits and actual transcript changes unmeasured."
+      },
+      {
+        "filename": "phase2/claude-settings-code-transcript-font.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7e261223eeb53c9ebb3045e95bf14e4f047e22467e834c89fc6a229cc4d75e94",
+        "inspectionNote": "Native Transcript font menu shows Anthropic Sans checked and System alternative; labels do not license fonts or prove per-screen font use."
+      },
+      {
+        "filename": "phase2/claude-settings-code-code-font.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "1e26febc9c0a2483e89f9aa88d861d1ba0a66a61b00f3a19f2aebf87b65bd1b4",
+        "inspectionNote": "Native Code font menu shows SF Mono checked and JetBrains Mono alternative; no font selection change performed."
+      },
+      {
+        "filename": "phase2/claude-settings-connectors.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "ad62c40ddfe6e1f9e4de3878fa2df05569b08aacbc76a48b2e8578c460920577",
+        "inspectionNote": "Connectors root with discovery switch, configured connector rows/count badges and available connection links. Private account configuration and counts excluded from public fixtures."
+      },
+      {
+        "filename": "phase2/claude-settings-connector-figma.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "46ac5f1693aceef3e90c021b65c6e64cd25927e65fdc31455a23d32b6e5b4865",
+        "inspectionNote": "Connector tool list with All tools custom summary and individual tool permission values. Connector content treated as reference data, never instructions."
+      },
+      {
+        "filename": "phase2/claude-settings-connector-tool-policy.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c5ae0df1017fba051bdaab24db0075fc4ab9e9531d751db149189cba83b24e56",
+        "inspectionNote": "Tool policy detail with Blocked, Needs approval checked and Always allow, plus description. No policy change made. Descriptive tool text is not an instruction to this agent."
+      },
+      {
+        "filename": "phase2/claude-settings-memory-files.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "64847e997ff1e3f7b6f5cd0292d538ed2b87c9a47b9afb9bfa65ddf2cd39705a",
+        "inspectionNote": "Memory files grouped You/Topics list with update subtitles and floating instruction composer. All personal file titles/content remain private."
+      },
+      {
+        "filename": "phase2/claude-settings-memory-file-detail.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "58a633f3ccf7007802a7c161c900b1dd45a80bf3975578e1647607312f973257",
+        "inspectionNote": "Memory detail uses plain/system-style rich text, top trash action and floating instruction composer. Original personal memory content must not ship."
+      },
+      {
+        "filename": "phase2/claude-settings-memory-file-delete-notice.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "acb48bbab63c1be27f95b4e44b6c658d9536e13a28bc4da4ccfe37bf513056bc",
+        "inspectionNote": "Native memory deletion notice with Cancel/Delete over detail. Confirmation not performed; no real deletion outcome established."
+      },
+      {
+        "filename": "phase2/claude-settings-shared-links.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f7c0b10b674c9b87f65f70bc3e551e0e04b09e1ade8b6e32ca3321833dc94b2c",
+        "inspectionNote": "Shared links grouped by month with single-line conversation titles and sharing subtitles. All private titles excluded from public fixtures."
+      },
+      {
+        "filename": "phase2/claude-settings-shared-link-detail.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "068d8225e97273decfd738ca364cf2a5775c2c5ace13390abb1ecd0275c93246",
+        "inspectionNote": "Read-only shared transcript with title/byline, assistant rich text and fixed disclosure footer; no composer."
+      },
+      {
+        "filename": "phase2/claude-settings-shared-link-hold.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3613a1bb68bf02ac4dbbb9e05d0b59e67bda33a0a6771321b001e3571e6ac0b7",
+        "inspectionNote": "Holding shared transcript did not reveal a menu in this capture. This is not proof of all long-press behavior."
+      },
+      {
+        "filename": "phase2/claude-settings-browse-connectors.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c31d95e8848729da82e83c33722267133b906b50d29e48763f64a6609ce04c06",
+        "inspectionNote": "Browse connectors sheet shows catalog cards, connected indicators, Connect buttons, sort control and bottom search. Account connection states and counts remain private; full catalog unverified."
+      },
+      {
+        "filename": "phase2/claude-settings-browse-connectors-sort.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "96467d2fb087851d805cf4a371d78d2791309c9f716d0c5bb63050740e556a2f",
+        "inspectionNote": "Sort/filter menu with Default selected, Popular/Trending/New/Alphabetical and All selected plus visible categories; lower categories clipped so full category catalog unverified."
+      },
+      {
+        "filename": "phase2/claude-settings-connector-all-tools.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "60c57410a737b79797725351aa22e05293c5491a06cbbe30815a3f334c74138f",
+        "inspectionNote": "All tools page shows Blocked/Needs approval/Always allow, with no selection check in captured custom state. No bulk policy change performed."
+      },
+      {
+        "filename": "phase2/claude-settings-connectors-add-menu.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "35f3bf55943ddfc2b2bf06500c988def34e4d07f2eabb5ef92873e5c985c88b1",
+        "inspectionNote": "Plus menu offers Browse connectors and Add custom connector."
+      },
+      {
+        "filename": "phase2/claude-settings-custom-connector-empty.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c77bcb5cec1d4587088b5820ed9b9a1ac414e85f1092e5c891173feb881dd367",
+        "inspectionNote": "Empty custom connector form: host organization subtitle, Name, MCP server URL, caution copy and disabled-looking Continue. Personal organization excluded from fixtures; submission/validation outcomes unobserved."
+      },
+      {
+        "filename": "phase2/claude-appearance-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "23527a2946beb09622ade2d25f4ee8b143987ff9d0bcc4ac9e1bc33113cbf5b7",
+        "inspectionNote": "Priority reference: Light appearance selected on Settings root; adaptive groups, native blue switch, footer logout visible."
+      },
+      {
+        "filename": "phase2/claude-markdown-code-table-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "14e803c321a67c80e58f37ac45a6d7abdc8e6d1ce6853f5dd7526cf6f7d62c6c",
+        "inspectionNote": "Priority reference: light code card with colored Python tokens and rounded inline-code backgrounds in compact three-column table; full code/table surface visible together."
+      },
+      {
+        "filename": "phase2/claude-markdown-expanded-code-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "ea9ec89974e9a9fcb644931be549115bd4dcb55508bb0ae18d470d69a6a6da73",
+        "inspectionNote": "Priority reference: expanded Python code light viewer with colored tokens, title and Close. Typography/color measurements require original pixels."
+      },
+      {
+        "filename": "phase2/claude-markdown-table-complete-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a4c076ee5e0b7977d28e77b0ef6025846314188f960ecc505a3fe30b30be267a",
+        "inspectionNote": "Priority reference: complete compact light three-column table with three body rows; rounded inline-code backgrounds. Does not establish larger table behavior."
+      },
+      {
+        "filename": "phase2/claude-markdown-table-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "6d7b932bff496fcf91d35561e21f5f22d81b24688f348ef65b7010d7eb13c666",
+        "inspectionNote": "Priority reference: partial scrolled table plus sent video card and reply in light mode; not a complete table endpoint."
+      },
+      {
+        "filename": "phase2/claude-video-sent-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "78e4e425be4ff4dc0d36cda3204ea855ca7cfee4ccbd48188b800251eba99c2d",
+        "inspectionNote": "Priority reference: light sent MP4 file card and assistant reply; actual recorded media and filename remain private."
+      },
+      {
+        "filename": "phase2/claude-settings-browse-health.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "824cb78a241f92a9189fad8ea41963e8368870d1c4610e670dca571e87cf851e",
+        "inspectionNote": "Prior connector batch reference: Consumer health filtered catalog cards, active orange sort/filter control and search. Full catalog and connection outcomes unverified."
+      },
+      {
+        "filename": "phase2/claude-video-viewer-light.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "2ae8b28f9b5c1abea77eb716d9425e225528b4507767e243aa28c2b07c26c183",
+        "inspectionNote": "Priority reference: Light video file viewer retains status, material filename header with black text/Close/ellipsis ink. Dot call controls are recorded movie content, not viewer controls. Actual private recording pixels excluded from distribution."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-000.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a6cba76914cedb8e578fcfa163713e4a412bb326a219e8bd8e914caa3d4d19e5",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-001.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f9c8f50a4d15e580a4decbbebf47aadc5fad9073e70b86623a3a68e4110e6c03",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-002.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5516f8330d7cdf5c42e24d74e77c4d98fb9848728ad57901434db365833f05c9",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-003.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "94280bf9d6075cd40d6cd2be804bc7ae38282230eb1c7177eb2419f21073b492",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-004.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "0e18f9f50ecdfc45c030204d78329d5149a28286c6e2d93684d41d36ea3ab4a8",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-005.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "647553450034757dd2d909f1a52ef9b582489c14cc61bf4d1a273e66ea1d5141",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-006.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5a5cfe50f75985b90e7d38aabc493cd4470f7b31b889259746cda6b6b33a0864",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-007.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "b89a8027658a779ddfeb426e6c2caf67009ce8c7fe23c3db68c629ec1098141f",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-008.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5a69d844019ec9c740c9f1505b9abd57f9a4c6d988be657f6b277f982db85c9a",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-009.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a92aece34e32b613ecf19900f217d334eca2424cc6e185bd5ce1ffddd8ce5444",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-010.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "a4fb9e642fd63d7e624411250e80c820d40171e3d2984b12598bf157e460ce5d",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-011.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "4c0ca6145c390dd10118fd65e28b78d8424cb9be33e2fdc6fef7079949213bdf",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-012.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "7271a9c56868955ef5deca3145b48122ece7851a2bf9dc2a4377b3749d805643",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-013.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "f582666d1df2b5fb1567f75c5573709fac502544991d01e1e24122ca617a70c3",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-014.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "02fd1dbc7e4119a775f42e2fcd43e591587b574ad994ca9b5f9594c3abd06291",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-015.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "5d00afec3c305a921ce6bda9f38c58c7ce22aa025e3e0c29472bdc392ec2835e",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-016.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "ba6ff47e6d062f52fe8da199fe8ec70f2ebda9dec1e907f61100bdd2f6579370",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-017.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "8e3e8775e91e387444a56ddff16b0ac9adf4fffc57c6f8ac17f802046712bec8",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-018.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "21dd6fb9c5915dda42bd5aa5259a6703ee82e2b17698ccbaa6e2bde89d59f15a",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-019.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "15da93d5639f7884f5e6c0814d3da1bbea4cfdc127dd767c89d1c00669886ce9",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-020.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "92d177f95d4643cbc91e48d98a6367b15bd39eac375aaec56a879efc0177802c",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-021.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "30d0285ae0f74ad13c0cb105aec1b988eccffd9e4016fd72579dded056c605ff",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-022.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "e08ece08af580d5779a109f399c9edc0f4040f0cd3198e1af4d6ba85fc75308d",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-023.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "c6598f081c96dbbcabc9b2c1490b7517a8f9624b105d4dca87db675a17128e5a",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-024.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "68a3bb6d1158cc0e0023afb866af687867613795c3b388b068d86b3c716336ff",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-025.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "580cb9baafbed5eaa0542ab3de2a67bae967ff2231fce48c7741cb99fbaeec63",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-026.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d83d91a38d5d351e90180e91139e8aa081b4551694d7a9655c87dc86975ebf3f",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-027.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "d5151475ff7228fb0141d2adbdc688e33f897eca53a7a71e2053b0ec6f98525d",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-028.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "50c81976d2d8f778e1e70eb084497bf5b1906dbfb4d313c2faffe0fb8b1e1e94",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-029.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "8a0a691959496a356ab092b0479a4faaef28b8f4db40da0543584bd62a9b7dba",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-030.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "3accd2af14118f1ee97d564ca642e2b7870bf809e317540aa8a5b7b6f26b68a3",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-031.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "504d600272ed747122a32b6f38bc33c2f0a75e1227c10e86d38db6dcab0fd596",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      },
+      {
+        "filename": "phase2/claude-relaunch-motion/frame-032.png",
+        "archiveRelativeDirectory": "private/reference-images/2026-10-08-phase2",
+        "status": "capture-visually-inspected",
+        "implementationComparison": "See current checkpoint and scope docs; exact parity not claimed",
+        "source": "iphone-mirroring",
+        "private": true,
+        "capturePixelDimensions": [
+          820,
+          1796
+        ],
+        "detectedMediaFormat": "JPEG",
+        "dimensionsVerification": "decoded-image-header",
+        "sha256": "504d600272ed747122a32b6f38bc33c2f0a75e1227c10e86d38db6dcab0fd596",
+        "inspectionNote": "Partial relaunch sample: complete phone viewport inspected in sequence contact sheet; splash transitions to ordinary home. Announcement absent. No timestamp sidecar; no duration/easing measurement. Capture later failed and lost viewport."
+      }
+    ],
+    "fidelityStatus": "unverified",
+    "knownLimitations": [
+      "Original font identities and exact icon assets not yet established.",
+      "Transition timing not measured.",
+      "Reference account content is private and must not ship in the demo.",
+      "Dictation controls visible, but Mirroring could not supply microphone audio.",
+      "Observed composer maximum about 414.5pt in 393x852pt mirrored content with no onscreen keyboard; keyboard-visible behavior remains unverified."
+    ],
+    "interactions": [
+      {
+        "id": "composer-empty-to-text",
+        "source": "new-chat/composer-empty",
+        "trigger": "type short fictional text",
+        "destination": "new-chat/composer-filled",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-home.png",
+          "claude-typed.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Typed and empty composer appearances captured.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "composer-grow-to-cap",
+        "source": "chat/composer-multiline",
+        "trigger": "append lines beyond visible cap",
+        "destination": "chat/composer-capped",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-composer-six-lines.png",
+          "claude-composer-max.png",
+          "claude-composer-max-confirmed.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Repeated observation: about 414.5pt cap within 393x852pt mirrored content with software keyboard hidden.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "user-message-longpress",
+        "source": "chat/user-message",
+        "trigger": "long press user message",
+        "destination": "chat/user-context-menu",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-user-context.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Timestamp plus Copy, Send to, Select text, Edit observed.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "assistant-copy",
+        "source": "chat/assistant-complete",
+        "trigger": "tap copy",
+        "destination": "chat/assistant-copied",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-copy.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Checkmark feedback and top Message copied toast observed.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "assistant-positive-feedback",
+        "source": "chat/assistant-complete",
+        "trigger": "tap positive rating",
+        "destination": "chat/positive-feedback-sheet",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-positive-feedback.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Sheet observed; cancel returns to unselected rating.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "assistant-negative-feedback",
+        "source": "chat/assistant-complete",
+        "trigger": "tap negative rating",
+        "destination": "chat/negative-feedback-sheet",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-negative-feedback.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Sheet observed; cancel returns to unselected rating.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "feedback-category",
+        "source": "chat/negative-feedback-sheet",
+        "trigger": "open category picker",
+        "destination": "chat/feedback-category-menu",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-feedback-categories.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Category selection menu observed.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "dictation-no-audio",
+        "source": "chat/composer-empty",
+        "trigger": "tap microphone",
+        "destination": "chat/dictation-no-audio",
+        "theme": "unknown",
+        "referenceEvidence": [
+          "claude-dictation-no-audio.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Silent dictation controls observed; audio input blocked by Mirroring.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "assistant-playback",
+        "source": "chat/assistant-complete",
+        "trigger": "tap play then pause",
+        "destination": "chat/assistant-complete",
+        "theme": "unknown",
+        "referenceEvidence": [],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "Play triangle changed to two outlined pause bars with same gray appearance; pause-to-play confirmed. No actual audio fidelity claim.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "assistant-longpress",
+        "source": "chat/assistant-complete",
+        "trigger": "hold assistant response twice",
+        "destination": "chat/assistant-complete",
+        "theme": "unknown",
+        "referenceEvidence": [],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "observation": "No context menu appeared in two live attempts; this is observed behavior in this reference session, not a universal guarantee.",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "appearance-dark-to-light",
+        "source": "settings/appearance-system",
+        "trigger": "select Light thumbnail",
+        "destination": "home/light",
+        "theme": "light",
+        "referenceEvidence": [
+          "claude-appearance-dark.png",
+          "claude-appearance-light.png",
+          "claude-home-light.png"
+        ],
+        "observation": "Appearance picker uses thumbnails; Light applied and System restored after inspection.",
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "incognito-light",
+        "source": "home/light",
+        "trigger": "select incognito",
+        "destination": "home/incognito",
+        "theme": "light",
+        "referenceEvidence": [
+          "claude-incognito-light.png"
+        ],
+        "observation": "Ghost control selected in a dark circle; Incognito title and explanatory description visible.",
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "unverified",
+        "reportedBy": "live-reference collection agent"
+      },
+      {
+        "id": "voice-idle",
+        "source": "chat/assistant-complete",
+        "trigger": "enter voice conversation",
+        "destination": "chat/voice-inline",
+        "theme": "dark",
+        "referenceEvidence": [
+          "claude-voice-idle.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "implemented-unverified",
+        "observation": "Conversation remains visible in inline voice mode. Settings gear at top; large central microphone; bottom plus/model/speaker/close controls. Silent visual state only; no captured speech.",
+        "reportedBy": "direct inspection of private reference captures"
+      },
+      {
+        "id": "voice-settings",
+        "source": "chat/voice-inline",
+        "trigger": "open voice settings",
+        "destination": "voice/settings",
+        "theme": "dark",
+        "referenceEvidence": [
+          "claude-voice-settings.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "implemented-unverified",
+        "observation": "Lower settings sheet contains voice cards, page dots, Model row and Language control with Beta label. Actual audio and transition timing unmeasured.",
+        "reportedBy": "direct inspection of private reference captures"
+      },
+      {
+        "id": "voice-model-picker",
+        "source": "voice/settings",
+        "trigger": "open Model row",
+        "destination": "voice/select-model",
+        "theme": "dark",
+        "referenceEvidence": [
+          "claude-voice-models.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "implemented-unverified",
+        "observation": "Select model sheet lists Fable, Opus, Sonnet, Haiku with descriptions, selection check, and Effort row. Reference fixture labels are not public availability claims.",
+        "reportedBy": "direct inspection of private reference captures"
+      },
+      {
+        "id": "voice-ended",
+        "source": "chat/voice-inline",
+        "trigger": "exit voice conversation",
+        "destination": "chat/voice-ended-banner",
+        "theme": "dark",
+        "referenceEvidence": [
+          "claude-voice-ended.png"
+        ],
+        "implementationEvidence": [],
+        "referenceStatus": "observed",
+        "implementationStatus": "implemented-unverified",
+        "observation": "Ordinary composer and assistant actions return. Top Voice chat ended banner shows duration plus rating and close controls. Visible43s label is a captured display value, not a measured animation duration.",
+        "reportedBy": "direct inspection of private reference captures"
+      }
+    ],
+    "appearanceAtEndOfInspection": {
+      "selection": "System",
+      "renderedAppearance": "dark",
+      "status": "observed",
+      "notes": "System was restored and the app returned to dark appearance."
+    },
+    "voiceReferenceStatus": {
+      "idle": "observed-inline",
+      "settings": "observed",
+      "modelPicker": "observed",
+      "exitBanner": "observed",
+      "speakingWaveform": "unknown",
+      "speakingMaximumHeight": "unknown",
+      "timing": "unmeasured",
+      "limitation": "Mac Mirroring cannot supply microphone audio. Direct recordings supplement some UI endpoints but do not establish dictation maximum/amplitude mapping."
+    },
+    "validation": {
+      "stateTests": {
+        "passed": 127,
+        "suites": 2,
+        "evidence": "claude-table-unit.log"
+      },
+      "latestBuild": {
+        "status": "build-for-testing passed; independent generic build pending",
+        "evidence": "claude-table-build.log"
+      },
+      "sourceScope": "Final known-scope snapshot independently tested/built; remaining gaps TODO",
+      "allUIFlowsRerunTogether": false,
+      "scopeLimit": "All remaining unobserved/unfinished states are TODO; no exact parity claim"
+    },
+    "codeReferenceStatus": {
+      "screens": "Code home/filter/model/effort, Routines empty/filter/new/manual/schedule/repeat and new-session references captured",
+      "implementation": "Observed Code/Routines/new-session/configuration layouts implemented with local state and typed host intents; scoped UI checks passed and final generic build includes them.",
+      "notClaimed": "Complete task execution UI, actual routine scheduling, connector authentication or Live Activities. Widget layouts have separate verified gallery coverage."
+    },
+    "projectsReferenceStatus": {
+      "screens": "Empty/filter/introduction/setup/icon/context/Drive/environment captured",
+      "validation": "Nine Project tests remain in the current 73-test suite. The earlier Projects/Artifacts scoped run passed both flows in45.296s; eight synthetic Project screenshots were inspected.",
+      "unverified": [
+        "Populated project layout",
+        "Archived project content",
+        "Repository selector",
+        "Creation progress/error",
+        "Exact icon artwork and educational illustration",
+        "Drive nonempty link validation"
+      ]
+    },
+    "artifactsReferenceStatus": {
+      "implemented": "List/filter/document viewer with injectable records/document renderer and local collapse",
+      "validation": "Four new state tests; Artifacts and Projects2/2 UI passed; generic build passed",
+      "gaps": [
+        "Tab 1 menu unobserved despite artifact-tabs filename",
+        "Other artifact kinds and editing/share/comment destinations",
+        "Exact font/thumbnail/icon parity"
+      ]
+    },
+    "validationCheckpoint": {
+      "pureTests": 73,
+      "genericSimulatorBuild": "passed arm64/x86_64 app and widget extension",
+      "evidence": [
+        "claude-video-unit.log",
+        "claude-video-generic-build.log",
+        "claude-video-ui.xcresult",
+        "claude-video-final-ui.xcresult"
+      ],
+      "uiScope": "Combined Markdown/image/video 3 of 3 passed; final video toolbar/reopen rerun passed. 23 unique flows cumulatively, not one all-23 rerun."
+    },
+    "videoPresentationStatus": {
+      "reference": "Native picker selection; composer poster without duration; sent MP4 file card; Copy-filename hold; filename sheet with Download-only menu and retained status",
+      "reportedByLiveCollector": "Movie played then held final frame; no transport controls observed after tap",
+      "implementation": "Separate typed video-file presentation implemented and tested; existing image path preserved. Download emits a host intent; source native share sheet now observed.",
+      "gaps": [
+        "Playback/audio timing",
+        "Transport controls beyond observed empty tap response",
+        "Full native-library integration",
+        "Exact open/close and hold-menu animation curves",
+        "Host native share-sheet integration beyond emitted Download intent"
+      ],
+      "privateMediaBundled": false
+    },
+    "phase2RouteStatus": {
+      "SettingsProfile": "Parent/Profile/Instructions and local preferences verified by scoped checkpoint; further subpages active",
+      "Avatar": "Photo menu and chooser captured; next implementation/QA pending",
+      "Notifications": "Captured and implemented local preferences; final affected UI passed",
+      "Info": "Menu captured; destinations unobserved",
+      "Announcement": "Still and local dismissal checks verified; original illustration animation/replay unmeasured",
+      "Customize": "Complete detail reference/implementation still required",
+      "TimeAndFocus": "Captured break selectors and unset quiet-day circles; implemented allowed choices; quiet-day aftermath host seam/unobserved",
+      "Privacy": "Captured cards/links/consent switch; implemented host-owned consent and links; final affected UI passed",
+      "Usage": "Implemented injectable meters and credit presentation; Billing/Usage mixed-bundle passing case27.502s; no account changes",
+      "Billing": "Implemented account-plan and website-management notice; passing case22.658s; external destinations host-owned",
+      "SharedLinks": "Injected grouped records/read-only transcript implemented; corrected scoped UI21.742s passed",
+      "CodePreferences": "Native slider/font menus/wrapping implemented;102 state tests and50.856s scoped UI passed; actual transcript size scale unmeasured",
+      "CapabilitiesMemory": "Captured and implemented host-owned capability truth plus file list/detail/delete request seam; final scoped UI49.683s passed",
+      "Connectors": "Root/tools/policy and subsequent All tools/add/custom/browse/sort implemented with scoped UI checks; OAuth, account policy effects and uncaptured states are TODO/host adapters."
+    },
+    "historicalPhase1Validation": {
+      "stateTests": {
+        "passed": 73,
+        "evidence": "claude-video-unit.log"
+      },
+      "latestGenericBuild": {
+        "status": "passed arm64/x86_64 app and WidgetKit extension",
+        "evidence": "claude-video-generic-build.log"
+      },
+      "uiFlows": {
+        "distinctFlowsPassed": 23,
+        "allRerunTogether": false,
+        "combinedMediaMarkdown": {
+          "status": "3 of 3 passed",
+          "durationSeconds": 122.215,
+          "evidence": "claude-video-ui.xcresult"
+        },
+        "finalVideo": {
+          "status": "passed white-toolbar and reopen check",
+          "durationSeconds": 28.185,
+          "evidence": "claude-video-final-ui.xcresult"
+        }
+      },
+      "visualComparison": "Final image, video-file and Markdown renders inspected; exact fonts/icons and complete route/motion parity remain unverified.",
+      "sourceScope": "Historical phase1 export checkpoint; see phase2.validation for later scoped results."
+    }
+  }
+}

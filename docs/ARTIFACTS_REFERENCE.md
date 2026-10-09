@@ -1,0 +1,17 @@
+# Artifacts reference coverage
+
+The captured October 8 list, filter menu and document viewer establish these visible surfaces:
+
+- A dark list with rounded document thumbnails, truncated titles, lock/Only you metadata, edited dates and bottom glass search field.
+- A native filter menu with independent ownership (All, Pinned, Yours, Shared with you) and kind (All types, Design, Design System, Docs, Slides, Other) groups.
+- A document viewer with Back, disabled Undo/Redo, comments/share toolbar, Tab 1 control, large serif title, date/author chips, section headings with collapse chevrons, and formatted body text.
+
+The demo's garden/workshop/library documents, names and dates are synthetic. No private reference text or thumbnails are bundled. Thumbnail previews are rendered from injected model data. Font, exact thumbnail scale and filter glyphs are approximations; Newsreader is the documented substitute serif, and the filter's All symbol uses SF Symbols rather than an exact custom trace.
+
+`ArtifactsState` accepts `[ClaudeArtifact]`. Each item may carry an `ArtifactDocument` containing title, metadata and sections. `ClaudeArtifactsView` also accepts an optional document-rendering closure for hosts with richer content models. The default renderer supports local section/title collapse and inline Markdown styling; it is not a collaborative editor. Collapse consequences are a reasonable local implementation of the observed chevrons, not a captured interaction sequence. Dynamic Type, light appearance and long-document editing have not been matched against additional references.
+
+Filter intersection and case-insensitive title search are local semantics. Private/shared/pinned labels are injected metadata, not service permission checks. Opening an item without a document emits the host intent while retaining the list; no unseen Design/Slides viewer is fabricated. Share, comments, tabs, undo and redo emit typed actions without performing operations or inventing their destinations. Undo/redo enabled state is host-provided and defaults to disabled. Reopening or closing a document clears its transient collapse state. Starting a new chat retains the injected artifacts and filters but closes the viewer.
+
+Four new reducer tests cover intersecting ownership/type/search filters, every artifact kind, unknown IDs, valid/invalid collapse targets, navigation cleanup, inert host intents and conversation isolation. All 53 package state tests pass in `claude-ui-artifacts-unit.log`. The Artifacts UI flow and refreshed Projects flow passed together in `claude-ui-artifacts-projects.xcresult` (45.3 seconds, zero failures). The generic arm64/x86_64 simulator build passed in `claude-ui-artifacts-projects-generic-build.log`. Xcode's optional simulator diagnostic collector stalled after the tests; only that task-owned collector was stopped after five minutes. Xcode then finalized the result and exited successfully. Test screenshots exported normally; private diagnostic attachments are not bundled.
+
+`screenshots/artifacts-list.png`, `artifacts-filter.png`, and `artifact-document.png` were inspected after export. They show synthetic content with working native menu grouping and a readable document layout. The refreshed `projects-icons.png` was also inspected to confirm the prior missing glyph is rendered. Across scoped runs this reaches seventeen unique UI flows; a full seventeen-flow rerun was not performed. The later reference named `claude-artifact-tabs.png` still showed the unchanged document viewer, so a Tab 1 menu remains unobserved.
