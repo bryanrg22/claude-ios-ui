@@ -1,41 +1,60 @@
-# Contributing UI changes
+# Contributing
 
-This is an unofficial interface skeleton. The app owns front-end presentation and local interaction state. Consumers supply their own backend. Keep contributions independently runnable with fictional sample data and no API keys or parent-repository dependencies.
+Thanks for helping. This project recreates the Claude iPhone app's interface, so most contributions are one of three
+things: making a screen match the real app more closely, adding a screen the real app has gained, or fixing a bug in
+the package. All three follow the same path.
 
-## Establish the reference
+## How a change gets in
 
-Every visual change must record:
+1. **Find or open an issue.** Use the issue forms: *Screen doesn't match the app*, *The app changed or a screen is
+   missing*, or *Bug in the package or demo*. They ask for exactly what a reviewer needs. Issues labelled
+   `good first issue` are a good place to start.
+2. **Capture the reference.** Screenshot or record the real app (see [Evidence](#evidence) below).
+3. **Make the change** in `Sources/ClaudeUI`. Use the demo's `--screen <name>` launch argument to open the screen
+   directly while you work.
+4. **Run the tests** described in [TESTING.md](TESTING.md). For an intended visual change, re-record the affected
+   screenshot references and look at every changed image.
+5. **Open a pull request.** The template asks for a before/after table: the real app, the recreation before, and the
+   recreation after. CI runs every test suite, and the maintainer reviews and merges.
 
-- Original app name, version, and build number, including how they were read.
-- Capture date and time zone; iOS version/build and device model.
-- Locale, appearance (light/dark/system), text size, accessibility settings, display zoom, and whether the software keyboard was visible.
-- Exact starting screen and action sequence, including selected features, conversation state, and any account or plan restrictions.
-- Before/after captures of the skeleton at the same viewport and configuration. Use a short recording or timed frames for motion.
+## Evidence
 
-Unknown values must stay unknown. The dimensions of a mirrored window do not establish the phone model or its native pixel resolution. A screenshot demonstrates one frame, not the full transition or font identity.
+A comparison is only meaningful like for like. Capture the real app and the recreation with the same:
 
-Use disposable, fictional content for any shareable reference. Do not submit personal chats, photos, filenames, account details, access tokens, or private recordings. Describe privately observed evidence in the baseline manifest without distributing it.
+- device size (the references use an iPhone 15 Pro) and iOS version;
+- appearance (light or dark) and text size;
+- starting screen and steps, including what you tapped.
 
-## Implement and verify
+Note the Claude app version from the **ⓘ menu in Settings**. A single screenshot shows one frame; for animations and
+transitions, attach a short screen recording.
 
-Prefer the matching native iOS menu, sheet, typography behavior, or material where the reference uses one. Match custom components only after inspecting the original. Document system-font and icon approximations explicitly; a similarly named SF Symbol is not evidence of an exact icon match.
+**Remove personal information** before uploading: names, email addresses, conversation text, photos and file names.
+Use a fresh conversation with neutral content when you can. Upload reference captures to the issue or pull request;
+don't commit screenshots of the real app to the repository.
 
-Exercise empty, filled, disabled, selected, loading, error, completed, and dismissed states as applicable. Compare light and dark appearance, short and multiline text, keyboard presentation/dismissal, scrolling, menu dismissal, and repeat interactions. Inspect touch-down/pressed visuals and selection colors, not only idle screens. Do not change reference-app settings or send external messages merely to produce a test fixture.
+## Implementation guidelines
 
-Run the project's state tests and simulator interaction checks, and attach the commands/results to the contribution. Visual tests must use a pinned simulator/iOS configuration. A snapshot regression passing only proves consistency with the committed baseline, not fidelity to the real app. Keep unsupported states listed rather than disguising them with inert buttons or claims of completed backend work.
+- **Prefer native components.** Where the real app uses a system menu, sheet, material or font behavior, use the same
+  SwiftUI or UIKit component rather than a custom imitation.
+- **Say what's approximate.** A similar-looking SF Symbol or system font is an approximation, not a match. Note it in
+  the pull request and in the relevant guide under [`docs/features`](docs/features).
+- **Cover every state.** Check empty, filled, disabled, selected, loading, error and dismissed states as they apply, in
+  light and dark, with short and long text, and with the keyboard shown and hidden.
+- **Keep the package backend-free.** No networking, API keys or device access in `Sources`. Anything that would need a
+  server or the system becomes a typed action for the host app. Sample data belongs in the demo
+  (`Examples/ClaudeUIDemo/Demo`), not in the package.
+- **Don't fake unfinished work.** If a destination isn't built yet, leave its "not built yet" notice in place rather than
+  adding a button that silently does nothing.
+- **New screens** get a case in [`Shared/DemoScreen.swift`](Examples/ClaudeUIDemo/Shared/DemoScreen.swift), which
+  gives them screenshot references and an accessibility audit automatically.
+- **Code style** is enforced by `swift format lint --strict`. Run `swift format format --in-place --recursive .`
+  before committing.
 
-## Assets and attribution
+## Assets and licensing
 
-Record every imported font, logo, symbol, and media asset in the project's asset provenance file: source URL, version, license/permission, changes, and whether redistribution is allowed. Preserve original notices. System-provided fonts and SF Symbols should be resolved through Apple APIs, not extracted and redistributed. Brand ownership and third-party asset licenses remain separate from the code license. Do not select a blanket repository license that purports to relicense those assets. Clearly identify the project as unofficial and avoid claims of endorsement.
+Code contributions are accepted under the [MIT License](LICENSE). Never extract fonts, icons, illustrations or other
+files from the app's install package. Use system fonts and SF Symbols through Apple's APIs, or original artwork you have the right
+to share. Record every new font, image or media file in [THIRD_PARTY.md](THIRD_PARTY.md) with its source, license and whether it
+may be redistributed.
 
-## Suggested pull request body
-
-```text
-Reference: app/version/build; captured YYYY-MM-DD; iOS/device; locale/theme/text size
-Change: screen and the visible behavior before/after
-Interactions: starting state -> action -> resulting state, including reversal/dismissal
-Evidence: sanitized screenshots/recording or private reference IDs
-Validation: commands, simulator configuration, and results
-Known differences: typography/icons/motion/screens not yet matched
-Assets: new source and redistribution permissions, or no asset changes
-```
+This project is unofficial and must not suggest endorsement by Anthropic.

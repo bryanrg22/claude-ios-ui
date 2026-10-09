@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: How do I connect my own backend?
+    url: https://github.com/bryanrg22/claude-ios-ui/blob/main/docs/INTEGRATION.md
+    about: Read the integration guide first; it covers every feature area.

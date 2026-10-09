@@ -1,0 +1,47 @@
+name: The app changed or a screen is missing
+description: Claude shipped a new version, or a screen in the real app has no recreation yet.
+title: "[App update] "
+labels: ["app-update"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the real app gained or changed a screen, a flow, or a visual style. One issue per change keeps
+        the work easy to pick up.
+  - type: input
+    id: app-version
+    attributes:
+      label: Claude app version
+      description: Shown in Claude → Settings → the ⓘ menu.
+      placeholder: 1.262000.0 (38000000000)
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What changed or is missing
+      description: Where it lives in the app and how you get there, step by step.
+    validations:
+      required: true
+  - type: upload
+    id: reference
+    attributes:
+      label: Screenshots or recording
+      description: Show the new or changed screen in the real app. A recording helps for animations and transitions.
+    validations:
+      required: true
+      accept: ".png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm"
+  - type: input
+    id: device
+    attributes:
+      label: Device and iOS version
+      placeholder: iPhone 15 Pro, iOS 27.0
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy
+      options:
+        - label: I removed personal information (names, email addresses, conversations, photos) from the uploads.
+          required: true
