@@ -1,0 +1,740 @@
+announcement | dark | Contrast nearly passed | 48::New
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Ask a quick question or hand off a task to finish in the background
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Chat
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Cowork
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Cowork and chat have merged. Ask anything and Claude will choose the best way to get it done.
+announcement | dark | Dynamic Type font sizes are unsupported | 48::New
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Set a task to repeat, like a Monday summary
+announcement | dark | Dynamic Type font sizes are unsupported | 48::Try more artifact types, like slides, designs, and docs
+announcement | dark | Dynamic Type font sizes are unsupported | 9:announcement.dismiss:Got it
+announcement | dark | Hit area is too small | 9:announcement.close:Close work announcement
+announcement | dark | Potentially inaccessible text | none
+announcement | light | Contrast nearly passed | 48::New
+announcement | light | Dynamic Type font sizes are unsupported | 48::Ask a quick question or hand off a task to finish in the background
+announcement | light | Dynamic Type font sizes are unsupported | 48::Chat
+announcement | light | Dynamic Type font sizes are unsupported | 48::Cowork
+announcement | light | Dynamic Type font sizes are unsupported | 48::Cowork and chat have merged. Ask anything and Claude will choose the best way to get it done.
+announcement | light | Dynamic Type font sizes are unsupported | 48::New
+announcement | light | Dynamic Type font sizes are unsupported | 48::Set a task to repeat, like a Monday summary
+announcement | light | Dynamic Type font sizes are unsupported | 48::Try more artifact types, like slides, designs, and docs
+announcement | light | Dynamic Type font sizes are unsupported | 9:announcement.dismiss:Got it
+announcement | light | Hit area is too small | 9:announcement.close:Close work announcement
+announcement | light | Potentially inaccessible text | none
+artifactDocument | dark | Contrast failed | 48::·
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::@Jordan Lee
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::A neighborhood garden gives people a place to learn together, share seasonal produce, and enjoy a quiet afternoon outside.
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::A practical first step: Start with a small herb bed near the entrance. Label each plant clearly and leave room for a bench and an accessible path.
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::Oct 6, 2026
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::Tab 1
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::The first workshop introduces the site, the planting calendar, and simple ways to get involved. Everyone is welcome, including first-time gardeners.
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::Three ideas for the first season:
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::·
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48:markdown.list:1.
+artifactDocument | dark | Dynamic Type font sizes are unsupported | 48:markdown.list:Grow something familiar. Ask neighbors which herbs and vegetables they use most often.
+artifactDocument | dark | Hit area is too small | 9:artifact.tabs:Tab 1
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::@Jordan Lee
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::A neighborhood garden gives people a place to learn together, share seasonal produce, and enjoy a quiet afternoon outside.
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::A practical first step: Start with a small herb bed near the entrance. Label each plant clearly and leave room for a bench and an accessible path.
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::Oct 6, 2026
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::Tab 1
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::The first workshop introduces the site, the planting calendar, and simple ways to get involved. Everyone is welcome, including first-time gardeners.
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::Three ideas for the first season:
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48::·
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48:markdown.list:1.
+artifactDocument | light | Dynamic Type font sizes are unsupported | 48:markdown.list:Grow something familiar. Ask neighbors which herbs and vegetables they use most often.
+artifactDocument | light | Hit area is too small | 9:artifact.tabs:Tab 1
+artifacts | dark | Contrast failed | 48::Edited last mo.
+artifacts | dark | Contrast failed | 48::Oct 5, 2026
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::A shared place to grow
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Community Garden Plan — Jordan
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Community Library — Volunteer Guide
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Community bulletin board design study
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Neighborhood Workshop
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Preparing the space
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Weekend Walk — Route Planning
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Welcome presentation
+artifacts | dark | Dynamic Type font sizes are partially unsupported | 48::Workshop Materials — An Overview
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::A neighborhood garden gives people a place to learn together, share seasonal produce, and enjoy a quiet afternoon outside.
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Arrange chairs around the shared table and set out the sample materials.
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Artifacts
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Community Garden Plan — Jordan
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Community Library — Volunteer Guide
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Community bulletin board design study
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Edited 2 days ago
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Edited 3 wk. ago
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Edited last mo.
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Edited last wk.
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Edited yesterday
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Neighborhood Workshop — Planning Notes
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Oct 5, 2026
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Oct 6, 2026
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Only you
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Shared with you
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Weekend Walk — Route Planning
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Welcome presentation
+artifacts | dark | Dynamic Type font sizes are unsupported | 48::Workshop Materials — An Overview
+artifacts | dark | Text clipped | 48::A shared place to grow
+artifacts | dark | Text clipped | 48::Community Garden Plan — Jordan
+artifacts | dark | Text clipped | 48::Community Library — Volunteer Guide
+artifacts | dark | Text clipped | 48::Community bulletin board design study
+artifacts | dark | Text clipped | 48::Neighborhood Workshop
+artifacts | dark | Text clipped | 48::Neighborhood Workshop — Planning Notes
+artifacts | dark | Text clipped | 48::Preparing the space
+artifacts | dark | Text clipped | 48::Weekend Walk — Route Planning
+artifacts | dark | Text clipped | 48::Welcome presentation
+artifacts | dark | Text clipped | 48::Workshop Materials — An Overview
+artifacts | light | Contrast failed | 48::Edited 2 days ago
+artifacts | light | Contrast failed | 48::Edited 3 wk. ago
+artifacts | light | Contrast failed | 48::Edited last mo.
+artifacts | light | Contrast failed | 48::Edited last wk.
+artifacts | light | Contrast failed | 48::Edited yesterday
+artifacts | light | Contrast failed | 48::Oct 5, 2026
+artifacts | light | Contrast failed | 48::Only you
+artifacts | light | Contrast failed | 48::Shared with you
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::A shared place to grow
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Community Garden Plan — Jordan
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Community Library — Volunteer Guide
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Community bulletin board design study
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Neighborhood Workshop
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Preparing the space
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Weekend Walk — Route Planning
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Welcome presentation
+artifacts | light | Dynamic Type font sizes are partially unsupported | 48::Workshop Materials — An Overview
+artifacts | light | Dynamic Type font sizes are unsupported | 48::A neighborhood garden gives people a place to learn together, share seasonal produce, and enjoy a quiet afternoon outside.
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Arrange chairs around the shared table and set out the sample materials.
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Artifacts
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Community Garden Plan — Jordan
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Community Library — Volunteer Guide
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Community bulletin board design study
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Edited 2 days ago
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Edited 3 wk. ago
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Edited last mo.
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Edited last wk.
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Edited yesterday
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Neighborhood Workshop — Planning Notes
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Oct 5, 2026
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Oct 6, 2026
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Only you
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Shared with you
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Weekend Walk — Route Planning
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Welcome presentation
+artifacts | light | Dynamic Type font sizes are unsupported | 48::Workshop Materials — An Overview
+artifacts | light | Text clipped | 48::A shared place to grow
+artifacts | light | Text clipped | 48::Community Garden Plan — Jordan
+artifacts | light | Text clipped | 48::Community Library — Volunteer Guide
+artifacts | light | Text clipped | 48::Community bulletin board design study
+artifacts | light | Text clipped | 48::Neighborhood Workshop
+artifacts | light | Text clipped | 48::Neighborhood Workshop — Planning Notes
+artifacts | light | Text clipped | 48::Preparing the space
+artifacts | light | Text clipped | 48::Weekend Walk — Route Planning
+artifacts | light | Text clipped | 48::Welcome presentation
+artifacts | light | Text clipped | 48::Workshop Materials — An Overview
+camera | dark | Dynamic Type font sizes are unsupported | 48::A
+camera | dark | Dynamic Type font sizes are unsupported | 9:camera.mode.PHOTO:PHOTO
+camera | dark | Dynamic Type font sizes are unsupported | 9:camera.mode.VIDEO:VIDEO
+camera | light | Dynamic Type font sizes are unsupported | 48::A
+camera | light | Dynamic Type font sizes are unsupported | 9:camera.mode.PHOTO:PHOTO
+camera | light | Dynamic Type font sizes are unsupported | 9:camera.mode.VIDEO:VIDEO
+code | dark | Dynamic Type font sizes are unsupported | 48::2d
+code | dark | Dynamic Type font sizes are unsupported | 48::Add device
+code | dark | Dynamic Type font sizes are unsupported | 48::Camera preview controls
+code | dark | Dynamic Type font sizes are unsupported | 48::Code
+code | dark | Dynamic Type font sizes are unsupported | 48::Community case study brief
+code | dark | Dynamic Type font sizes are unsupported | 48::Community portfolio website
+code | dark | Dynamic Type font sizes are unsupported | 48::Computer performance study
+code | dark | Dynamic Type font sizes are unsupported | 48::Design study to website translation
+code | dark | Dynamic Type font sizes are unsupported | 48::Devices
+code | dark | Dynamic Type font sizes are unsupported | 48::Evaluate project fit for community events
+code | dark | Dynamic Type font sizes are unsupported | 48::New session
+code | dark | Dynamic Type font sizes are unsupported | 48::Portfolio assets deliverable
+code | dark | Dynamic Type font sizes are unsupported | 48::Sample-Project
+code | dark | Dynamic Type font sizes are unsupported | 48::Sep 29
+code | dark | Dynamic Type font sizes are unsupported | 48::Sessions
+code | dark | Dynamic Type font sizes are unsupported | 48::Waiting for you · 2d
+code | dark | Dynamic Type font sizes are unsupported | 48::Waiting for you · Sample-Project
+code | dark | Dynamic Type font sizes are unsupported | 48::Waiting for you · Sep 19
+code | dark | Dynamic Type font sizes are unsupported | 48::Walking route map
+code | dark | Dynamic Type font sizes are unsupported | 48::sample-website · main
+code | dark | Text clipped | 48::Evaluate project fit for community events
+code | light | Contrast failed | 48::2d
+code | light | Contrast failed | 48::Add device
+code | light | Contrast failed | 48::Computer performance study
+code | light | Contrast failed | 48::Devices
+code | light | Contrast failed | 48::Sample-Project
+code | light | Contrast failed | 48::Sep 29
+code | light | Contrast failed | 48::Sessions
+code | light | Contrast failed | 48::Waiting for you · 2d
+code | light | Contrast failed | 48::Waiting for you · Sample-Project
+code | light | Contrast failed | 48::Waiting for you · Sep 19
+code | light | Contrast failed | 48::sample-website · main
+code | light | Dynamic Type font sizes are unsupported | 48::2d
+code | light | Dynamic Type font sizes are unsupported | 48::Add device
+code | light | Dynamic Type font sizes are unsupported | 48::Camera preview controls
+code | light | Dynamic Type font sizes are unsupported | 48::Code
+code | light | Dynamic Type font sizes are unsupported | 48::Community case study brief
+code | light | Dynamic Type font sizes are unsupported | 48::Community portfolio website
+code | light | Dynamic Type font sizes are unsupported | 48::Computer performance study
+code | light | Dynamic Type font sizes are unsupported | 48::Design study to website translation
+code | light | Dynamic Type font sizes are unsupported | 48::Devices
+code | light | Dynamic Type font sizes are unsupported | 48::Evaluate project fit for community events
+code | light | Dynamic Type font sizes are unsupported | 48::New session
+code | light | Dynamic Type font sizes are unsupported | 48::Portfolio assets deliverable
+code | light | Dynamic Type font sizes are unsupported | 48::Sample-Project
+code | light | Dynamic Type font sizes are unsupported | 48::Sep 29
+code | light | Dynamic Type font sizes are unsupported | 48::Sessions
+code | light | Dynamic Type font sizes are unsupported | 48::Waiting for you · 2d
+code | light | Dynamic Type font sizes are unsupported | 48::Waiting for you · Sample-Project
+code | light | Dynamic Type font sizes are unsupported | 48::Waiting for you · Sep 19
+code | light | Dynamic Type font sizes are unsupported | 48::Walking route map
+code | light | Dynamic Type font sizes are unsupported | 48::sample-website · main
+code | light | Text clipped | 48::Evaluate project fit for community events
+codeNewSession | dark | Contrast failed | 48::Default
+codeNewSession | dark | Contrast failed | 48::SampleProject · main
+codeNewSession | dark | Contrast nearly passed | 48::High
+codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::Default
+codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::High
+codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::SampleProject · main
+codeNewSession | dark | Dynamic Type font sizes are unsupported | none
+codeNewSession | light | Contrast failed | 48::Default
+codeNewSession | light | Contrast failed | 48::High
+codeNewSession | light | Dynamic Type font sizes are unsupported | 48::Default
+codeNewSession | light | Dynamic Type font sizes are unsupported | 48::High
+codeNewSession | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+codeNewSession | light | Dynamic Type font sizes are unsupported | 48::SampleProject · main
+codeNewSession | light | Dynamic Type font sizes are unsupported | none
+conversation | dark | Contrast nearly passed | 48::High
+conversation | dark | Dynamic Type font sizes are unsupported | 48::Claude is AI and can make mistakes.
+conversation | dark | Dynamic Type font sizes are unsupported | 48::High
+conversation | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+conversation | dark | Dynamic Type font sizes are unsupported | 48::Reply with a short greeting.
+conversation | dark | Dynamic Type font sizes are unsupported | none
+conversation | dark | Hit area is too small | 9:arrow.clockwise:Retry response
+conversation | dark | Hit area is too small | 9:play:Read aloud
+conversation | light | Contrast failed | 48::Claude is AI and can make mistakes.
+conversation | light | Contrast failed | 48::High
+conversation | light | Dynamic Type font sizes are unsupported | 48::Claude is AI and can make mistakes.
+conversation | light | Dynamic Type font sizes are unsupported | 48::High
+conversation | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+conversation | light | Dynamic Type font sizes are unsupported | 48::Reply with a short greeting.
+conversation | light | Dynamic Type font sizes are unsupported | none
+conversation | light | Hit area is too small | 9:arrow.clockwise:Retry response
+conversation | light | Hit area is too small | 9:play:Read aloud
+devicesSheet | dark | Dynamic Type font sizes are unsupported | 48::Claude Desktop (macOS)
+devicesSheet | dark | Dynamic Type font sizes are unsupported | 48::Connected
+devicesSheet | dark | Dynamic Type font sizes are unsupported | 48::Devices
+devicesSheet | dark | Dynamic Type font sizes are unsupported | 48::Manage devices
+devicesSheet | dark | Text clipped | 48::Claude Desktop (macOS)
+devicesSheet | dark | Text clipped | 48::Devices
+devicesSheet | dark | Text clipped | 48::Manage devices
+devicesSheet | light | Contrast nearly passed | 48::Connected
+devicesSheet | light | Dynamic Type font sizes are unsupported | 48::Claude Desktop (macOS)
+devicesSheet | light | Dynamic Type font sizes are unsupported | 48::Connected
+devicesSheet | light | Dynamic Type font sizes are unsupported | 48::Devices
+devicesSheet | light | Dynamic Type font sizes are unsupported | 48::Manage devices
+devicesSheet | light | Text clipped | 48::Claude Desktop (macOS)
+devicesSheet | light | Text clipped | 48::Devices
+devicesSheet | light | Text clipped | 48::Manage devices
+dictation | dark | Dynamic Type font sizes are unsupported | none
+dictation | dark | Hit area is too small | 1:dictation.waveform:Listening
+dictation | light | Dynamic Type font sizes are unsupported | none
+dictation | light | Hit area is too small | 1:dictation.waveform:Listening
+dispatch | dark | Contrast failed | 48::Hey, glad you’re here. Tell me what’s on your plate, no ask is too big or small. You could ask me to:  • Find a confirmation in Downloads and check the order status on the site.  • Open a GitHub project on your computer, make a quick code change, and run the tests.  • Scan Slack for a bug report, find the file, and open a Code session to fix it.  • Search your repos for an error message and trace where it comes from.  You can also control this conversation from your phone. Download the Claude app for iOS or Android, then go to the Dispatch tab.
+dispatch | dark | Dynamic Type font sizes are unsupported | 48::Dispatch
+dispatch | dark | Dynamic Type font sizes are unsupported | 48::Oct 7, 2026 at 9:11 PM
+dispatch | dark | Dynamic Type font sizes are unsupported | 48::Online
+dispatch | light | Contrast failed | 48::Oct 7, 2026 at 9:11 PM
+dispatch | light | Contrast failed | 48::Online
+dispatch | light | Dynamic Type font sizes are unsupported | 48::Dispatch
+dispatch | light | Dynamic Type font sizes are unsupported | 48::Oct 7, 2026 at 9:11 PM
+dispatch | light | Dynamic Type font sizes are unsupported | 48::Online
+editing | dark | Contrast nearly passed | 48::High
+editing | dark | Dynamic Type font sizes are unsupported | 48::Editing message
+editing | dark | Dynamic Type font sizes are unsupported | 48::Editing this message will restart the conversation from this point.
+editing | dark | Dynamic Type font sizes are unsupported | 48::High
+editing | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+editing | dark | Dynamic Type font sizes are unsupported | 48::Reply with a short greeting.
+editing | dark | Dynamic Type font sizes are unsupported | 49:composer.draft:
+editing | light | Contrast failed | 48::Editing this message will restart the conversation from this point.
+editing | light | Contrast failed | 48::High
+editing | light | Dynamic Type font sizes are unsupported | 48::Editing message
+editing | light | Dynamic Type font sizes are unsupported | 48::Editing this message will restart the conversation from this point.
+editing | light | Dynamic Type font sizes are unsupported | 48::High
+editing | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+editing | light | Dynamic Type font sizes are unsupported | 48::Reply with a short greeting.
+editing | light | Dynamic Type font sizes are unsupported | 49:composer.draft:
+home | dark | Contrast nearly passed | 48::High
+home | dark | Dynamic Type font sizes are unsupported | 48::High
+home | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+home | dark | Dynamic Type font sizes are unsupported | none
+home | light | Contrast failed | 48::High
+home | light | Dynamic Type font sizes are unsupported | 48::High
+home | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+home | light | Dynamic Type font sizes are unsupported | none
+imageViewer | dark | Dynamic Type font sizes are unsupported | 48::Garden-1.png
+imageViewer | dark | Label not human-readable | 48::Garden-1.png
+imageViewer | light | Dynamic Type font sizes are unsupported | 48::Garden-1.png
+imageViewer | light | Label not human-readable | 48::Garden-1.png
+longDraft | dark | Contrast nearly passed | 48::High
+longDraft | dark | Dynamic Type font sizes are unsupported | 48::High
+longDraft | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+longDraft | dark | Dynamic Type font sizes are unsupported | 49:composer.draft:
+longDraft | light | Contrast failed | 48::High
+longDraft | light | Dynamic Type font sizes are unsupported | 48::High
+longDraft | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+longDraft | light | Dynamic Type font sizes are unsupported | 49:composer.draft:
+markdown | dark | Contrast failed | 48::Plant
+markdown | dark | Contrast failed | 48::Season
+markdown | dark | Contrast failed | 48:markdown.list:☑
+markdown | dark | Contrast nearly passed | 48::High
+markdown | dark | Dynamic Type font sizes are unsupported | 48::High
+markdown | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+markdown | dark | Dynamic Type font sizes are unsupported | 48::python
+markdown | dark | Dynamic Type font sizes are unsupported | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
+markdown | dark | Dynamic Type font sizes are unsupported | none
+markdown | light | Contrast failed | 48::High
+markdown | light | Contrast failed | 48::Plant
+markdown | light | Contrast failed | 48::Season
+markdown | light | Contrast failed | 48:markdown.list:☑
+markdown | light | Contrast nearly passed | 48::python
+markdown | light | Contrast nearly passed | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
+markdown | light | Dynamic Type font sizes are unsupported | 48::High
+markdown | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+markdown | light | Dynamic Type font sizes are unsupported | 48::python
+markdown | light | Dynamic Type font sizes are unsupported | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
+markdown | light | Dynamic Type font sizes are unsupported | none
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Effort
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Fable 5.1
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Fastest for quick answers
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::For complex work and everyday tasks
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::For your toughest challenges
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Haiku 5.5
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::High
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Most efficient for simpler tasks
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Select model
+modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Sonnet 5.5
+modelsSheet | dark | Text clipped | 48::Fable 5.1
+modelsSheet | dark | Text clipped | 48::Fastest for quick answers
+modelsSheet | dark | Text clipped | 48::For complex work and everyday tasks
+modelsSheet | dark | Text clipped | 48::For your toughest challenges
+modelsSheet | dark | Text clipped | 48::Haiku 5.5
+modelsSheet | dark | Text clipped | 48::High
+modelsSheet | dark | Text clipped | 48::Most efficient for simpler tasks
+modelsSheet | dark | Text clipped | 48::Opus 5.5
+modelsSheet | dark | Text clipped | 48::Select model
+modelsSheet | dark | Text clipped | 48::Sonnet 5.5
+modelsSheet | light | Contrast nearly passed | 48::Fastest for quick answers
+modelsSheet | light | Contrast nearly passed | 48::For complex work and everyday tasks
+modelsSheet | light | Contrast nearly passed | 48::For your toughest challenges
+modelsSheet | light | Contrast nearly passed | 48::High
+modelsSheet | light | Contrast nearly passed | 48::Most efficient for simpler tasks
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Effort
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Fable 5.1
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Fastest for quick answers
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::For complex work and everyday tasks
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::For your toughest challenges
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Haiku 5.5
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::High
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Most efficient for simpler tasks
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Select model
+modelsSheet | light | Dynamic Type font sizes are unsupported | 48::Sonnet 5.5
+modelsSheet | light | Text clipped | 48::Fable 5.1
+modelsSheet | light | Text clipped | 48::Fastest for quick answers
+modelsSheet | light | Text clipped | 48::For complex work and everyday tasks
+modelsSheet | light | Text clipped | 48::For your toughest challenges
+modelsSheet | light | Text clipped | 48::Haiku 5.5
+modelsSheet | light | Text clipped | 48::High
+modelsSheet | light | Text clipped | 48::Most efficient for simpler tasks
+modelsSheet | light | Text clipped | 48::Opus 5.5
+modelsSheet | light | Text clipped | 48::Select model
+modelsSheet | light | Text clipped | 48::Sonnet 5.5
+projects | dark | Dynamic Type font sizes are unsupported | 48::Create one to organize sessions around a topic or set of documents.
+projects | dark | Dynamic Type font sizes are unsupported | 48::New project
+projects | dark | Dynamic Type font sizes are unsupported | 48::No projects yet
+projects | dark | Dynamic Type font sizes are unsupported | 48::Projects
+projects | dark | Hit area is too small | 9:projects.sidebar:Open sidebar
+projects | light | Contrast failed | 48::Create one to organize sessions around a topic or set of documents.
+projects | light | Contrast failed | 48::No projects yet
+projects | light | Dynamic Type font sizes are unsupported | 48::Create one to organize sessions around a topic or set of documents.
+projects | light | Dynamic Type font sizes are unsupported | 48::New project
+projects | light | Dynamic Type font sizes are unsupported | 48::No projects yet
+projects | light | Dynamic Type font sizes are unsupported | 48::Projects
+projects | light | Hit area is too small | 9:projects.sidebar:Open sidebar
+settings | dark | Dynamic Type font sizes are unsupported | 48::Account
+settings | dark | Dynamic Type font sizes are unsupported | 48::Add account
+settings | dark | Dynamic Type font sizes are unsupported | 48::App
+settings | dark | Dynamic Type font sizes are unsupported | 48::Billing
+settings | dark | Dynamic Type font sizes are unsupported | 48::Give the gift of Claude
+settings | dark | Dynamic Type font sizes are unsupported | 48::JL
+settings | dark | Dynamic Type font sizes are unsupported | 48::Max plan
+settings | dark | Dynamic Type font sizes are unsupported | 48::Notifications
+settings | dark | Dynamic Type font sizes are unsupported | 48::Personal
+settings | dark | Dynamic Type font sizes are unsupported | 48::Privacy
+settings | dark | Dynamic Type font sizes are unsupported | 48::Profile
+settings | dark | Dynamic Type font sizes are unsupported | 48::Settings
+settings | dark | Dynamic Type font sizes are unsupported | 48::Shared links
+settings | dark | Dynamic Type font sizes are unsupported | 48::Time & focus
+settings | dark | Dynamic Type font sizes are unsupported | 48::Usage
+settings | dark | Dynamic Type font sizes are unsupported | 48::jordan@example.com
+settings | light | Contrast failed | 48::Account
+settings | light | Contrast failed | 48::App
+settings | light | Contrast nearly passed | 48::Add account
+settings | light | Contrast nearly passed | 48::Give the gift of Claude
+settings | light | Contrast nearly passed | 48::Max plan
+settings | light | Contrast nearly passed | 48::Personal
+settings | light | Dynamic Type font sizes are unsupported | 48::Account
+settings | light | Dynamic Type font sizes are unsupported | 48::Add account
+settings | light | Dynamic Type font sizes are unsupported | 48::App
+settings | light | Dynamic Type font sizes are unsupported | 48::Billing
+settings | light | Dynamic Type font sizes are unsupported | 48::Give the gift of Claude
+settings | light | Dynamic Type font sizes are unsupported | 48::JL
+settings | light | Dynamic Type font sizes are unsupported | 48::Max plan
+settings | light | Dynamic Type font sizes are unsupported | 48::Notifications
+settings | light | Dynamic Type font sizes are unsupported | 48::Personal
+settings | light | Dynamic Type font sizes are unsupported | 48::Privacy
+settings | light | Dynamic Type font sizes are unsupported | 48::Profile
+settings | light | Dynamic Type font sizes are unsupported | 48::Settings
+settings | light | Dynamic Type font sizes are unsupported | 48::Shared links
+settings | light | Dynamic Type font sizes are unsupported | 48::Time & focus
+settings | light | Dynamic Type font sizes are unsupported | 48::Usage
+settings | light | Dynamic Type font sizes are unsupported | 48::jordan@example.com
+settingsBilling | dark | Dynamic Type font sizes are unsupported | 48::Account plan
+settingsBilling | dark | Dynamic Type font sizes are unsupported | 48::Billing
+settingsBilling | dark | Dynamic Type font sizes are unsupported | 48::Manage subscription
+settingsBilling | dark | Dynamic Type font sizes are unsupported | 48::Restore purchases
+settingsBilling | dark | Dynamic Type font sizes are unsupported | 48:settings.billing.plan:Max
+settingsBilling | light | Contrast nearly passed | 48:settings.billing.plan:Max
+settingsBilling | light | Dynamic Type font sizes are unsupported | 48::Account plan
+settingsBilling | light | Dynamic Type font sizes are unsupported | 48::Billing
+settingsBilling | light | Dynamic Type font sizes are unsupported | 48::Manage subscription
+settingsBilling | light | Dynamic Type font sizes are unsupported | 48::Restore purchases
+settingsBilling | light | Dynamic Type font sizes are unsupported | 48:settings.billing.plan:Max
+settingsCapabilities | dark | Contrast failed | 48::Required by code execution
+settingsCapabilities | dark | Contrast nearly passed | 48::Artifacts
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Allow Claude to execute code and create and edit docs, spreadsheets, presentations, PDFs, and data reports.
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Allow Claude to generate interactive visualizations, charts, and diagrams directly in the conversation.
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Artifacts
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Beta
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Capabilities
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Code execution and file creation
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Generate memory from chats
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Inline visualizations
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Memory
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Required by code execution
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Search and reference chats
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::Switch models when a message is flagged
+settingsCapabilities | dark | Dynamic Type font sizes are unsupported | 48::When safety measures flag a message, automatically switch to a different model to keep chatting. When off, your chat will pause instead.
+settingsCapabilities | light | Contrast failed | 48::Memory
+settingsCapabilities | light | Contrast failed | 48::Required by code execution
+settingsCapabilities | light | Contrast nearly passed | 48::Allow Claude to execute code and create and edit docs, spreadsheets, presentations, PDFs, and data reports.
+settingsCapabilities | light | Contrast nearly passed | 48::Allow Claude to generate interactive visualizations, charts, and diagrams directly in the conversation.
+settingsCapabilities | light | Contrast nearly passed | 48::Artifacts
+settingsCapabilities | light | Contrast nearly passed | 48::When safety measures flag a message, automatically switch to a different model to keep chatting. When off, your chat will pause instead.
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Allow Claude to execute code and create and edit docs, spreadsheets, presentations, PDFs, and data reports.
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Allow Claude to generate interactive visualizations, charts, and diagrams directly in the conversation.
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Artifacts
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Beta
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Capabilities
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Code execution and file creation
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Generate memory from chats
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Inline visualizations
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Memory
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Required by code execution
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Search and reference chats
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::Switch models when a message is flagged
+settingsCapabilities | light | Dynamic Type font sizes are unsupported | 48::When safety measures flag a message, automatically switch to a different model to keep chatting. When off, your chat will pause instead.
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::A
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Anthropic Sans
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Appearance
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Claude Code
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Code appearance
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Code font
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::SF Mono
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Transcript font
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Transcript text size
+settingsCode | dark | Dynamic Type font sizes are unsupported | 48::Wrap long lines
+settingsCode | light | Contrast failed | 48::Anthropic Sans
+settingsCode | light | Contrast failed | 48::Appearance
+settingsCode | light | Contrast failed | 48::Code appearance
+settingsCode | light | Contrast failed | 48::SF Mono
+settingsCode | light | Contrast nearly passed | 48::A
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::A
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Anthropic Sans
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Appearance
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Claude Code
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Code appearance
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Code font
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::SF Mono
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Transcript font
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Transcript text size
+settingsCode | light | Dynamic Type font sizes are unsupported | 48::Wrap long lines
+settingsConnectors | dark | Contrast nearly passed | 48::1
+settingsConnectors | dark | Contrast nearly passed | 48::3
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::1
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::3
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Calendar
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Claude will help you find available connectors in your directory.
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Connect
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Connector discovery
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Connectors
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Design Studio
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Notes
+settingsConnectors | dark | Dynamic Type font sizes are unsupported | 48::Travel Planner
+settingsConnectors | light | Contrast failed | 48::1
+settingsConnectors | light | Contrast failed | 48::3
+settingsConnectors | light | Contrast nearly passed | 48::Claude will help you find available connectors in your directory.
+settingsConnectors | light | Contrast nearly passed | 48::Connect
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::1
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::3
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Calendar
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Claude will help you find available connectors in your directory.
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Connect
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Connector discovery
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Connectors
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Design Studio
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Notes
+settingsConnectors | light | Dynamic Type font sizes are unsupported | 48::Travel Planner
+settingsMemoryFiles | dark | Contrast nearly passed | 48::Tell Claude what to remember
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Coding Style
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Gardening
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Memory files
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Profile
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Reading
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Tell Claude what to remember
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Topics
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Updated 2 days ago
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Updated 2 months ago
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Updated 3 weeks ago
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::Updated last month
+settingsMemoryFiles | dark | Dynamic Type font sizes are unsupported | 48::You
+settingsMemoryFiles | light | Contrast failed | 48::Topics
+settingsMemoryFiles | light | Contrast failed | 48::You
+settingsMemoryFiles | light | Contrast nearly passed | 48::Tell Claude what to remember
+settingsMemoryFiles | light | Contrast nearly passed | 48::Updated 2 days ago
+settingsMemoryFiles | light | Contrast nearly passed | 48::Updated 2 months ago
+settingsMemoryFiles | light | Contrast nearly passed | 48::Updated 3 weeks ago
+settingsMemoryFiles | light | Contrast nearly passed | 48::Updated last month
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Coding Style
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Gardening
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Memory files
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Profile
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Reading
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Tell Claude what to remember
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Topics
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated 2 days ago
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated 2 months ago
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated 3 weeks ago
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated last month
+settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::You
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Code and project updates
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Code permission requests
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Dispatch messages
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified about new features, tips, and occasional promotions
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Claude finishes a reply.
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Claude messages you in Dispatch.
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions need your approval to use a tool
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions or projects have updates
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when research completes
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when scheduled tasks finish, can’t run, or need your input
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Notifications
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Product updates
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Replies
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Research complete
+settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Scheduled tasks
+settingsNotifications | light | Contrast nearly passed | 48::Get notified about new features, tips, and occasional promotions
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when Claude finishes a reply.
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when Claude messages you in Dispatch.
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when Code sessions need your approval to use a tool
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when Code sessions or projects have updates
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when research completes
+settingsNotifications | light | Contrast nearly passed | 48::Get notified when scheduled tasks finish, can’t run, or need your input
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Code and project updates
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Code permission requests
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Dispatch messages
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified about new features, tips, and occasional promotions
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Claude finishes a reply.
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Claude messages you in Dispatch.
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions need your approval to use a tool
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions or projects have updates
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when research completes
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when scheduled tasks finish, can’t run, or need your input
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Notifications
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Product updates
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Replies
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Research complete
+settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Scheduled tasks
+settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Anthropic believes in transparent data practices.
+settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Data privacy
+settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Help improve our AI models
+settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Privacy
+settingsPrivacy | light | Contrast nearly passed | 48::Anthropic believes in transparent data practices.
+settingsPrivacy | light | Dynamic Type font sizes are unsupported | 48::Anthropic believes in transparent data practices.
+settingsPrivacy | light | Dynamic Type font sizes are unsupported | 48::Data privacy
+settingsPrivacy | light | Dynamic Type font sizes are unsupported | 48::Help improve our AI models
+settingsPrivacy | light | Dynamic Type font sizes are unsupported | 48::Privacy
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Claude calls you by your nickname.
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Delete account
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Edit photo
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Full name
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Instructions
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::JL
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Nickname
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 48::Profile
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 49:settings.profile.fullName:
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 49:settings.profile.nickname:
+settingsProfile | dark | Dynamic Type font sizes are unsupported | 9:settings.profile.instructions:How you’d like Claude to respond
+settingsProfile | light | Contrast failed | 48::Claude calls you by your nickname.
+settingsProfile | light | Contrast failed | 48::Delete account
+settingsProfile | light | Contrast failed | 48::Instructions
+settingsProfile | light | Contrast nearly passed | 48::Full name
+settingsProfile | light | Contrast nearly passed | 48::Nickname
+settingsProfile | light | Contrast nearly passed | 9:settings.profile.instructions:How you’d like Claude to respond
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Claude calls you by your nickname.
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Delete account
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Edit photo
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Full name
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Instructions
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::JL
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Nickname
+settingsProfile | light | Dynamic Type font sizes are unsupported | 48::Profile
+settingsProfile | light | Dynamic Type font sizes are unsupported | 49:settings.profile.fullName:
+settingsProfile | light | Dynamic Type font sizes are unsupported | 49:settings.profile.nickname:
+settingsProfile | light | Dynamic Type font sizes are unsupported | 9:settings.profile.instructions:How you’d like Claude to respond
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::April
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Building a weekend reading list
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Finding time for a neighborhood walk
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::May
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Organizing notes for a creative project
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Planning a small balcony garden and choosing herbs
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::September
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Shared 1 month ago
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Shared 1 week ago
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Shared 4 months ago
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Shared 6 months ago
+settingsSharedLinks | dark | Dynamic Type font sizes are unsupported | 48::Shared links
+settingsSharedLinks | dark | Text clipped | 48::Planning a small balcony garden and choosing herbs
+settingsSharedLinks | light | Contrast failed | 48::April
+settingsSharedLinks | light | Contrast failed | 48::May
+settingsSharedLinks | light | Contrast failed | 48::September
+settingsSharedLinks | light | Contrast nearly passed | 48::Shared 1 month ago
+settingsSharedLinks | light | Contrast nearly passed | 48::Shared 1 week ago
+settingsSharedLinks | light | Contrast nearly passed | 48::Shared 4 months ago
+settingsSharedLinks | light | Contrast nearly passed | 48::Shared 6 months ago
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::April
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Building a weekend reading list
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Finding time for a neighborhood walk
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::May
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Organizing notes for a creative project
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Planning a small balcony garden and choosing herbs
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::September
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Shared 1 month ago
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Shared 1 week ago
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Shared 4 months ago
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Shared 6 months ago
+settingsSharedLinks | light | Dynamic Type font sizes are unsupported | 48::Shared links
+settingsSharedLinks | light | Text clipped | 48::Planning a small balcony garden and choosing herbs
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::-
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Break reminders
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Get a nudge to take a break from Claude. You can snooze or adjust anytime.
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Quiet hours
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Set time limits for Claude. You can dismiss or adjust anytime.
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Time & focus
+settingsTimeAndFocus | dark | Dynamic Type font sizes are unsupported | 48::Time and focus
+settingsTimeAndFocus | light | Contrast nearly passed | 48::Get a nudge to take a break from Claude. You can snooze or adjust anytime.
+settingsTimeAndFocus | light | Contrast nearly passed | 48::Set time limits for Claude. You can dismiss or adjust anytime.
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::-
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Break reminders
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Get a nudge to take a break from Claude. You can snooze or adjust anytime.
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Quiet hours
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Set time limits for Claude. You can dismiss or adjust anytime.
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Time & focus
+settingsTimeAndFocus | light | Dynamic Type font sizes are unsupported | 48::Time and focus
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::+20 credits
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::+3 credits
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::12% used
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::27% used
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::35% used · Expires Jun 15, 2027
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::40% used
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::All models
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Credits
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Current balance
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Current session
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Fable only
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Promo credit
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Purchase - Sep 12, 2026
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Resets Mon 9:00 AM
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Resets in 3 hr 20 min
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Usage
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Usage credits
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48::Weekly limits
+settingsUsage | dark | Dynamic Type font sizes are unsupported | 48:settings.usage.balance:18 credits
+settingsUsage | dark | Hit area is too small | 35:settings.usage.meter.all:All models
+settingsUsage | dark | Hit area is too small | 35:settings.usage.meter.current:Current session
+settingsUsage | dark | Hit area is too small | 35:settings.usage.meter.fable:Fable only
+settingsUsage | light | Contrast failed | 48::Credits
+settingsUsage | light | Contrast failed | 48::Weekly limits
+settingsUsage | light | Contrast nearly passed | 48::12% used
+settingsUsage | light | Contrast nearly passed | 48::27% used
+settingsUsage | light | Contrast nearly passed | 48::35% used · Expires Jun 15, 2027
+settingsUsage | light | Contrast nearly passed | 48::40% used
+settingsUsage | light | Contrast nearly passed | 48::Resets Mon 9:00 AM
+settingsUsage | light | Contrast nearly passed | 48::Resets in 3 hr 20 min
+settingsUsage | light | Contrast nearly passed | 48:settings.usage.balance:18 credits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::+20 credits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::+3 credits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::12% used
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::27% used
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::35% used · Expires Jun 15, 2027
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::40% used
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::All models
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Credits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Current balance
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Current session
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Fable only
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Promo credit
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Purchase - Sep 12, 2026
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Resets Mon 9:00 AM
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Resets in 3 hr 20 min
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Usage
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Usage credits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48::Weekly limits
+settingsUsage | light | Dynamic Type font sizes are unsupported | 48:settings.usage.balance:18 credits
+settingsUsage | light | Hit area is too small | 35:settings.usage.meter.all:All models
+settingsUsage | light | Hit area is too small | 35:settings.usage.meter.current:Current session
+settingsUsage | light | Hit area is too small | 35:settings.usage.meter.fable:Fable only
+temporary | dark | Contrast nearly passed | 48::High
+temporary | dark | Dynamic Type font sizes are unsupported | 48::High
+temporary | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+temporary | dark | Dynamic Type font sizes are unsupported | none
+temporary | light | Contrast failed | 48::High
+temporary | light | Dynamic Type font sizes are unsupported | 48::High
+temporary | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+temporary | light | Dynamic Type font sizes are unsupported | none
+typed | dark | Contrast nearly passed | 48::High
+typed | dark | Dynamic Type font sizes are unsupported | 48::High
+typed | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+typed | dark | Dynamic Type font sizes are unsupported | 49:composer.draft:
+typed | light | Contrast failed | 48::High
+typed | light | Dynamic Type font sizes are unsupported | 48::High
+typed | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+typed | light | Dynamic Type font sizes are unsupported | 49:composer.draft:
+videoDraft | dark | Contrast nearly passed | 48::High
+videoDraft | dark | Dynamic Type font sizes are unsupported | 48::High
+videoDraft | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+videoDraft | dark | Dynamic Type font sizes are unsupported | none
+videoDraft | light | Contrast failed | 48::High
+videoDraft | light | Dynamic Type font sizes are unsupported | 48::High
+videoDraft | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
+videoDraft | light | Dynamic Type font sizes are unsupported | none
+voice | dark | Dynamic Type font sizes are unsupported | 48::Opus
+voice | light | Dynamic Type font sizes are unsupported | 48::Opus
+waveform | dark | Dynamic Type font sizes are unsupported | none
+waveform | light | Dynamic Type font sizes are unsupported | none
+widgets | dark | Dynamic Type font sizes are unsupported | 48::Chat
+widgets | dark | Dynamic Type font sizes are unsupported | 48::Code
+widgets | dark | Dynamic Type font sizes are unsupported | 48::How can I help you today?
+widgets | light | Dynamic Type font sizes are unsupported | 48::Chat
+widgets | light | Dynamic Type font sizes are unsupported | 48::Code
+widgets | light | Dynamic Type font sizes are unsupported | 48::How can I help you today?

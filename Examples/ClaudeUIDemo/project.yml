@@ -1,0 +1,93 @@
+name: ClaudeUIDemo
+options:
+  bundleIdPrefix: org.community.claudeui
+  deploymentTarget:
+    iOS: '26.0'
+packages:
+  ClaudeUI:
+    path: ../..
+  SnapshotTesting:
+    url: https://github.com/pointfreeco/swift-snapshot-testing
+    exactVersion: 1.19.6
+settings:
+  base:
+    SWIFT_VERSION: '6.0'
+    CODE_SIGNING_ALLOWED: NO
+    DEVELOPMENT_TEAM: ''
+    CURRENT_PROJECT_VERSION: '1'
+    MARKETING_VERSION: '0.1.0'
+targets:
+  ClaudeUIDemo:
+    type: application
+    platform: iOS
+    sources: [Demo, Shared]
+    dependencies:
+      - package: ClaudeUI
+        product: ClaudeUI
+      - package: ClaudeUI
+        product: ClaudeWidgets
+      - target: ClaudeDemoWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.community.claudeui.demo
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Claude UI Demo
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        TARGETED_DEVICE_FAMILY: '1,2'
+    info:
+      path: Demo/Info.plist
+      properties:
+        CFBundleURLTypes:
+          - CFBundleURLName: org.community.claudeui.widget
+            CFBundleURLSchemes: [claude-ui-demo]
+  ClaudeDemoWidgets:
+    type: app-extension
+    platform: iOS
+    sources: [WidgetDemo]
+    dependencies:
+      - package: ClaudeUI
+        product: ClaudeWidgets
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: org.community.claudeui.demo.widgets
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        GENERATE_INFOPLIST_FILE: YES
+    info:
+      path: WidgetDemo/Info.plist
+      properties:
+        CFBundleDisplayName: Claude UI Demo Widgets
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+  ClaudeUIDemoUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources: [UITests, Shared]
+    dependencies:
+      - target: ClaudeUIDemo
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: org.community.claudeui.uitests
+  ClaudeUISnapshotTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [SnapshotTests]
+    dependencies:
+      - target: ClaudeUIDemo
+      - package: SnapshotTesting
+        product: SnapshotTesting
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: org.community.claudeui.snapshottests
+schemes:
+  ClaudeUIDemo:
+    build:
+      targets:
+        ClaudeUIDemo: all
+    test:
+      targets:
+        - ClaudeUISnapshotTests
+        - ClaudeUIDemoUITests

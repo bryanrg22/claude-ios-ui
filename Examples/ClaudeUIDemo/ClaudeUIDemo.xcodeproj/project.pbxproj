@@ -1,0 +1,1158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		029F55D65B94FCADDAAF80B3 /* SettingsAccountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D6F34C6976C0865904F0B3 /* SettingsAccountUITests.swift */; };
+		04080512BE50729CFA2224CF /* screen.settingsConnectors-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 572C9444E18E869BEE5C70E2 /* screen.settingsConnectors-dark.png */; };
+		061B9383C5378BC5244BE39D /* SessionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70FEB6C9C8BDC60A1BEDD61 /* SessionUITests.swift */; };
+		068961C83EA58E861E22D472 /* screen.settingsTimeAndFocus-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 77CF35A07BAC6A7FEB010E72 /* screen.settingsTimeAndFocus-dark.png */; };
+		06C8EEF2326215B45C9C4C4A /* ArtifactsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BAB68441E1305BF884A7478 /* ArtifactsUITests.swift */; };
+		07A1DE611B1A33F19BB5176D /* screen.temporary-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B723A2F80B2419CAD7B2F30 /* screen.temporary-light.png */; };
+		0BF753869616CF19ACB9A163 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = B013B9B29C109BF71660A39A /* SnapshotTesting */; };
+		1A90FE33325FD585A86FEA51 /* screen.dispatch-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = E67C8A17FDFF70DB6B2ABAD1 /* screen.dispatch-dark.png */; };
+		1F8581877ADFDE51378D6A9C /* screen.modelsSheet-light.png in Resources */ = {isa = PBXBuildFile; fileRef = E51A2579F7D369A272FD7196 /* screen.modelsSheet-light.png */; };
+		206278F92E46BA77CEF81E75 /* screen.dictation-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 56ABDF6402748C521C33478D /* screen.dictation-dark.png */; };
+		229AB41E4B49FB461C00372A /* ClaudeDemoWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBCB6266781CB08D22C274C8 /* ClaudeDemoWidgets.swift */; };
+		27076CB51A43D51828158690 /* screen.settingsTimeAndFocus-light.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C0A2877F0293AFB789E6D2 /* screen.settingsTimeAndFocus-light.png */; };
+		27CF2CB761D93B4DC987C97D /* screen.artifactDocument-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = A490C1EC110A90A1743427D5 /* screen.artifactDocument-dark.png */; };
+		2874BFC045AE898B44794548 /* SnapshotSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CB4BEBEBC2AD38C9204B58 /* SnapshotSupport.swift */; };
+		2AECF55D357DFCD178D83258 /* screen.settingsCode-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F74710A6439E3248BE42AC0 /* screen.settingsCode-dark.png */; };
+		2E9B049968D4FCFE1381FC04 /* ClaudeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9FA9B70C7BCD95F0083920F4 /* ClaudeUI */; };
+		31ECAA31FE10BF9925273EDE /* screen.widgets-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 38A0F8186146766D6735818E /* screen.widgets-dark.png */; };
+		36F44A604CE40AAE06B84B8B /* screen.dispatch-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 07D3E4A159FB40B1521B342F /* screen.dispatch-light.png */; };
+		380715B0F58EE27889873226 /* WidgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D34292B762FC6B06342893 /* WidgetUITests.swift */; };
+		3CE44014B0040E04A0E91C4B /* screen.settingsUsage-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AEBABED8B42F3EE87D09EBE /* screen.settingsUsage-light.png */; };
+		3D551BFFD4954A199BBEAE99 /* screen.projects-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 124CFC4BFB0F6C09CCFD38BC /* screen.projects-light.png */; };
+		3DA39527993D00BC42EF3FC7 /* screen.settingsBilling-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 9684FB691157B5306E5B9AEB /* screen.settingsBilling-light.png */; };
+		3EB021365A3BC886EF6D20C8 /* screen.settingsProfile-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 850279613957332B41E23766 /* screen.settingsProfile-dark.png */; };
+		40FB49C35CDC5222C7702346 /* screen.markdown-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = D06A452F4BDEEFDB0E5DF56C /* screen.markdown-dark.png */; };
+		444AE8437379507CA8126670 /* screen.artifactDocument-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6696E2260BB2D3B272D6F5 /* screen.artifactDocument-light.png */; };
+		49F19F0D0F38998E7869A201 /* AccessibilityAuditBaseline.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9E6F8CF43CCDCB717F8B2F58 /* AccessibilityAuditBaseline.txt */; };
+		4CD58A6AAD383F0F33C2917E /* screen.devicesSheet-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABCFA99B6460B1841E8F24C /* screen.devicesSheet-light.png */; };
+		50A48A9A9245AAEF408CBA8C /* UITestSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AE325494039EA50029A2B0 /* UITestSupport.swift */; };
+		539FD77ABF99F0D31AD7242A /* screen.conversation-light.png in Resources */ = {isa = PBXBuildFile; fileRef = A835DF4791C2AE74139DF12A /* screen.conversation-light.png */; };
+		56E397A37525F7187A4BC12B /* Garden-Motion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B026435A14A023E7A1909166 /* Garden-Motion.mp4 */; };
+		576BFF7BCE42011EC1986256 /* screen.camera-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1BE04B6DD9E3422FC8A775 /* screen.camera-dark.png */; };
+		5AC469AD3C4834F3C262BE31 /* screen.videoDraft-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3439DCE32925A8B6E4866228 /* screen.videoDraft-light.png */; };
+		5BEC1C131C2613F8728CFF5C /* screen.home-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CB86240726F4F49C5DDED7 /* screen.home-light.png */; };
+		5D6B44CB55BFBD39738026C5 /* screen.widgets-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E330DD2C02B1CD56B9CEA /* screen.widgets-light.png */; };
+		5D93B6EDA1F4AC255151651A /* screen.artifacts-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 60DD6B7A0DA536A14A995BCC /* screen.artifacts-dark.png */; };
+		60A594B2D6B146E0AA0D401C /* screen.settingsCode-light.png in Resources */ = {isa = PBXBuildFile; fileRef = D0C956BBA943B1C3D390B33F /* screen.settingsCode-light.png */; };
+		62D6B26D5B2F57C74045E383 /* screen.settingsMemoryFiles-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 738DB39F2536D46312D50BC1 /* screen.settingsMemoryFiles-light.png */; };
+		64AFE7433A733CACE6CC5202 /* SettingsCapabilitiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95E1C974DB4F962E438C5E6 /* SettingsCapabilitiesUITests.swift */; };
+		65457826F455AE9E80C53203 /* CodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA59B12C21B4C192AFB2AE9 /* CodeUITests.swift */; };
+		66F98830068B82CA3AD1CDCA /* WidgetPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C708DD33A85A09E0CB682 /* WidgetPreview.swift */; };
+		676E134015EEF815E0FCC1CE /* screen.typed-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 56891B9CF4AA325C411A90D1 /* screen.typed-dark.png */; };
+		6DCE7AB9DEF36B614C404212 /* DemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995E51A88C5A6EF4A6EAD5 /* DemoScreen.swift */; };
+		6EAC7E5725B496F9C3A479D7 /* screen.longDraft-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 15DC4DE75D98241499847558 /* screen.longDraft-dark.png */; };
+		749FBA72B71DCDAB96A1832E /* DemoScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B542144C728CCC8BFB0DB67 /* DemoScreens.swift */; };
+		756F9F66E4D3B6904AC13273 /* SettingsPreferencesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC110ED3E3739186F3F1C090 /* SettingsPreferencesUITests.swift */; };
+		7939E92364F677C807C27DE7 /* DevicesDispatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004A41E8B3BD10367A84571E /* DevicesDispatchUITests.swift */; };
+		7B13A7EF92E9839C6B743A8F /* screen.projects-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = FA03781A150ADC9D83FFA4C3 /* screen.projects-dark.png */; };
+		7B8D087A97B7805DD57F90C1 /* VoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E11E1B9E64B4D587E70A9E1 /* VoiceUITests.swift */; };
+		8127FFD32CF9AECB09074FDC /* AnnouncementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70F9189D645F6D40BD7B896 /* AnnouncementUITests.swift */; };
+		82DEBFAC656C074675785AF8 /* screen.settingsSharedLinks-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8991328573D3C6C017F1FB73 /* screen.settingsSharedLinks-light.png */; };
+		831FBF8D805D962D9FA04D58 /* screen.code-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B54AEE3AF1B894296179FC4 /* screen.code-dark.png */; };
+		8375BEB9CCD1817C70176BBC /* screen.markdown-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 747D684E1D6AD7071599B566 /* screen.markdown-light.png */; };
+		86F1AA8BA337E4F83C54C361 /* RoutinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958CDA118C477FB1C43A655E /* RoutinesUITests.swift */; };
+		88CDBA091BBDB3A56E07FD76 /* screen.codeNewSession-light.png in Resources */ = {isa = PBXBuildFile; fileRef = E8154060BC96655BF903DAE9 /* screen.codeNewSession-light.png */; };
+		8CA8A55B544121EBDD6ED5E1 /* VideoFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C632E9D238304C7A1F4D14 /* VideoFixture.swift */; };
+		923FE2963548F7E3AE9FC1C5 /* screen.code-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1EECD947F67B68D0F31892 /* screen.code-light.png */; };
+		9350995165C13A6D8A4C06AD /* screen.announcement-light.png in Resources */ = {isa = PBXBuildFile; fileRef = BE8330E192D20D6CC440C021 /* screen.announcement-light.png */; };
+		95438EE1D90B152D5F21CC21 /* screen.voice-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 95FB4BF714F236F7592D639D /* screen.voice-dark.png */; };
+		98C05522F1A9679F33F70F63 /* ClaudeWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = 782140E5F1B190F68385FCBD /* ClaudeWidgets */; };
+		9EB04ACD600E4A31B9F93AFE /* MarkdownFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1098609504779142EC7096EC /* MarkdownFixture.swift */; };
+		A48EE4BF1E8FEF6A3172CD95 /* screen.settingsNotifications-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = B84FC1FEF288F3BF032DA5EA /* screen.settingsNotifications-dark.png */; };
+		A557E82E30ECF288AB1B940E /* screen.settingsBilling-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = F50DE23898ADA6DF085CE531 /* screen.settingsBilling-dark.png */; };
+		A68E9077405243B12BD132FC /* screen.settingsPrivacy-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 99BCA70E905A498616344940 /* screen.settingsPrivacy-dark.png */; };
+		A7B99CE3F9380E300806C638 /* screen.conversation-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = F16BE0A4E80220B04D860494 /* screen.conversation-dark.png */; };
+		A92F6ED9E6D85B6169DBB82A /* screen.waveform-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = AD95F364EAC138AD73E8B14E /* screen.waveform-dark.png */; };
+		AAF2B9E8BF3C085D177F7431 /* SettingsProfileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FE757862C5B88A2F754BA5 /* SettingsProfileUITests.swift */; };
+		AB1BD138366E9A7035A1F104 /* screen.typed-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3244E99A82FBBD9666E18A2B /* screen.typed-light.png */; };
+		AD1E15E0B865FD0080B6345F /* screen.waveform-light.png in Resources */ = {isa = PBXBuildFile; fileRef = E07807ECE2C1EC8219B4B6BF /* screen.waveform-light.png */; };
+		B2261A6F049F15D73F6DBB13 /* screen.videoDraft-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 698E844C5D3F7C4F88C8FDC7 /* screen.videoDraft-dark.png */; };
+		B25369643AEF2251668063BE /* screen.settingsConnectors-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CCBD5BFF95066AC8E3712A0 /* screen.settingsConnectors-light.png */; };
+		B2E52E887D173F900634B5F3 /* screen.devicesSheet-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = E96FF3E13289851FC87F805E /* screen.devicesSheet-dark.png */; };
+		B3A9DE86DE995AB35B34B23E /* MediaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A40FF8C84E29B7B9DF7E746 /* MediaUITests.swift */; };
+		B53587606E5350C94AB9D750 /* DemoFixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23ECABA8AB0C2D2EEF2E535 /* DemoFixtures.swift */; };
+		B8950489BED273FDA58AF5DD /* screen.imageViewer-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 5CF73F02866B1B89D024041A /* screen.imageViewer-light.png */; };
+		B8BFAB944D912FB30A391BC5 /* screen.editing-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 60D044C6E3B060323A45B747 /* screen.editing-dark.png */; };
+		BA7DC0DA4D990943FF253DD1 /* ClaudeWidgets in Frameworks */ = {isa = PBXBuildFile; productRef = 5F22526BA5C77F12D433939B /* ClaudeWidgets */; };
+		BD34B0F17147CEB8098A6486 /* screen.codeNewSession-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D611D2D574712B3E2E6786E /* screen.codeNewSession-dark.png */; };
+		BEDF3DB3270399C4066FF3CE /* screen.editing-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 97484C520D3DC19346CFE77A /* screen.editing-light.png */; };
+		BF734E37E3DD13E520B93991 /* screen.temporary-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 90C50B429A3C76B7749DA174 /* screen.temporary-dark.png */; };
+		C2C5AD52AEC898E09F59D426 /* screen.voice-light.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6B2AC94ACAD1242778E43B /* screen.voice-light.png */; };
+		CBB371483BF10EAC216D498E /* ClaudeDemoWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 1ABE505A86F4DA5E1C61415E /* ClaudeDemoWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD5387903E5B2D016ACBCAA8 /* screen.settingsSharedLinks-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AFD3E5519FC7E096E407FA6 /* screen.settingsSharedLinks-dark.png */; };
+		CE93E65E4840D421B3B409A6 /* screen.settingsPrivacy-light.png in Resources */ = {isa = PBXBuildFile; fileRef = C7C1408B66AFA6925D38DF45 /* screen.settingsPrivacy-light.png */; };
+		D2E796C2885330F5BD699453 /* screen.announcement-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 482427902BECF38149F7196A /* screen.announcement-dark.png */; };
+		D30906C8A231E6B43F690421 /* SettingsConnectorsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F578C2652E38E872FF71E7DC /* SettingsConnectorsUITests.swift */; };
+		D3985AF639598C29993EBE46 /* screen.camera-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 511B69692C3335A6FF2FE74C /* screen.camera-light.png */; };
+		DA3124B33E20DA6D428CFF65 /* screen.settings-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = CBBCAD11805EE3CAB71A7DD8 /* screen.settings-dark.png */; };
+		DECD2EDD8B9D0BB23616DBA1 /* screen.settingsCapabilities-light.png in Resources */ = {isa = PBXBuildFile; fileRef = E4242B0C27A28912DC688C7B /* screen.settingsCapabilities-light.png */; };
+		E07AD12C48EF545650F41E83 /* screen.imageViewer-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 505CF0BEFD25A40B3F81361B /* screen.imageViewer-dark.png */; };
+		E128F302D574B3C9BDE017A3 /* screen.home-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 1715CC0FE9C9A5A1A65C423C /* screen.home-dark.png */; };
+		E21034DD4304C624E7FB955E /* screen.dictation-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC139E5C56AD373E813BED7 /* screen.dictation-light.png */; };
+		E2F5BB1FE8796BB55ED81547 /* screen.settingsProfile-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 43C58EFD98407F973EBC1757 /* screen.settingsProfile-light.png */; };
+		E31D1126E54D72C40C141FAB /* AccessibilityAuditUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1653071BC726EA08B1770254 /* AccessibilityAuditUITests.swift */; };
+		E36A7B3F42323FDD4DDE5D66 /* screen.settingsNotifications-light.png in Resources */ = {isa = PBXBuildFile; fileRef = EA3E7A032DDB56CEF79BC4F3 /* screen.settingsNotifications-light.png */; };
+		E4B883212ABD6A6A4EB3191D /* MarkdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA9F5625F099AB10324F8B8 /* MarkdownUITests.swift */; };
+		E672182E5FBAFA2FAF25D7E0 /* ScreenSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C14160B2607CCAF79B58FE /* ScreenSnapshotTests.swift */; };
+		E82CDEDA304C9E62727CB3DE /* screen.settingsUsage-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = E4B70761972FA8D79A5261D3 /* screen.settingsUsage-dark.png */; };
+		EA1E1B6EAB39991778AB1237 /* screen.artifacts-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F914B09742ADFA22FA0F261 /* screen.artifacts-light.png */; };
+		EB4499807DAA928BD21974E3 /* screen.modelsSheet-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F7C63516C0EB19028CDFDA7 /* screen.modelsSheet-dark.png */; };
+		F74DE43546537F93BEDCE9C7 /* screen.settingsCapabilities-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = FE5C860B54DB65906C300E31 /* screen.settingsCapabilities-dark.png */; };
+		FA84EC5984054244CA389F77 /* ClaudeDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCCBB598354D57CD17D02C5 /* ClaudeDemoApp.swift */; };
+		FA9EBB28DAF28A993623DFD6 /* screen.settings-light.png in Resources */ = {isa = PBXBuildFile; fileRef = B71436510EEEBBCA8AD216E0 /* screen.settings-light.png */; };
+		FADB820E52BE78382E9F4CA8 /* DemoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC995E51A88C5A6EF4A6EAD5 /* DemoScreen.swift */; };
+		FC269552C009FA57800F5281 /* ProjectsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978A81C7B42300246E9232CD /* ProjectsUITests.swift */; };
+		FCB0EB344F1E643BAAC086C0 /* screen.settingsMemoryFiles-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 978FBF4788D4782649DF7A7C /* screen.settingsMemoryFiles-dark.png */; };
+		FF6611E4D2E6595F0F162FE1 /* screen.longDraft-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 62B9639966639FD11C358AA6 /* screen.longDraft-light.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18E07D7053F797FBD1FCE35F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697EFD479DA60932CF4096A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F1434C96808D8993D532A6;
+			remoteInfo = ClaudeUIDemo;
+		};
+		75C187791A1463A2940FF329 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697EFD479DA60932CF4096A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1788DEAC5032C323973F9100;
+			remoteInfo = ClaudeDemoWidgets;
+		};
+		A3463A07C8B12EFB360672C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697EFD479DA60932CF4096A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94F1434C96808D8993D532A6;
+			remoteInfo = ClaudeUIDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C936F9F72B06A5C342366DA6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CBB371483BF10EAC216D498E /* ClaudeDemoWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		004A41E8B3BD10367A84571E /* DevicesDispatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesDispatchUITests.swift; sourceTree = "<group>"; };
+		04DB26AEF2F1AD1BA94B802F /* ClaudeUISnapshotTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClaudeUISnapshotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D3E4A159FB40B1521B342F /* screen.dispatch-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.dispatch-light.png"; sourceTree = "<group>"; };
+		0B54AEE3AF1B894296179FC4 /* screen.code-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.code-dark.png"; sourceTree = "<group>"; };
+		1098609504779142EC7096EC /* MarkdownFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownFixture.swift; sourceTree = "<group>"; };
+		124CFC4BFB0F6C09CCFD38BC /* screen.projects-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.projects-light.png"; sourceTree = "<group>"; };
+		15DC4DE75D98241499847558 /* screen.longDraft-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.longDraft-dark.png"; sourceTree = "<group>"; };
+		1653071BC726EA08B1770254 /* AccessibilityAuditUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityAuditUITests.swift; sourceTree = "<group>"; };
+		1715CC0FE9C9A5A1A65C423C /* screen.home-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.home-dark.png"; sourceTree = "<group>"; };
+		1A6696E2260BB2D3B272D6F5 /* screen.artifactDocument-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.artifactDocument-light.png"; sourceTree = "<group>"; };
+		1ABE505A86F4DA5E1C61415E /* ClaudeDemoWidgets.appex */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "wrapper.app-extension"; path = ClaudeDemoWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFD3E5519FC7E096E407FA6 /* screen.settingsSharedLinks-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsSharedLinks-dark.png"; sourceTree = "<group>"; };
+		1DC139E5C56AD373E813BED7 /* screen.dictation-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.dictation-light.png"; sourceTree = "<group>"; };
+		1F5C708DD33A85A09E0CB682 /* WidgetPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetPreview.swift; sourceTree = "<group>"; };
+		20D34292B762FC6B06342893 /* WidgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUITests.swift; sourceTree = "<group>"; };
+		2AEBABED8B42F3EE87D09EBE /* screen.settingsUsage-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsUsage-light.png"; sourceTree = "<group>"; };
+		2D611D2D574712B3E2E6786E /* screen.codeNewSession-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.codeNewSession-dark.png"; sourceTree = "<group>"; };
+		2EA59B12C21B4C192AFB2AE9 /* CodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeUITests.swift; sourceTree = "<group>"; };
+		3244E99A82FBBD9666E18A2B /* screen.typed-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.typed-light.png"; sourceTree = "<group>"; };
+		3439DCE32925A8B6E4866228 /* screen.videoDraft-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.videoDraft-light.png"; sourceTree = "<group>"; };
+		35D6F34C6976C0865904F0B3 /* SettingsAccountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsAccountUITests.swift; sourceTree = "<group>"; };
+		36CB4BEBEBC2AD38C9204B58 /* SnapshotSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotSupport.swift; sourceTree = "<group>"; };
+		38A0F8186146766D6735818E /* screen.widgets-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.widgets-dark.png"; sourceTree = "<group>"; };
+		3BA9F5625F099AB10324F8B8 /* MarkdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownUITests.swift; sourceTree = "<group>"; };
+		43C58EFD98407F973EBC1757 /* screen.settingsProfile-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsProfile-light.png"; sourceTree = "<group>"; };
+		482427902BECF38149F7196A /* screen.announcement-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.announcement-dark.png"; sourceTree = "<group>"; };
+		4B7E330DD2C02B1CD56B9CEA /* screen.widgets-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.widgets-light.png"; sourceTree = "<group>"; };
+		4BAB68441E1305BF884A7478 /* ArtifactsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtifactsUITests.swift; sourceTree = "<group>"; };
+		505CF0BEFD25A40B3F81361B /* screen.imageViewer-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.imageViewer-dark.png"; sourceTree = "<group>"; };
+		511B69692C3335A6FF2FE74C /* screen.camera-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.camera-light.png"; sourceTree = "<group>"; };
+		52CB86240726F4F49C5DDED7 /* screen.home-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.home-light.png"; sourceTree = "<group>"; };
+		56891B9CF4AA325C411A90D1 /* screen.typed-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.typed-dark.png"; sourceTree = "<group>"; };
+		56ABDF6402748C521C33478D /* screen.dictation-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.dictation-dark.png"; sourceTree = "<group>"; };
+		572C9444E18E869BEE5C70E2 /* screen.settingsConnectors-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsConnectors-dark.png"; sourceTree = "<group>"; };
+		57A1FF4ACBB65137AC16F42E /* ClaudeUIDemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ClaudeUIDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF73F02866B1B89D024041A /* screen.imageViewer-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.imageViewer-light.png"; sourceTree = "<group>"; };
+		60D044C6E3B060323A45B747 /* screen.editing-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.editing-dark.png"; sourceTree = "<group>"; };
+		60DD6B7A0DA536A14A995BCC /* screen.artifacts-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.artifacts-dark.png"; sourceTree = "<group>"; };
+		62B9639966639FD11C358AA6 /* screen.longDraft-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.longDraft-light.png"; sourceTree = "<group>"; };
+		698E844C5D3F7C4F88C8FDC7 /* screen.videoDraft-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.videoDraft-dark.png"; sourceTree = "<group>"; };
+		6ABCFA99B6460B1841E8F24C /* screen.devicesSheet-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.devicesSheet-light.png"; sourceTree = "<group>"; };
+		6B542144C728CCC8BFB0DB67 /* DemoScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreens.swift; sourceTree = "<group>"; };
+		738DB39F2536D46312D50BC1 /* screen.settingsMemoryFiles-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsMemoryFiles-light.png"; sourceTree = "<group>"; };
+		747D684E1D6AD7071599B566 /* screen.markdown-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.markdown-light.png"; sourceTree = "<group>"; };
+		77CF35A07BAC6A7FEB010E72 /* screen.settingsTimeAndFocus-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsTimeAndFocus-dark.png"; sourceTree = "<group>"; };
+		7A1EECD947F67B68D0F31892 /* screen.code-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.code-light.png"; sourceTree = "<group>"; };
+		81C14160B2607CCAF79B58FE /* ScreenSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSnapshotTests.swift; sourceTree = "<group>"; };
+		850279613957332B41E23766 /* screen.settingsProfile-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsProfile-dark.png"; sourceTree = "<group>"; };
+		86F7211E0B70FD4A2E3398C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8991328573D3C6C017F1FB73 /* screen.settingsSharedLinks-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsSharedLinks-light.png"; sourceTree = "<group>"; };
+		8A40FF8C84E29B7B9DF7E746 /* MediaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaUITests.swift; sourceTree = "<group>"; };
+		8CCBD5BFF95066AC8E3712A0 /* screen.settingsConnectors-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsConnectors-light.png"; sourceTree = "<group>"; };
+		8E11E1B9E64B4D587E70A9E1 /* VoiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceUITests.swift; sourceTree = "<group>"; };
+		8F7C63516C0EB19028CDFDA7 /* screen.modelsSheet-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.modelsSheet-dark.png"; sourceTree = "<group>"; };
+		8FCCBB598354D57CD17D02C5 /* ClaudeDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeDemoApp.swift; sourceTree = "<group>"; };
+		90C50B429A3C76B7749DA174 /* screen.temporary-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.temporary-dark.png"; sourceTree = "<group>"; };
+		958CDA118C477FB1C43A655E /* RoutinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutinesUITests.swift; sourceTree = "<group>"; };
+		95FB4BF714F236F7592D639D /* screen.voice-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.voice-dark.png"; sourceTree = "<group>"; };
+		9684FB691157B5306E5B9AEB /* screen.settingsBilling-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsBilling-light.png"; sourceTree = "<group>"; };
+		97484C520D3DC19346CFE77A /* screen.editing-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.editing-light.png"; sourceTree = "<group>"; };
+		978A81C7B42300246E9232CD /* ProjectsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsUITests.swift; sourceTree = "<group>"; };
+		978FBF4788D4782649DF7A7C /* screen.settingsMemoryFiles-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsMemoryFiles-dark.png"; sourceTree = "<group>"; };
+		99BCA70E905A498616344940 /* screen.settingsPrivacy-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsPrivacy-dark.png"; sourceTree = "<group>"; };
+		9B723A2F80B2419CAD7B2F30 /* screen.temporary-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.temporary-light.png"; sourceTree = "<group>"; };
+		9DA2FC8389466BA3D8498C15 /* claude-ios-ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "claude-ios-ui"; path = ../..; sourceTree = SOURCE_ROOT; };
+		9E6F8CF43CCDCB717F8B2F58 /* AccessibilityAuditBaseline.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccessibilityAuditBaseline.txt; sourceTree = "<group>"; };
+		9F74710A6439E3248BE42AC0 /* screen.settingsCode-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsCode-dark.png"; sourceTree = "<group>"; };
+		9F914B09742ADFA22FA0F261 /* screen.artifacts-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.artifacts-light.png"; sourceTree = "<group>"; };
+		A490C1EC110A90A1743427D5 /* screen.artifactDocument-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.artifactDocument-dark.png"; sourceTree = "<group>"; };
+		A835DF4791C2AE74139DF12A /* screen.conversation-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.conversation-light.png"; sourceTree = "<group>"; };
+		AC995E51A88C5A6EF4A6EAD5 /* DemoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreen.swift; sourceTree = "<group>"; };
+		AD95F364EAC138AD73E8B14E /* screen.waveform-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.waveform-dark.png"; sourceTree = "<group>"; };
+		B026435A14A023E7A1909166 /* Garden-Motion.mp4 */ = {isa = PBXFileReference; path = "Garden-Motion.mp4"; sourceTree = "<group>"; };
+		B0C632E9D238304C7A1F4D14 /* VideoFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoFixture.swift; sourceTree = "<group>"; };
+		B2C0A2877F0293AFB789E6D2 /* screen.settingsTimeAndFocus-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsTimeAndFocus-light.png"; sourceTree = "<group>"; };
+		B70F9189D645F6D40BD7B896 /* AnnouncementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnouncementUITests.swift; sourceTree = "<group>"; };
+		B70FEB6C9C8BDC60A1BEDD61 /* SessionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionUITests.swift; sourceTree = "<group>"; };
+		B71436510EEEBBCA8AD216E0 /* screen.settings-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settings-light.png"; sourceTree = "<group>"; };
+		B84FC1FEF288F3BF032DA5EA /* screen.settingsNotifications-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsNotifications-dark.png"; sourceTree = "<group>"; };
+		BB6B2AC94ACAD1242778E43B /* screen.voice-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.voice-light.png"; sourceTree = "<group>"; };
+		BE8330E192D20D6CC440C021 /* screen.announcement-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.announcement-light.png"; sourceTree = "<group>"; };
+		BF1BE04B6DD9E3422FC8A775 /* screen.camera-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.camera-dark.png"; sourceTree = "<group>"; };
+		C0228826BBD8F0F30CFF8A1E /* ClaudeUIDemoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ClaudeUIDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23ECABA8AB0C2D2EEF2E535 /* DemoFixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFixtures.swift; sourceTree = "<group>"; };
+		C7C1408B66AFA6925D38DF45 /* screen.settingsPrivacy-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsPrivacy-light.png"; sourceTree = "<group>"; };
+		C95E1C974DB4F962E438C5E6 /* SettingsCapabilitiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCapabilitiesUITests.swift; sourceTree = "<group>"; };
+		CBBCAD11805EE3CAB71A7DD8 /* screen.settings-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settings-dark.png"; sourceTree = "<group>"; };
+		D06A452F4BDEEFDB0E5DF56C /* screen.markdown-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.markdown-dark.png"; sourceTree = "<group>"; };
+		D0C956BBA943B1C3D390B33F /* screen.settingsCode-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsCode-light.png"; sourceTree = "<group>"; };
+		D1AE325494039EA50029A2B0 /* UITestSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestSupport.swift; sourceTree = "<group>"; };
+		DC110ED3E3739186F3F1C090 /* SettingsPreferencesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPreferencesUITests.swift; sourceTree = "<group>"; };
+		E07807ECE2C1EC8219B4B6BF /* screen.waveform-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.waveform-light.png"; sourceTree = "<group>"; };
+		E4242B0C27A28912DC688C7B /* screen.settingsCapabilities-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsCapabilities-light.png"; sourceTree = "<group>"; };
+		E4B70761972FA8D79A5261D3 /* screen.settingsUsage-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsUsage-dark.png"; sourceTree = "<group>"; };
+		E51A2579F7D369A272FD7196 /* screen.modelsSheet-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.modelsSheet-light.png"; sourceTree = "<group>"; };
+		E67C8A17FDFF70DB6B2ABAD1 /* screen.dispatch-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.dispatch-dark.png"; sourceTree = "<group>"; };
+		E8154060BC96655BF903DAE9 /* screen.codeNewSession-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.codeNewSession-light.png"; sourceTree = "<group>"; };
+		E96FF3E13289851FC87F805E /* screen.devicesSheet-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.devicesSheet-dark.png"; sourceTree = "<group>"; };
+		E98F5B354B042E577D297C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E9FE757862C5B88A2F754BA5 /* SettingsProfileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProfileUITests.swift; sourceTree = "<group>"; };
+		EA3E7A032DDB56CEF79BC4F3 /* screen.settingsNotifications-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsNotifications-light.png"; sourceTree = "<group>"; };
+		EBCB6266781CB08D22C274C8 /* ClaudeDemoWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeDemoWidgets.swift; sourceTree = "<group>"; };
+		F16BE0A4E80220B04D860494 /* screen.conversation-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.conversation-dark.png"; sourceTree = "<group>"; };
+		F50DE23898ADA6DF085CE531 /* screen.settingsBilling-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsBilling-dark.png"; sourceTree = "<group>"; };
+		F578C2652E38E872FF71E7DC /* SettingsConnectorsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsConnectorsUITests.swift; sourceTree = "<group>"; };
+		FA03781A150ADC9D83FFA4C3 /* screen.projects-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.projects-dark.png"; sourceTree = "<group>"; };
+		FE5C860B54DB65906C300E31 /* screen.settingsCapabilities-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsCapabilities-dark.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09CCF5A0850FEF2262252CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E9B049968D4FCFE1381FC04 /* ClaudeUI in Frameworks */,
+				BA7DC0DA4D990943FF253DD1 /* ClaudeWidgets in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FE556EB4358C6C415ACBA7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BF753869616CF19ACB9A163 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A640F02E966E4207E9FF55E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98C05522F1A9679F33F70F63 /* ClaudeWidgets in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		069481CC7B4866E34712033D /* __Snapshots__ */ = {
+			isa = PBXGroup;
+			children = (
+				218C5CB8298DA51F403B1A48 /* ScreenSnapshotTests */,
+			);
+			path = __Snapshots__;
+			sourceTree = "<group>";
+		};
+		218C5CB8298DA51F403B1A48 /* ScreenSnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				482427902BECF38149F7196A /* screen.announcement-dark.png */,
+				BE8330E192D20D6CC440C021 /* screen.announcement-light.png */,
+				A490C1EC110A90A1743427D5 /* screen.artifactDocument-dark.png */,
+				1A6696E2260BB2D3B272D6F5 /* screen.artifactDocument-light.png */,
+				60DD6B7A0DA536A14A995BCC /* screen.artifacts-dark.png */,
+				9F914B09742ADFA22FA0F261 /* screen.artifacts-light.png */,
+				BF1BE04B6DD9E3422FC8A775 /* screen.camera-dark.png */,
+				511B69692C3335A6FF2FE74C /* screen.camera-light.png */,
+				0B54AEE3AF1B894296179FC4 /* screen.code-dark.png */,
+				7A1EECD947F67B68D0F31892 /* screen.code-light.png */,
+				2D611D2D574712B3E2E6786E /* screen.codeNewSession-dark.png */,
+				E8154060BC96655BF903DAE9 /* screen.codeNewSession-light.png */,
+				F16BE0A4E80220B04D860494 /* screen.conversation-dark.png */,
+				A835DF4791C2AE74139DF12A /* screen.conversation-light.png */,
+				E96FF3E13289851FC87F805E /* screen.devicesSheet-dark.png */,
+				6ABCFA99B6460B1841E8F24C /* screen.devicesSheet-light.png */,
+				56ABDF6402748C521C33478D /* screen.dictation-dark.png */,
+				1DC139E5C56AD373E813BED7 /* screen.dictation-light.png */,
+				E67C8A17FDFF70DB6B2ABAD1 /* screen.dispatch-dark.png */,
+				07D3E4A159FB40B1521B342F /* screen.dispatch-light.png */,
+				60D044C6E3B060323A45B747 /* screen.editing-dark.png */,
+				97484C520D3DC19346CFE77A /* screen.editing-light.png */,
+				1715CC0FE9C9A5A1A65C423C /* screen.home-dark.png */,
+				52CB86240726F4F49C5DDED7 /* screen.home-light.png */,
+				505CF0BEFD25A40B3F81361B /* screen.imageViewer-dark.png */,
+				5CF73F02866B1B89D024041A /* screen.imageViewer-light.png */,
+				15DC4DE75D98241499847558 /* screen.longDraft-dark.png */,
+				62B9639966639FD11C358AA6 /* screen.longDraft-light.png */,
+				D06A452F4BDEEFDB0E5DF56C /* screen.markdown-dark.png */,
+				747D684E1D6AD7071599B566 /* screen.markdown-light.png */,
+				8F7C63516C0EB19028CDFDA7 /* screen.modelsSheet-dark.png */,
+				E51A2579F7D369A272FD7196 /* screen.modelsSheet-light.png */,
+				FA03781A150ADC9D83FFA4C3 /* screen.projects-dark.png */,
+				124CFC4BFB0F6C09CCFD38BC /* screen.projects-light.png */,
+				CBBCAD11805EE3CAB71A7DD8 /* screen.settings-dark.png */,
+				B71436510EEEBBCA8AD216E0 /* screen.settings-light.png */,
+				F50DE23898ADA6DF085CE531 /* screen.settingsBilling-dark.png */,
+				9684FB691157B5306E5B9AEB /* screen.settingsBilling-light.png */,
+				FE5C860B54DB65906C300E31 /* screen.settingsCapabilities-dark.png */,
+				E4242B0C27A28912DC688C7B /* screen.settingsCapabilities-light.png */,
+				9F74710A6439E3248BE42AC0 /* screen.settingsCode-dark.png */,
+				D0C956BBA943B1C3D390B33F /* screen.settingsCode-light.png */,
+				572C9444E18E869BEE5C70E2 /* screen.settingsConnectors-dark.png */,
+				8CCBD5BFF95066AC8E3712A0 /* screen.settingsConnectors-light.png */,
+				978FBF4788D4782649DF7A7C /* screen.settingsMemoryFiles-dark.png */,
+				738DB39F2536D46312D50BC1 /* screen.settingsMemoryFiles-light.png */,
+				B84FC1FEF288F3BF032DA5EA /* screen.settingsNotifications-dark.png */,
+				EA3E7A032DDB56CEF79BC4F3 /* screen.settingsNotifications-light.png */,
+				99BCA70E905A498616344940 /* screen.settingsPrivacy-dark.png */,
+				C7C1408B66AFA6925D38DF45 /* screen.settingsPrivacy-light.png */,
+				850279613957332B41E23766 /* screen.settingsProfile-dark.png */,
+				43C58EFD98407F973EBC1757 /* screen.settingsProfile-light.png */,
+				1AFD3E5519FC7E096E407FA6 /* screen.settingsSharedLinks-dark.png */,
+				8991328573D3C6C017F1FB73 /* screen.settingsSharedLinks-light.png */,
+				77CF35A07BAC6A7FEB010E72 /* screen.settingsTimeAndFocus-dark.png */,
+				B2C0A2877F0293AFB789E6D2 /* screen.settingsTimeAndFocus-light.png */,
+				E4B70761972FA8D79A5261D3 /* screen.settingsUsage-dark.png */,
+				2AEBABED8B42F3EE87D09EBE /* screen.settingsUsage-light.png */,
+				90C50B429A3C76B7749DA174 /* screen.temporary-dark.png */,
+				9B723A2F80B2419CAD7B2F30 /* screen.temporary-light.png */,
+				56891B9CF4AA325C411A90D1 /* screen.typed-dark.png */,
+				3244E99A82FBBD9666E18A2B /* screen.typed-light.png */,
+				698E844C5D3F7C4F88C8FDC7 /* screen.videoDraft-dark.png */,
+				3439DCE32925A8B6E4866228 /* screen.videoDraft-light.png */,
+				95FB4BF714F236F7592D639D /* screen.voice-dark.png */,
+				BB6B2AC94ACAD1242778E43B /* screen.voice-light.png */,
+				AD95F364EAC138AD73E8B14E /* screen.waveform-dark.png */,
+				E07807ECE2C1EC8219B4B6BF /* screen.waveform-light.png */,
+				38A0F8186146766D6735818E /* screen.widgets-dark.png */,
+				4B7E330DD2C02B1CD56B9CEA /* screen.widgets-light.png */,
+			);
+			path = ScreenSnapshotTests;
+			sourceTree = "<group>";
+		};
+		26AB5C24E24088E5E1392130 /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				81C14160B2607CCAF79B58FE /* ScreenSnapshotTests.swift */,
+				36CB4BEBEBC2AD38C9204B58 /* SnapshotSupport.swift */,
+				069481CC7B4866E34712033D /* __Snapshots__ */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
+		2F48589E96A489371231F295 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9E6F8CF43CCDCB717F8B2F58 /* AccessibilityAuditBaseline.txt */,
+				1653071BC726EA08B1770254 /* AccessibilityAuditUITests.swift */,
+				B70F9189D645F6D40BD7B896 /* AnnouncementUITests.swift */,
+				4BAB68441E1305BF884A7478 /* ArtifactsUITests.swift */,
+				2EA59B12C21B4C192AFB2AE9 /* CodeUITests.swift */,
+				004A41E8B3BD10367A84571E /* DevicesDispatchUITests.swift */,
+				3BA9F5625F099AB10324F8B8 /* MarkdownUITests.swift */,
+				8A40FF8C84E29B7B9DF7E746 /* MediaUITests.swift */,
+				978A81C7B42300246E9232CD /* ProjectsUITests.swift */,
+				958CDA118C477FB1C43A655E /* RoutinesUITests.swift */,
+				B70FEB6C9C8BDC60A1BEDD61 /* SessionUITests.swift */,
+				35D6F34C6976C0865904F0B3 /* SettingsAccountUITests.swift */,
+				C95E1C974DB4F962E438C5E6 /* SettingsCapabilitiesUITests.swift */,
+				F578C2652E38E872FF71E7DC /* SettingsConnectorsUITests.swift */,
+				DC110ED3E3739186F3F1C090 /* SettingsPreferencesUITests.swift */,
+				E9FE757862C5B88A2F754BA5 /* SettingsProfileUITests.swift */,
+				D1AE325494039EA50029A2B0 /* UITestSupport.swift */,
+				8E11E1B9E64B4D587E70A9E1 /* VoiceUITests.swift */,
+				20D34292B762FC6B06342893 /* WidgetUITests.swift */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		3459F032097F176584FBD427 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B026435A14A023E7A1909166 /* Garden-Motion.mp4 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		36B5C57EB1DDC773B90DD233 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AC995E51A88C5A6EF4A6EAD5 /* DemoScreen.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		454731F974B927A252F48817 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8FCCBB598354D57CD17D02C5 /* ClaudeDemoApp.swift */,
+				C23ECABA8AB0C2D2EEF2E535 /* DemoFixtures.swift */,
+				6B542144C728CCC8BFB0DB67 /* DemoScreens.swift */,
+				E98F5B354B042E577D297C5F /* Info.plist */,
+				1098609504779142EC7096EC /* MarkdownFixture.swift */,
+				B0C632E9D238304C7A1F4D14 /* VideoFixture.swift */,
+				1F5C708DD33A85A09E0CB682 /* WidgetPreview.swift */,
+				3459F032097F176584FBD427 /* Resources */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		71BB9921CE51862BA37C78AD /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9DA2FC8389466BA3D8498C15 /* claude-ios-ui */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		784AFAEFA911C19C21C18223 = {
+			isa = PBXGroup;
+			children = (
+				454731F974B927A252F48817 /* Demo */,
+				71BB9921CE51862BA37C78AD /* Packages */,
+				36B5C57EB1DDC773B90DD233 /* Shared */,
+				26AB5C24E24088E5E1392130 /* SnapshotTests */,
+				2F48589E96A489371231F295 /* UITests */,
+				8E5DB312FDC35CF29F5EEE10 /* WidgetDemo */,
+				8F225890C3C5FD1C024FCDF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E5DB312FDC35CF29F5EEE10 /* WidgetDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EBCB6266781CB08D22C274C8 /* ClaudeDemoWidgets.swift */,
+				86F7211E0B70FD4A2E3398C8 /* Info.plist */,
+			);
+			path = WidgetDemo;
+			sourceTree = "<group>";
+		};
+		8F225890C3C5FD1C024FCDF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1ABE505A86F4DA5E1C61415E /* ClaudeDemoWidgets.appex */,
+				57A1FF4ACBB65137AC16F42E /* ClaudeUIDemo.app */,
+				C0228826BBD8F0F30CFF8A1E /* ClaudeUIDemoUITests.xctest */,
+				04DB26AEF2F1AD1BA94B802F /* ClaudeUISnapshotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1788DEAC5032C323973F9100 /* ClaudeDemoWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A97D58172F30EA4EA693992 /* Build configuration list for PBXNativeTarget "ClaudeDemoWidgets" */;
+			buildPhases = (
+				228A3320465F23776F454DFC /* Sources */,
+				A640F02E966E4207E9FF55E9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClaudeDemoWidgets;
+			packageProductDependencies = (
+				782140E5F1B190F68385FCBD /* ClaudeWidgets */,
+			);
+			productName = ClaudeDemoWidgets;
+			productReference = 1ABE505A86F4DA5E1C61415E /* ClaudeDemoWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		500EA7D9AC0C341F7BB336CF /* ClaudeUISnapshotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38C6700B1F9489F4680CAE68 /* Build configuration list for PBXNativeTarget "ClaudeUISnapshotTests" */;
+			buildPhases = (
+				C5257983EF194A99DBA43468 /* Sources */,
+				66F1CAC2F0C56E4D15EBF101 /* Resources */,
+				2FE556EB4358C6C415ACBA7F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EA43A9B15F95B07E191774D /* PBXTargetDependency */,
+			);
+			name = ClaudeUISnapshotTests;
+			packageProductDependencies = (
+				B013B9B29C109BF71660A39A /* SnapshotTesting */,
+			);
+			productName = ClaudeUISnapshotTests;
+			productReference = 04DB26AEF2F1AD1BA94B802F /* ClaudeUISnapshotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		94F1434C96808D8993D532A6 /* ClaudeUIDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90C79DAC8D7D240795F28045 /* Build configuration list for PBXNativeTarget "ClaudeUIDemo" */;
+			buildPhases = (
+				9D511DEC328A67FDCB18F5F2 /* Sources */,
+				EB6C46DB84E0B953EC79C5EB /* Resources */,
+				09CCF5A0850FEF2262252CDA /* Frameworks */,
+				C936F9F72B06A5C342366DA6 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F7FC9726DF9E7B22CBF39D92 /* PBXTargetDependency */,
+			);
+			name = ClaudeUIDemo;
+			packageProductDependencies = (
+				9FA9B70C7BCD95F0083920F4 /* ClaudeUI */,
+				5F22526BA5C77F12D433939B /* ClaudeWidgets */,
+			);
+			productName = ClaudeUIDemo;
+			productReference = 57A1FF4ACBB65137AC16F42E /* ClaudeUIDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E705F9E9FDA1D3121CA7EB3C /* ClaudeUIDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECE6E91B6B2F1836C4B51EE3 /* Build configuration list for PBXNativeTarget "ClaudeUIDemoUITests" */;
+			buildPhases = (
+				31B778AD61F93DC37CA47F9C /* Sources */,
+				5DC9E268B225C423C6AB2407 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F5D0D6583559C500F8EC3E8 /* PBXTargetDependency */,
+			);
+			name = ClaudeUIDemoUITests;
+			packageProductDependencies = (
+			);
+			productName = ClaudeUIDemoUITests;
+			productReference = C0228826BBD8F0F30CFF8A1E /* ClaudeUIDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		697EFD479DA60932CF4096A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					1788DEAC5032C323973F9100 = {
+						DevelopmentTeam = "";
+					};
+					500EA7D9AC0C341F7BB336CF = {
+						DevelopmentTeam = "";
+					};
+					94F1434C96808D8993D532A6 = {
+						DevelopmentTeam = "";
+					};
+					E705F9E9FDA1D3121CA7EB3C = {
+						DevelopmentTeam = "";
+						TestTargetID = 94F1434C96808D8993D532A6;
+					};
+				};
+			};
+			buildConfigurationList = 599CC53B9EF4209A905F29E8 /* Build configuration list for PBXProject "ClaudeUIDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 784AFAEFA911C19C21C18223;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				57F826868D5E9127E2C4AD47 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+				C6529C4B7AB8129B265D7B72 /* XCLocalSwiftPackageReference "../.." */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8F225890C3C5FD1C024FCDF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1788DEAC5032C323973F9100 /* ClaudeDemoWidgets */,
+				94F1434C96808D8993D532A6 /* ClaudeUIDemo */,
+				E705F9E9FDA1D3121CA7EB3C /* ClaudeUIDemoUITests */,
+				500EA7D9AC0C341F7BB336CF /* ClaudeUISnapshotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DC9E268B225C423C6AB2407 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F19F0D0F38998E7869A201 /* AccessibilityAuditBaseline.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F1CAC2F0C56E4D15EBF101 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E796C2885330F5BD699453 /* screen.announcement-dark.png in Resources */,
+				9350995165C13A6D8A4C06AD /* screen.announcement-light.png in Resources */,
+				27CF2CB761D93B4DC987C97D /* screen.artifactDocument-dark.png in Resources */,
+				444AE8437379507CA8126670 /* screen.artifactDocument-light.png in Resources */,
+				5D93B6EDA1F4AC255151651A /* screen.artifacts-dark.png in Resources */,
+				EA1E1B6EAB39991778AB1237 /* screen.artifacts-light.png in Resources */,
+				576BFF7BCE42011EC1986256 /* screen.camera-dark.png in Resources */,
+				D3985AF639598C29993EBE46 /* screen.camera-light.png in Resources */,
+				831FBF8D805D962D9FA04D58 /* screen.code-dark.png in Resources */,
+				923FE2963548F7E3AE9FC1C5 /* screen.code-light.png in Resources */,
+				BD34B0F17147CEB8098A6486 /* screen.codeNewSession-dark.png in Resources */,
+				88CDBA091BBDB3A56E07FD76 /* screen.codeNewSession-light.png in Resources */,
+				A7B99CE3F9380E300806C638 /* screen.conversation-dark.png in Resources */,
+				539FD77ABF99F0D31AD7242A /* screen.conversation-light.png in Resources */,
+				B2E52E887D173F900634B5F3 /* screen.devicesSheet-dark.png in Resources */,
+				4CD58A6AAD383F0F33C2917E /* screen.devicesSheet-light.png in Resources */,
+				206278F92E46BA77CEF81E75 /* screen.dictation-dark.png in Resources */,
+				E21034DD4304C624E7FB955E /* screen.dictation-light.png in Resources */,
+				1A90FE33325FD585A86FEA51 /* screen.dispatch-dark.png in Resources */,
+				36F44A604CE40AAE06B84B8B /* screen.dispatch-light.png in Resources */,
+				B8BFAB944D912FB30A391BC5 /* screen.editing-dark.png in Resources */,
+				BEDF3DB3270399C4066FF3CE /* screen.editing-light.png in Resources */,
+				E128F302D574B3C9BDE017A3 /* screen.home-dark.png in Resources */,
+				5BEC1C131C2613F8728CFF5C /* screen.home-light.png in Resources */,
+				E07AD12C48EF545650F41E83 /* screen.imageViewer-dark.png in Resources */,
+				B8950489BED273FDA58AF5DD /* screen.imageViewer-light.png in Resources */,
+				6EAC7E5725B496F9C3A479D7 /* screen.longDraft-dark.png in Resources */,
+				FF6611E4D2E6595F0F162FE1 /* screen.longDraft-light.png in Resources */,
+				40FB49C35CDC5222C7702346 /* screen.markdown-dark.png in Resources */,
+				8375BEB9CCD1817C70176BBC /* screen.markdown-light.png in Resources */,
+				EB4499807DAA928BD21974E3 /* screen.modelsSheet-dark.png in Resources */,
+				1F8581877ADFDE51378D6A9C /* screen.modelsSheet-light.png in Resources */,
+				7B13A7EF92E9839C6B743A8F /* screen.projects-dark.png in Resources */,
+				3D551BFFD4954A199BBEAE99 /* screen.projects-light.png in Resources */,
+				DA3124B33E20DA6D428CFF65 /* screen.settings-dark.png in Resources */,
+				FA9EBB28DAF28A993623DFD6 /* screen.settings-light.png in Resources */,
+				A557E82E30ECF288AB1B940E /* screen.settingsBilling-dark.png in Resources */,
+				3DA39527993D00BC42EF3FC7 /* screen.settingsBilling-light.png in Resources */,
+				F74DE43546537F93BEDCE9C7 /* screen.settingsCapabilities-dark.png in Resources */,
+				DECD2EDD8B9D0BB23616DBA1 /* screen.settingsCapabilities-light.png in Resources */,
+				2AECF55D357DFCD178D83258 /* screen.settingsCode-dark.png in Resources */,
+				60A594B2D6B146E0AA0D401C /* screen.settingsCode-light.png in Resources */,
+				04080512BE50729CFA2224CF /* screen.settingsConnectors-dark.png in Resources */,
+				B25369643AEF2251668063BE /* screen.settingsConnectors-light.png in Resources */,
+				FCB0EB344F1E643BAAC086C0 /* screen.settingsMemoryFiles-dark.png in Resources */,
+				62D6B26D5B2F57C74045E383 /* screen.settingsMemoryFiles-light.png in Resources */,
+				A48EE4BF1E8FEF6A3172CD95 /* screen.settingsNotifications-dark.png in Resources */,
+				E36A7B3F42323FDD4DDE5D66 /* screen.settingsNotifications-light.png in Resources */,
+				A68E9077405243B12BD132FC /* screen.settingsPrivacy-dark.png in Resources */,
+				CE93E65E4840D421B3B409A6 /* screen.settingsPrivacy-light.png in Resources */,
+				3EB021365A3BC886EF6D20C8 /* screen.settingsProfile-dark.png in Resources */,
+				E2F5BB1FE8796BB55ED81547 /* screen.settingsProfile-light.png in Resources */,
+				CD5387903E5B2D016ACBCAA8 /* screen.settingsSharedLinks-dark.png in Resources */,
+				82DEBFAC656C074675785AF8 /* screen.settingsSharedLinks-light.png in Resources */,
+				068961C83EA58E861E22D472 /* screen.settingsTimeAndFocus-dark.png in Resources */,
+				27076CB51A43D51828158690 /* screen.settingsTimeAndFocus-light.png in Resources */,
+				E82CDEDA304C9E62727CB3DE /* screen.settingsUsage-dark.png in Resources */,
+				3CE44014B0040E04A0E91C4B /* screen.settingsUsage-light.png in Resources */,
+				BF734E37E3DD13E520B93991 /* screen.temporary-dark.png in Resources */,
+				07A1DE611B1A33F19BB5176D /* screen.temporary-light.png in Resources */,
+				676E134015EEF815E0FCC1CE /* screen.typed-dark.png in Resources */,
+				AB1BD138366E9A7035A1F104 /* screen.typed-light.png in Resources */,
+				B2261A6F049F15D73F6DBB13 /* screen.videoDraft-dark.png in Resources */,
+				5AC469AD3C4834F3C262BE31 /* screen.videoDraft-light.png in Resources */,
+				95438EE1D90B152D5F21CC21 /* screen.voice-dark.png in Resources */,
+				C2C5AD52AEC898E09F59D426 /* screen.voice-light.png in Resources */,
+				A92F6ED9E6D85B6169DBB82A /* screen.waveform-dark.png in Resources */,
+				AD1E15E0B865FD0080B6345F /* screen.waveform-light.png in Resources */,
+				31ECAA31FE10BF9925273EDE /* screen.widgets-dark.png in Resources */,
+				5D6B44CB55BFBD39738026C5 /* screen.widgets-light.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6C46DB84E0B953EC79C5EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56E397A37525F7187A4BC12B /* Garden-Motion.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		228A3320465F23776F454DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229AB41E4B49FB461C00372A /* ClaudeDemoWidgets.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31B778AD61F93DC37CA47F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31D1126E54D72C40C141FAB /* AccessibilityAuditUITests.swift in Sources */,
+				8127FFD32CF9AECB09074FDC /* AnnouncementUITests.swift in Sources */,
+				06C8EEF2326215B45C9C4C4A /* ArtifactsUITests.swift in Sources */,
+				65457826F455AE9E80C53203 /* CodeUITests.swift in Sources */,
+				FADB820E52BE78382E9F4CA8 /* DemoScreen.swift in Sources */,
+				7939E92364F677C807C27DE7 /* DevicesDispatchUITests.swift in Sources */,
+				E4B883212ABD6A6A4EB3191D /* MarkdownUITests.swift in Sources */,
+				B3A9DE86DE995AB35B34B23E /* MediaUITests.swift in Sources */,
+				FC269552C009FA57800F5281 /* ProjectsUITests.swift in Sources */,
+				86F1AA8BA337E4F83C54C361 /* RoutinesUITests.swift in Sources */,
+				061B9383C5378BC5244BE39D /* SessionUITests.swift in Sources */,
+				029F55D65B94FCADDAAF80B3 /* SettingsAccountUITests.swift in Sources */,
+				64AFE7433A733CACE6CC5202 /* SettingsCapabilitiesUITests.swift in Sources */,
+				D30906C8A231E6B43F690421 /* SettingsConnectorsUITests.swift in Sources */,
+				756F9F66E4D3B6904AC13273 /* SettingsPreferencesUITests.swift in Sources */,
+				AAF2B9E8BF3C085D177F7431 /* SettingsProfileUITests.swift in Sources */,
+				50A48A9A9245AAEF408CBA8C /* UITestSupport.swift in Sources */,
+				7B8D087A97B7805DD57F90C1 /* VoiceUITests.swift in Sources */,
+				380715B0F58EE27889873226 /* WidgetUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D511DEC328A67FDCB18F5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA84EC5984054244CA389F77 /* ClaudeDemoApp.swift in Sources */,
+				B53587606E5350C94AB9D750 /* DemoFixtures.swift in Sources */,
+				6DCE7AB9DEF36B614C404212 /* DemoScreen.swift in Sources */,
+				749FBA72B71DCDAB96A1832E /* DemoScreens.swift in Sources */,
+				9EB04ACD600E4A31B9F93AFE /* MarkdownFixture.swift in Sources */,
+				8CA8A55B544121EBDD6ED5E1 /* VideoFixture.swift in Sources */,
+				66F98830068B82CA3AD1CDCA /* WidgetPreview.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5257983EF194A99DBA43468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E672182E5FBAFA2FAF25D7E0 /* ScreenSnapshotTests.swift in Sources */,
+				2874BFC045AE898B44794548 /* SnapshotSupport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EA43A9B15F95B07E191774D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F1434C96808D8993D532A6 /* ClaudeUIDemo */;
+			targetProxy = A3463A07C8B12EFB360672C7 /* PBXContainerItemProxy */;
+		};
+		8F5D0D6583559C500F8EC3E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94F1434C96808D8993D532A6 /* ClaudeUIDemo */;
+			targetProxy = 18E07D7053F797FBD1FCE35F /* PBXContainerItemProxy */;
+		};
+		F7FC9726DF9E7B22CBF39D92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1788DEAC5032C323973F9100 /* ClaudeDemoWidgets */;
+			targetProxy = 75C187791A1463A2940FF329 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04B9C4C29E9CAE7D1D3CA788 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClaudeUIDemo;
+			};
+			name = Debug;
+		};
+		1BA863CF8ED13D2108BF1A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.demo.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BE54250EE5E004E37E5EBA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude UI Demo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94F457D14ABEC79C576C5996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.snapshottests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClaudeUIDemo.app/ClaudeUIDemo";
+			};
+			name = Debug;
+		};
+		950B1482D832BEA05DD2CBAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ClaudeUIDemo;
+			};
+			name = Release;
+		};
+		B12EF74F85FC0E004F2ECD76 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D04FB722E1C311888640CE59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.snapshottests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClaudeUIDemo.app/ClaudeUIDemo";
+			};
+			name = Release;
+		};
+		DE96E311E13F43FCD4D9A384 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Claude UI Demo";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.demo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9EDEC78FAB8382DE0A07388 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		EF97B96E472FC788082025C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WidgetDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.community.claudeui.demo.widgets;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		38C6700B1F9489F4680CAE68 /* Build configuration list for PBXNativeTarget "ClaudeUISnapshotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94F457D14ABEC79C576C5996 /* Debug */,
+				D04FB722E1C311888640CE59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		599CC53B9EF4209A905F29E8 /* Build configuration list for PBXProject "ClaudeUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9EDEC78FAB8382DE0A07388 /* Debug */,
+				B12EF74F85FC0E004F2ECD76 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		90C79DAC8D7D240795F28045 /* Build configuration list for PBXNativeTarget "ClaudeUIDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BE54250EE5E004E37E5EBA1 /* Debug */,
+				DE96E311E13F43FCD4D9A384 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9A97D58172F30EA4EA693992 /* Build configuration list for PBXNativeTarget "ClaudeDemoWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF97B96E472FC788082025C1 /* Debug */,
+				1BA863CF8ED13D2108BF1A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		ECE6E91B6B2F1836C4B51EE3 /* Build configuration list for PBXNativeTarget "ClaudeUIDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B9C4C29E9CAE7D1D3CA788 /* Debug */,
+				950B1482D832BEA05DD2CBAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		C6529C4B7AB8129B265D7B72 /* XCLocalSwiftPackageReference "../.." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57F826868D5E9127E2C4AD47 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 1.19.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5F22526BA5C77F12D433939B /* ClaudeWidgets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClaudeWidgets;
+		};
+		782140E5F1B190F68385FCBD /* ClaudeWidgets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClaudeWidgets;
+		};
+		9FA9B70C7BCD95F0083920F4 /* ClaudeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ClaudeUI;
+		};
+		B013B9B29C109BF71660A39A /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57F826868D5E9127E2C4AD47 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 697EFD479DA60932CF4096A7 /* Project object */;
+}
