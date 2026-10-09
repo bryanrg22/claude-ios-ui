@@ -12,7 +12,9 @@ on:
         default: false
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  # A newer push or pull-request update cancels the older run; manual runs (such as re-recording references) are
+  # grouped separately so they neither cancel nor get cancelled by push runs.
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:

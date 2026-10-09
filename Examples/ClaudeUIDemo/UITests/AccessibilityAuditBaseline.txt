@@ -7,7 +7,6 @@ announcement | dark | Dynamic Type font sizes are unsupported | 48::New
 announcement | dark | Dynamic Type font sizes are unsupported | 48::Set a task to repeat, like a Monday summary
 announcement | dark | Dynamic Type font sizes are unsupported | 48::Try more artifact types, like slides, designs, and docs
 announcement | dark | Dynamic Type font sizes are unsupported | 9:announcement.dismiss:Got it
-announcement | dark | Hit area is too small | 9:announcement.close:Close work announcement
 announcement | dark | Potentially inaccessible text | none
 announcement | light | Contrast nearly passed | 48::New
 announcement | light | Dynamic Type font sizes are unsupported | 48::Ask a quick question or hand off a task to finish in the background
@@ -18,7 +17,6 @@ announcement | light | Dynamic Type font sizes are unsupported | 48::New
 announcement | light | Dynamic Type font sizes are unsupported | 48::Set a task to repeat, like a Monday summary
 announcement | light | Dynamic Type font sizes are unsupported | 48::Try more artifact types, like slides, designs, and docs
 announcement | light | Dynamic Type font sizes are unsupported | 9:announcement.dismiss:Got it
-announcement | light | Hit area is too small | 9:announcement.close:Close work announcement
 announcement | light | Potentially inaccessible text | none
 artifactDocument | dark | Contrast failed | 48::·
 artifactDocument | dark | Dynamic Type font sizes are unsupported | 48::@Jordan Lee
@@ -129,12 +127,15 @@ artifacts | light | Text clipped | 48::Preparing the space
 artifacts | light | Text clipped | 48::Weekend Walk — Route Planning
 artifacts | light | Text clipped | 48::Welcome presentation
 artifacts | light | Text clipped | 48::Workshop Materials — An Overview
+camera | dark | Contrast failed | 9:camera.mode.PHOTO:PHOTO
 camera | dark | Dynamic Type font sizes are unsupported | 48::A
 camera | dark | Dynamic Type font sizes are unsupported | 9:camera.mode.PHOTO:PHOTO
 camera | dark | Dynamic Type font sizes are unsupported | 9:camera.mode.VIDEO:VIDEO
+camera | light | Contrast failed | 9:camera.mode.PHOTO:PHOTO
 camera | light | Dynamic Type font sizes are unsupported | 48::A
 camera | light | Dynamic Type font sizes are unsupported | 9:camera.mode.PHOTO:PHOTO
 camera | light | Dynamic Type font sizes are unsupported | 9:camera.mode.VIDEO:VIDEO
+code | dark | Contrast failed | 48::Add device
 code | dark | Dynamic Type font sizes are unsupported | 48::2d
 code | dark | Dynamic Type font sizes are unsupported | 48::Add device
 code | dark | Dynamic Type font sizes are unsupported | 48::Camera preview controls
@@ -189,7 +190,6 @@ code | light | Dynamic Type font sizes are unsupported | 48::Walking route map
 code | light | Dynamic Type font sizes are unsupported | 48::sample-website · main
 code | light | Text clipped | 48::Evaluate project fit for community events
 codeNewSession | dark | Contrast failed | 48::Default
-codeNewSession | dark | Contrast failed | 48::SampleProject · main
 codeNewSession | dark | Contrast nearly passed | 48::High
 codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::Default
 codeNewSession | dark | Dynamic Type font sizes are unsupported | 48::High
@@ -285,23 +285,22 @@ longDraft | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
 longDraft | light | Dynamic Type font sizes are unsupported | 49:composer.draft:
 markdown | dark | Contrast failed | 48::Plant
 markdown | dark | Contrast failed | 48::Season
+markdown | dark | Contrast failed | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
 markdown | dark | Contrast failed | 48:markdown.list:☑
 markdown | dark | Contrast nearly passed | 48::High
 markdown | dark | Dynamic Type font sizes are unsupported | 48::High
 markdown | dark | Dynamic Type font sizes are unsupported | 48::Opus 5.5
 markdown | dark | Dynamic Type font sizes are unsupported | 48::python
-markdown | dark | Dynamic Type font sizes are unsupported | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
 markdown | dark | Dynamic Type font sizes are unsupported | none
 markdown | light | Contrast failed | 48::High
 markdown | light | Contrast failed | 48::Plant
 markdown | light | Contrast failed | 48::Season
+markdown | light | Contrast failed | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
 markdown | light | Contrast failed | 48:markdown.list:☑
 markdown | light | Contrast nearly passed | 48::python
-markdown | light | Contrast nearly passed | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
 markdown | light | Dynamic Type font sizes are unsupported | 48::High
 markdown | light | Dynamic Type font sizes are unsupported | 48::Opus 5.5
 markdown | light | Dynamic Type font sizes are unsupported | 48::python
-markdown | light | Dynamic Type font sizes are unsupported | 48:markdown.code.content:def greet(name: str) -> str:     return f"Hello, {name}!" 
 markdown | light | Dynamic Type font sizes are unsupported | none
 modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Effort
 modelsSheet | dark | Dynamic Type font sizes are unsupported | 48::Fable 5.1
@@ -354,14 +353,12 @@ projects | dark | Dynamic Type font sizes are unsupported | 48::Create one to or
 projects | dark | Dynamic Type font sizes are unsupported | 48::New project
 projects | dark | Dynamic Type font sizes are unsupported | 48::No projects yet
 projects | dark | Dynamic Type font sizes are unsupported | 48::Projects
-projects | dark | Hit area is too small | 9:projects.sidebar:Open sidebar
 projects | light | Contrast failed | 48::Create one to organize sessions around a topic or set of documents.
 projects | light | Contrast failed | 48::No projects yet
 projects | light | Dynamic Type font sizes are unsupported | 48::Create one to organize sessions around a topic or set of documents.
 projects | light | Dynamic Type font sizes are unsupported | 48::New project
 projects | light | Dynamic Type font sizes are unsupported | 48::No projects yet
 projects | light | Dynamic Type font sizes are unsupported | 48::Projects
-projects | light | Hit area is too small | 9:projects.sidebar:Open sidebar
 settings | dark | Dynamic Type font sizes are unsupported | 48::Account
 settings | dark | Dynamic Type font sizes are unsupported | 48::Add account
 settings | dark | Dynamic Type font sizes are unsupported | 48::App

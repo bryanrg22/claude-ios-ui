@@ -32,7 +32,9 @@ Unit tests need no simulator:
 swift test
 ```
 
-Screenshot references are only valid on the exact simulator they were recorded on. Create it once:
+Screenshot references and the accessibility baseline were recorded by CI with Xcode 27.0 (build 27A266a) and the
+released iOS 27.0 simulator runtime, and are only valid on that configuration. Beta runtimes render Liquid Glass slightly
+differently and fail a few screens by a fraction of a percent. With Xcode 27.0 selected, create the simulator once:
 
 ```sh
 xcrun simctl create "iPhone 15 Pro (iOS 27)" "iPhone 15 Pro" com.apple.CoreSimulator.SimRuntime.iOS-27-0
