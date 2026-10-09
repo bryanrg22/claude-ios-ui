@@ -1,6 +1,6 @@
 # Testing
 
-Four test suites guard this project. CI always runs format, project-sync, unit and iOS 26 SDK build checks. Screenshot, UI and accessibility suites run automatically for public repositories; while private, run them manually from Actions (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+Four test suites guard this project. CI always runs format, project-sync, unit and iOS 26 SDK build checks. Screenshot, UI and accessibility suites run automatically for public repositories; while private, run them manually from Actions (see [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)).
 
 | Suite | Location | What it checks | Runs on |
 |---|---|---|---|

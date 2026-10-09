@@ -33,7 +33,7 @@ These are screenshots of this project's demo with fictional messages, not captur
 - **`ClaudeUI`** — SwiftUI views and presentation state for the app: chat and composer, model and effort pickers, dictation, voice mode, camera, photos and video, Markdown with syntax-highlighted code, Settings and its pages, Claude Code (sessions, environments, repositories, connectors, routines), Dispatch, Devices, Projects and Artifacts.
 - **`ClaudeWidgets`** — Home Screen widget views with deep links.
 - **A demo app** in [`Examples/ClaudeUIDemo`](Examples/ClaudeUIDemo) with fictional data, a real WidgetKit extension, and a `--screen <name>` shortcut that opens any of the 34 catalogued screens directly.
-- **Four test suites** — unit, screenshot, UI and accessibility. CI always checks format, project sync, unit tests and the iOS 26 SDK build. Simulator suites run automatically for public repositories; while private, they require a manual Actions run. See [TESTING.md](TESTING.md).
+- **Four test suites** — unit, screenshot, UI and accessibility. CI always checks format, project sync, unit tests and the iOS 26 SDK build. Simulator suites run automatically for public repositories; while private, they require a manual Actions run. See [TESTING.md](docs/TESTING.md).
 
 The package draws the interface and keeps presentation state only. It makes no network calls, needs no API keys, and never touches the microphone, camera or photo library: your app supplies all of that.
 
@@ -51,7 +51,7 @@ cd claude-ios-ui
 open Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj
 ```
 
-Choose the `ClaudeUIDemo` scheme and an iPhone simulator, then press Run. The first build resolves package dependencies over the network. Running the demo requires no account or API key. For screenshot comparisons, use the exact configuration in [TESTING.md](TESTING.md), rather than any available simulator.
+Choose the `ClaudeUIDemo` scheme and an iPhone simulator, then press Run. The first build resolves package dependencies over the network. Running the demo requires no account or API key. For screenshot comparisons, use the exact configuration in [TESTING.md](docs/TESTING.md), rather than any available simulator.
 
 Sending a message streams a canned local reply. To jump to a screen, add a launch argument in the scheme, for example `--screen code` or `--screen settingsPrivacy --light`. Every name is listed in [`Shared/DemoScreen.swift`](Examples/ClaudeUIDemo/Shared/DemoScreen.swift).
 

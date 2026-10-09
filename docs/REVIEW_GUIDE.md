@@ -16,7 +16,7 @@ A passing test run protects the skeleton's behavior. Reference evidence establis
 
 Contributors open a PR using the provided template. Reviewers can use **Files changed** to comment on specific lines, then **Review changes → Approve** or **Request changes**. The checklist is a review policy; repository rules and required checks enforce merge permissions separately.
 
-Both repositories currently run simulator suites automatically only when public. While private, use **Actions → CI → Run workflow**, select the PR branch, and leave reference recording disabled. Confirm the **Screenshot and UI tests (iOS 27)** job ran successfully; a skipped simulator job does not satisfy visual validation. See [Testing](../TESTING.md) for commands and the pinned baseline.
+Both repositories currently run simulator suites automatically only when public. While private, use **Actions → CI → Run workflow**, select the PR branch, and leave reference recording disabled. Confirm the **Screenshot and UI tests (iOS 27)** job ran successfully; a skipped simulator job does not satisfy visual validation. See [Testing](TESTING.md) for commands and the pinned baseline.
 
 The issue forms and PR template follow [GitHub's contribution-template workflow](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests). GitHub validates required issue-form fields only for public repositories, so reviewers must still check completeness while these repositories are private.
 
