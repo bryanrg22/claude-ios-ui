@@ -6,6 +6,7 @@ A reusable SwiftUI UI skeleton inspired by Claude for iPhone. Explore chat, medi
 ![Swift 6.2](https://img.shields.io/badge/Swift-6.2-F05138?logo=swift&logoColor=white)
 ![iOS 26+](https://img.shields.io/badge/iOS-26%2B-000000?logo=apple&logoColor=white)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/bryanrg22/claude-ios-ui?sort=semver&color=blue)](https://github.com/bryanrg22/claude-ios-ui/releases)
 
 <p align="center">
   <img src="docs/images/banner.png" alt="Five screens of the recreation: the home screen, a Markdown answer, Claude Code, an artifact document and Settings" width="100%">
@@ -60,7 +61,7 @@ Sending a message streams a canned local reply. To jump to a screen, add a launc
 Add the package in Xcode (**File → Add Package Dependencies…**) with this repository's URL, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/bryanrg22/claude-ios-ui", branch: "main")
+.package(url: "https://github.com/bryanrg22/claude-ios-ui", from: "0.1.0")
 ```
 
 Then own a `SessionState`, show `ClaudeSessionView`, and answer the actions it sends you. This example streams a reply from your own backend:

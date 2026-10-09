@@ -1,0 +1,7 @@
+# Swift Package Index build and documentation settings.
+# https://swiftpackageindex.com/swiftpackageindex/spimanifest/documentation/spimanifest/commonusecases
+version: 1
+builder:
+  configs:
+    - platform: ios
+      documentation_targets: [ClaudeUI, ClaudeWidgets]
