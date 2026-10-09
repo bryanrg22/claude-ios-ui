@@ -19,7 +19,7 @@ A SwiftUI recreation of the Claude iPhone app's interface — every screen in li
 - **`ClaudeUI`** — SwiftUI views and presentation state for the app: chat and composer, model and effort pickers, dictation, voice mode, camera, photos and video, Markdown with syntax-highlighted code, Settings and its pages, Claude Code (sessions, environments, repositories, connectors, routines), Dispatch, Devices, Projects and Artifacts.
 - **`ClaudeWidgets`** — Home Screen widget views with deep links.
 - **A demo app** in [`Examples/ClaudeUIDemo`](Examples/ClaudeUIDemo) with fictional data, a real WidgetKit extension, and a `--screen <name>` shortcut that opens any of the 34 catalogued screens directly.
-- **Four test suites** — unit, screenshot, UI and accessibility — running in CI. See [TESTING.md](TESTING.md).
+- **Four test suites** — unit, screenshot, UI and accessibility — running in CI. See [TESTING.md](docs/TESTING.md).
 
 The package draws the interface and keeps presentation state only. It makes no network calls, needs no API keys, and never touches the microphone, camera or photo library: your app supplies all of that.
 
@@ -125,8 +125,8 @@ docs/                       Integration guide, feature guides, fidelity records
 
 ## Contributing
 
-Contributions are welcome — especially updates when the real app changes. Every visual change needs before-and-after evidence: a screenshot or recording of the real app next to the same screen in the recreation, captured on the same device size and appearance, with personal information removed. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full process and [TESTING.md](TESTING.md) for updating screenshot references.
+Contributions are welcome — especially updates when the real app changes. Every visual change needs before-and-after evidence: a screenshot or recording of the real app next to the same screen in the recreation, captured on the same device size and appearance, with personal information removed. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full process and [TESTING.md](docs/TESTING.md) for updating screenshot references.
 
 ## License
 
-The source code is available under the [MIT License](LICENSE). Bundled fonts, artwork and dependencies keep their own terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
+The source code is available under the [MIT License](LICENSE). Bundled fonts, artwork and dependencies keep their own terms; see [THIRD_PARTY.md](THIRD_PARTY_NOTICES.md).

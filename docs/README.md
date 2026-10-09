@@ -1,7 +1,7 @@
 # Documentation
 
 - [Integration guide](INTEGRATION.md) — connect the package to your backend, feature by feature.
-- [Testing](../TESTING.md) — the four test suites, screenshot references and the accessibility baseline.
+- [Testing](TESTING.md) — the four test suites, screenshot references and the accessibility baseline.
 
 ## Feature guides
 
