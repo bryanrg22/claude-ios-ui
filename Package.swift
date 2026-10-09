@@ -6,8 +6,8 @@ let package = Package(
         .library(name: "ClaudeUI", targets: ["ClaudeUI"]), .library(name: "ClaudeWidgets", targets: ["ClaudeWidgets"])
     ],
     dependencies: [
-        .package(url: "https://github.com/swiftlang/swift-markdown.git", exact: "0.9.0"),
-        .package(url: "https://github.com/smittytone/HighlighterSwift.git", exact: "3.1.0")
+        .package(url: "https://github.com/swiftlang/swift-markdown.git", from: "0.9.0"),
+        .package(url: "https://github.com/smittytone/HighlighterSwift.git", from: "3.1.0")
     ],
     targets: [
         .target(

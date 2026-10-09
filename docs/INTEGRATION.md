@@ -4,6 +4,8 @@ How to put `ClaudeUI` into your own app and connect it to your backend. The pack
 
 ## Getting started
 
+The package declares its dependencies with minimum versions (`from:`), so your app can resolve a version that also satisfies its other packages. The committed `Package.resolved` records the exact versions this repository is tested with; your own app's `Package.resolved` decides what it ships.
+
 Add this directory (or your published repository URL) as a Swift package dependency and import `ClaudeUI`. Own the state in your application and consume typed UI intents:
 
 ```swift
