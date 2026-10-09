@@ -6,27 +6,25 @@ This is an initial implementation, **not a verified exact replica**. See [refere
 
 ## Run
 
-Requires Xcode 26.4 or newer and an iOS 26 simulator. Open `ClaudeUIDemo.xcodeproj`, select the `ClaudeUIDemo` scheme, select an iPhone simulator, and run. No keys, server, or parent repository required.
+Requires Xcode 26.4 or newer and an iOS 26 simulator. Open `Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj`, select the `ClaudeUIDemo` scheme, select an iPhone simulator, and run. No keys, server, or parent repository required.
 
-To regenerate the project (only after editing `project.yml`):
+The demo project is generated from `Examples/ClaudeUIDemo/project.yml` using [XcodeGen](https://github.com/yonaskolb/XcodeGen) 2.45.4. The generated project is committed, so you only need XcodeGen after editing `project.yml`:
 
 ```sh
 brew install xcodegen
+cd Examples/ClaudeUIDemo
 xcodegen generate
 ```
 
-Build and test:
+Unit tests run on the Mac without a simulator:
 
 ```sh
 swift test
-xcodebuild -project ClaudeUIDemo.xcodeproj -scheme ClaudeUIDemo \
-  -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
-# Replace with an installed simulator name:
-xcodebuild -project ClaudeUIDemo.xcodeproj -scheme ClaudeUIDemo \
-  -destination 'platform=iOS Simulator,name=iPhone 17 Pro' CODE_SIGNING_ALLOWED=NO test
 ```
 
-Launch arguments expose repeatable visual states: `--typed`, `--complete`, `--dictation`, `--long-draft`, `--light`, `--complete --editing`, `--waveform`, `--complete --voice`, `--dispatch`, `--code`, and `--announcement`. The attachment Camera tile opens an offline camera presentation with an injectable preview and capture metadata. It never accesses hardware. Dictation is deliberately silent and never requests a microphone permission. Inline voice mode, its settings, model picker, and exit summary follow the observed silent-session reference. Microphone/output controls are local UI states; actual speaking visuals and audio behavior remain unverified.
+Screenshot tests, UI tests and the accessibility audit run on an iPhone 15 Pro simulator with iOS 27.0. See [TESTING.md](TESTING.md).
+
+Launch arguments expose repeatable visual states: `--screen <name>` opens any screen listed in `Examples/ClaudeUIDemo/Shared/DemoScreen.swift`, and `--typed`, `--complete`, `--dictation`, `--long-draft`, `--light`, `--complete --editing`, `--waveform`, `--complete --voice`, `--dispatch`, `--code`, and `--announcement`. The attachment Camera tile opens an offline camera presentation with an injectable preview and capture metadata. It never accesses hardware. Dictation is deliberately silent and never requests a microphone permission. Inline voice mode, its settings, model picker, and exit summary follow the observed silent-session reference. Microphone/output controls are local UI states; actual speaking visuals and audio behavior remain unverified.
 
 ## Integrate
 
