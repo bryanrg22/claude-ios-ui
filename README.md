@@ -1,6 +1,6 @@
 # Claude iOS UI
 
-A SwiftUI recreation of the Claude iPhone app's interface — every screen in light and dark, Liquid Glass included — with no backend attached. Drop it into your app and plug in your own model.
+A reusable SwiftUI UI skeleton inspired by Claude for iPhone. Explore chat, media, rich text and native Liquid Glass controls in an offline demo, then connect your own model and services. Light and dark presentations are included; full app parity is still a work in progress.
 
 [![CI](https://github.com/bryanrg22/claude-ios-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/bryanrg22/claude-ios-ui/actions/workflows/ci.yml)
 ![Swift 6.2](https://img.shields.io/badge/Swift-6.2-F05138?logo=swift&logoColor=white)
@@ -14,12 +14,26 @@ A SwiftUI recreation of the Claude iPhone app's interface — every screen in li
 > [!NOTE]
 > **Unofficial.** This project is not affiliated with, endorsed by, or sponsored by Anthropic. Claude is a trademark of Anthropic. The recreation follows Claude for iOS version 1.261002.20, observed in October 2026.
 
+[Run the demo](#try-the-demo) · [Integrate](docs/INTEGRATION.md) · [Contribute](CONTRIBUTING.md) · [Report a mismatch](https://github.com/bryanrg22/claude-ios-ui/issues/new/choose)
+
+## Light and dark
+
+<table>
+  <tr><th>Light</th><th>Dark</th></tr>
+  <tr>
+    <td><img src="Examples/ClaudeUIDemo/SnapshotTests/__Snapshots__/ScreenSnapshotTests/screen.conversation-light.png" width="260" alt="Claude UI skeleton conversation in light mode"></td>
+    <td><img src="Examples/ClaudeUIDemo/SnapshotTests/__Snapshots__/ScreenSnapshotTests/screen.conversation-dark.png" width="260" alt="Claude UI skeleton conversation in dark mode"></td>
+  </tr>
+</table>
+
+These are screenshots of this project's demo with fictional messages, not captures of the official app. The banner above shows more feature areas. Browse the [screen catalog](Examples/ClaudeUIDemo/Shared/DemoScreen.swift) and [coverage notes](docs/fidelity/ROUTE_COVERAGE.md) for what is implemented, approximate or still TODO.
+
 ## What's inside
 
 - **`ClaudeUI`** — SwiftUI views and presentation state for the app: chat and composer, model and effort pickers, dictation, voice mode, camera, photos and video, Markdown with syntax-highlighted code, Settings and its pages, Claude Code (sessions, environments, repositories, connectors, routines), Dispatch, Devices, Projects and Artifacts.
 - **`ClaudeWidgets`** — Home Screen widget views with deep links.
 - **A demo app** in [`Examples/ClaudeUIDemo`](Examples/ClaudeUIDemo) with fictional data, a real WidgetKit extension, and a `--screen <name>` shortcut that opens any of the 34 catalogued screens directly.
-- **Four test suites** — unit, screenshot, UI and accessibility — running in CI. See [TESTING.md](docs/TESTING.md).
+- **Four test suites** — unit, screenshot, UI and accessibility. CI always checks format, project sync, unit tests and the iOS 26 SDK build. Simulator suites run automatically for public repositories; while private, they require a manual Actions run. See [TESTING.md](docs/TESTING.md).
 
 The package draws the interface and keeps presentation state only. It makes no network calls, needs no API keys, and never touches the microphone, camera or photo library: your app supplies all of that.
 
@@ -31,9 +45,13 @@ The package draws the interface and keeps presentation state only. It makes no n
 
 ## Try the demo
 
-1. Clone the repository.
-2. Open `Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj`.
-3. Choose the `ClaudeUIDemo` scheme and an iPhone simulator, then press Run.
+```sh
+git clone https://github.com/bryanrg22/claude-ios-ui.git
+cd claude-ios-ui
+open Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj
+```
+
+Choose the `ClaudeUIDemo` scheme and an iPhone simulator, then press Run. The first build resolves package dependencies over the network. Running the demo requires no account or API key. For screenshot comparisons, use the exact configuration in [TESTING.md](docs/TESTING.md), rather than any available simulator.
 
 Sending a message streams a canned local reply. To jump to a screen, add a launch argument in the scheme, for example `--screen code` or `--screen settingsPrivacy --light`. Every name is listed in [`Shared/DemoScreen.swift`](Examples/ClaudeUIDemo/Shared/DemoScreen.swift).
 
@@ -123,9 +141,16 @@ Examples/ClaudeUIDemo/      Demo app, widget extension, screenshot and UI tests
 docs/                       Integration guide, feature guides, fidelity records
 ```
 
-## Contributing
+## Help keep it current
 
-Contributions are welcome — especially updates when the real app changes. Every visual change needs before-and-after evidence: a screenshot or recording of the real app next to the same screen in the recreation, captured on the same device size and appearance, with personal information removed. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full process and [TESTING.md](docs/TESTING.md) for updating screenshot references.
+- **Found a visual mismatch?** [Open a mismatch report](https://github.com/bryanrg22/claude-ios-ui/issues/new?template=1-ui-mismatch.yml) with the route, reproduction steps, app version, device/iOS, appearance and a reference screenshot or video.
+- **The real app changed?** [Suggest an update](https://github.com/bryanrg22/claude-ios-ui/issues/new?template=2-app-update.yml). Keep one screen or flow per issue.
+- **Something crashes or fails to build?** [Report a bug](https://github.com/bryanrg22/claude-ios-ui/issues/new?template=3-bug.yml) with a minimal reproduction and logs.
+- **Want to fix it?** Read [CONTRIBUTING.md](CONTRIBUTING.md). A visual PR includes **reference → before → after** evidence in both appearances where applicable. Motion changes need recordings and measured timing; CI screenshots alone cannot verify motion or official-app parity.
+
+The maintainer compares the evidence, checks the test results, and reviews the code before approving a PR. [The review guide](docs/REVIEW_GUIDE.md) explains the acceptance checklist and how to review screenshot updates. Keep all reference captures free of personal information.
+
+Looking for the other skeleton? [ChatGPT iOS UI](https://github.com/bryanrg22/chatgpt-ios-ui).
 
 ## License
 

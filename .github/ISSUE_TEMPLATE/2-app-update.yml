@@ -1,7 +1,8 @@
 name: The app changed or a screen is missing
 description: Claude shipped a new version, or a screen in the real app has no recreation yet.
-title: "[App update] "
-labels: ["app-update"]
+title: '[App update] '
+labels:
+  - app-update
 body:
   - type: markdown
     attributes:
@@ -30,14 +31,32 @@ body:
       description: Show the new or changed screen in the real app. A recording helps for animations and transitions.
     validations:
       required: true
-      accept: ".png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm"
+      accept: .png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm
   - type: input
     id: device
     attributes:
       label: Device and iOS version
       placeholder: iPhone 15 Pro, iOS 27.0
+      description: Record the reference phone and demo simulator separately, including iOS build numbers. Use
+        unknown for unverified metadata.
     validations:
       required: true
+  - type: input
+    id: capture-configuration
+    attributes:
+      label: Capture date and display settings
+      description: Date observed; locale; light/dark; text size; display zoom; keyboard shown/hidden; relevant
+        accessibility settings. Unknown is acceptable.
+    validations:
+      required: true
+  - type: input
+    id: demo-version
+    attributes:
+      label: Demo commit and Xcode version/build
+      description: If you ran the skeleton, paste its commit or release and xcodebuild -version output. Otherwise
+        write not run.
+    validations:
+      required: false
   - type: checkboxes
     id: privacy
     attributes:

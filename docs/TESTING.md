@@ -1,6 +1,6 @@
 # Testing
 
-Four test suites guard this project. CI runs all of them (see [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)).
+Four test suites guard this project. CI always runs format, project-sync, unit and iOS 26 SDK build checks. Screenshot, UI and accessibility suites run automatically for public repositories; while private, run them manually from Actions (see [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)).
 
 | Suite | Location | What it checks | Runs on |
 |---|---|---|---|
@@ -83,3 +83,11 @@ the file, so a change cannot make accessibility worse. The file is also a to-do 
 Most entries are fixed font sizes that ignore the system text size (Dynamic Type), small tap targets, and low contrast.
 To regenerate the file after fixing issues, run the audit test with `TEST_RUNNER_ACCESSIBILITY_AUDIT_RECORD=1` and
 review the diff before committing it.
+
+## Evidence for a reviewed change
+
+Attach exact test commands, the commit tested, configuration and result to the PR. Capture Xcode's version/build with `xcodebuild -version`; record the simulator model and runtime version/build as well. SDK version and simulator runtime version are different values. Use the same fixture, appearance, locale, text size, keyboard and accessibility settings when comparing screenshots.
+
+For a private repository, choose **Actions → CI → Run workflow**, select the contribution branch and leave **Re-record screenshot references** off for verification. The simulator job must run, not be skipped. Re-recording produces candidate baselines for review; it is not a passing comparison run. CI currently uploads `.xcresult` bundles on failure; attach your local result bundle or link the successful job logs for a passing run.
+
+Report failures and skipped suites explicitly. For widget registration or Home Screen changes, test a fresh simulator as well as the existing installation; screenshots of an in-app widget preview do not prove native gallery integration. A regression baseline detects changes to this project's output, not fidelity to the official app.
