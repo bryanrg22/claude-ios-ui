@@ -17,7 +17,7 @@ The `ClaudeWidgets` target reuses a copy of the same `ClaudeLogo` SVG to remain 
 
 ## Swift Markdown and cmark
 
-Markdown parsing uses swiftlang/swift-markdown 0.9.0 (Apache License 2.0 with Runtime Library Exception) and its swift-cmark 0.9.0 dependency (BSD-style and included component notices). Full notices are retained with the package resources as `Swift-Markdown-LICENSE.txt` and `Swift-CMark-COPYING.txt`. The upstream sources are resolved through SwiftPM, not copied into this repository. See [Markdown integration and limitations](docs/MARKDOWN.md).
+Markdown parsing uses swiftlang/swift-markdown 0.9.0 (Apache License 2.0 with Runtime Library Exception) and its swift-cmark 0.9.0 dependency (BSD-style and included component notices). Full notices are retained with the package resources as `Swift-Markdown-LICENSE.txt` and `Swift-CMark-COPYING.txt`. The upstream sources are resolved through SwiftPM, not copied into this repository. See [Markdown integration and limitations](docs/features/MARKDOWN.md).
 
 The added `Newsreader-Italic.ttf` is the unmodified variable italic face from [Google Fonts Newsreader](https://github.com/google/fonts/tree/main/ofl/newsreader), distributed under the accompanying Newsreader OFL notice. It complements the existing upright substitute so emphasis has a real italic face. It is not Claude's proprietary typeface.
 

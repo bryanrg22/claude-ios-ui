@@ -1,94 +1,132 @@
-# Claude iOS UI skeleton
+# Claude iOS UI
 
-An **unofficial, independent** SwiftUI interface study with a runnable offline demo and a reusable UI package. It is not made, endorsed, or distributed by Anthropic. It has no model API, authentication, microphone recording, or phone automation. Backend-dependent behavior is simulated by the demo app.
+A SwiftUI recreation of the Claude iPhone app's interface — every screen in light and dark, Liquid Glass included — with no backend attached. Drop it into your app and plug in your own model.
 
-This is an initial implementation, **not a verified exact replica**. See [reference coverage and known gaps](docs/REFERENCE.md) before adopting it. It targets the interface observed on October 7, 2026, version 1.261002.20 (37091698851); model labels are reference UI fixtures, not claims of public availability.
+[![CI](https://github.com/bryanrg22/claude-ios-ui/actions/workflows/ci.yml/badge.svg)](https://github.com/bryanrg22/claude-ios-ui/actions/workflows/ci.yml)
+![Swift 6.2](https://img.shields.io/badge/Swift-6.2-F05138?logo=swift&logoColor=white)
+![iOS 26+](https://img.shields.io/badge/iOS-26%2B-000000?logo=apple&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Run
+<p align="center">
+  <img src="docs/images/banner.png" alt="Five screens of the recreation: the home screen, a Markdown answer, Claude Code, an artifact document and Settings" width="100%">
+</p>
 
-Requires Xcode 26.4 or newer and an iOS 26 simulator. Open `Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj`, select the `ClaudeUIDemo` scheme, select an iPhone simulator, and run. No keys, server, or parent repository required.
+> [!NOTE]
+> **Unofficial.** This project is not affiliated with, endorsed by, or sponsored by Anthropic. Claude is a trademark of Anthropic. The recreation follows Claude for iOS version 1.261002.20, observed in October 2026.
 
-The demo project is generated from `Examples/ClaudeUIDemo/project.yml` using [XcodeGen](https://github.com/yonaskolb/XcodeGen) 2.45.4. The generated project is committed, so you only need XcodeGen after editing `project.yml`:
+## What's inside
 
-```sh
-brew install xcodegen
-cd Examples/ClaudeUIDemo
-xcodegen generate
-```
+- **`ClaudeUI`** — SwiftUI views and presentation state for the app: chat and composer, model and effort pickers, dictation, voice mode, camera, photos and video, Markdown with syntax-highlighted code, Settings and its pages, Claude Code (sessions, environments, repositories, connectors, routines), Dispatch, Devices, Projects and Artifacts.
+- **`ClaudeWidgets`** — Home Screen widget views with deep links.
+- **A demo app** in [`Examples/ClaudeUIDemo`](Examples/ClaudeUIDemo) with fictional data, a real WidgetKit extension, and a `--screen <name>` shortcut that opens any of the 34 catalogued screens directly.
+- **Four test suites** — unit, screenshot, UI and accessibility — running in CI. See [TESTING.md](TESTING.md).
 
-Unit tests run on the Mac without a simulator:
+The package draws the interface and keeps presentation state only. It makes no network calls, needs no API keys, and never touches the microphone, camera or photo library: your app supplies all of that.
 
-```sh
-swift test
-```
+## Requirements
 
-Screenshot tests, UI tests and the accessibility audit run on an iPhone 15 Pro simulator with iOS 27.0. See [TESTING.md](TESTING.md).
+- Xcode 26.4 or newer (the screenshot references are recorded with Xcode 27.0)
+- iOS 26 or newer
+- Swift 6.2
 
-Launch arguments expose repeatable visual states: `--screen <name>` opens any screen listed in `Examples/ClaudeUIDemo/Shared/DemoScreen.swift`, and `--typed`, `--complete`, `--dictation`, `--long-draft`, `--light`, `--complete --editing`, `--waveform`, `--complete --voice`, `--dispatch`, `--code`, and `--announcement`. The attachment Camera tile opens an offline camera presentation with an injectable preview and capture metadata. It never accesses hardware. Dictation is deliberately silent and never requests a microphone permission. Inline voice mode, its settings, model picker, and exit summary follow the observed silent-session reference. Microphone/output controls are local UI states; actual speaking visuals and audio behavior remain unverified.
+## Try the demo
 
-## Integrate
+1. Clone the repository.
+2. Open `Examples/ClaudeUIDemo/ClaudeUIDemo.xcodeproj`.
+3. Choose the `ClaudeUIDemo` scheme and an iPhone simulator, then press Run.
 
-Add this directory (or your published repository URL) as a Swift package dependency and import `ClaudeUI`. Own the state in your application and consume typed UI intents:
+Sending a message streams a canned local reply. To jump to a screen, add a launch argument in the scheme, for example `--screen code` or `--screen settingsPrivacy --light`. Every name is listed in [`Shared/DemoScreen.swift`](Examples/ClaudeUIDemo/Shared/DemoScreen.swift).
+
+## Use it in your app
+
+Add the package in Xcode (**File → Add Package Dependencies…**) with this repository's URL, or in `Package.swift`:
 
 ```swift
-@State private var session = SessionState()
+.package(url: "https://github.com/bryanrg22/claude-ios-ui", branch: "main")
+```
 
-var body: some View {
-    ClaudeSessionView(state: $session) { action in
-        session.reduce(action)
-        // Route .send, .stop, .startDictation, .share, etc. to your adapter.
-        // Capture let requestID = session.responseID after Send or Retry.
-        // Deliver chunks with session.appendResponse(chunk, responseID: requestID)
-        // and session.finishResponse(responseID: requestID).
-        // Old request tokens are rejected, including after a new send.
+Then own a `SessionState`, show `ClaudeSessionView`, and answer the actions it sends you. This example streams a reply from your own backend:
+
+```swift
+import ClaudeUI
+import SwiftUI
+
+struct ContentView: View {
+    @State private var session = SessionState()
+    @State private var reply: Task<Void, Never>?
+
+    var body: some View {
+        ClaudeSessionView(state: $session) { action in
+            session.reduce(action)  // let the UI update itself first
+            switch action {
+            case .send(let text):
+                guard let id = session.responseID else { return }  // set by reduce(.send)
+                reply = Task {
+                    do {
+                        for try await chunk in MyBackend.stream(prompt: text) {  // your API client
+                            session.appendResponse(chunk, responseID: id)  // each new piece of text
+                        }
+                    } catch {
+                        session.appendResponse("\n\n(Something went wrong.)", responseID: id)
+                    }
+                    session.finishResponse(responseID: id)
+                }
+            case .stop:
+                reply?.cancel()
+            default:
+                break
+            }
+        }
     }
 }
 ```
 
-Native Settings uses injected `SessionState.settings` account/profile data and typed `.settings(...)` actions. Profile edits are reversible drafts; saving requires a matching host acknowledgement. Notification and break-reminder presentation preferences are host-persistable local values. Privacy consent and Usage balances remain host-owned: switches emit requests without changing account truth. Billing reproduces the captured website-origin native notice; shared links display injected read-only snapshots. Code appearance preferences are serializable local UI values. Capabilities, Memory files, and Settings connector permissions use host-owned data and typed requests; memory deletion needs a matching host acknowledgement. Connector browsing uses injected cards, ranking and categories with local search/filter state; custom connector name/HTTPS URL drafts emit a host request and are discarded on cancel. All tools policies remain host-owned. Photo changes, logout, quiet-day details, and unobserved subpages remain host intents. See [Settings coverage](docs/SETTINGS.md). `--announcement` presents the observed feature-announcement still with working dismissal; its motion has not been reconstructed.
+## How it works
 
-Feedback submission intents include sentiment, comment, and issue category; cancellation never emits a submission.
+`SessionState` is a plain value, and a single `reduce(_:)` function applies every user action to it, so the UI's behavior is predictable and easy to test:
 
-Voice intents include entry/exit, microphone/output toggles, voice/language selection, and `.voiceFeedback(Bool)` from the exit summary. Voice entry preserves the conversation and unsent draft; exit restores the composer. No audio session is created.
+```text
+user taps ──▶ ClaudeAction ──▶ your handler ──▶ session.reduce(action)   (the UI updates itself)
+                                     │
+                                     └──▶ your backend ──▶ appendResponse / finishResponse, feature data
+```
 
-`SessionState.devices` contains host-injected device rows and account profile state. It defaults to no devices; only the demo fixture supplies a Connected desktop. `.devices(.openManage)` creates an account request token. Deliver profile data with `devices.finishAccountLoad(profile, requestID:)` or failure with `failAccountLoad`; replaced or dismissed request tokens are ignored. Profile edits are local state, and logout, API keys, photo changes, links, account tabs, and organization copy are typed host intents. The demo copies only its fictional organization ID and performs no account operation.
+- **State in.** `SessionState` and its feature states (`session.code`, `session.settings`, `session.projects`, …) hold what the screens show. Set them from your data.
+- **Actions out.** Every button that would need a server, a device or the system emits a typed action: send, stop, retry, start dictation, share, connect, save.
+- **Stale replies are ignored.** Each request gets an ID. Updates for a stopped or replaced request are dropped, so a slow network can't overwrite a newer answer. Account loads, Dispatch messages and settings saves work the same way.
 
-`SessionState.dispatch` supplies connection status, timestamped messages, draft, and token-guarded loading. `.openDispatch` presents the observed route and creates `dispatch.loadID`; the host delivers messages with `finishLoading(_:requestID:)`. `.dispatch(.submit(text))` and `.dispatch(.attach)` are integration hooks. They intentionally leave the draft and messages intact until a host implements their outcomes. The demo injects an Online fixture and welcome text; it never connects to a desktop or sends a task. Unobserved attachment menus, sent-task states, and error visuals remain gaps.
+The [integration guide](docs/INTEGRATION.md) covers every feature area: settings, voice, devices, Dispatch, Code, routines, projects, artifacts, widgets, Markdown, media, camera and dictation.
 
-`SessionState.code` accepts `CodeSession` and `CodeDevice` rows and applies local status filtering. `.openCode` switches to the observed list without changing the chat. `.code(...)` carries session/device/search hooks and opens the observed New session and remote-control setup views; no task starts. `CodeDraftState` keeps injected repositories, environments, branches, local model/effort and connector permissions separate from normal chat. Connector logos in the synthetic fixture remain SF Symbol stand-ins. `.code(.editor(...))` exposes typed host intents for task submission, media, environment creation and service connections. The clock opens the observed Routines surface. `.code(.routines(...))` carries local form edits, schedule UI choices, and host-only draft/create/configuration intents. No cron, webhook, or scheduler is implemented. Cancel clears the unsaved routine; backing between description and manual setup preserves it. Other repeat-specific fields and routine detail/results are not captured.
+## What's covered
 
+| Area | Status |
+|---|---|
+| Chat, composer, editing, feedback, sidebar | ✅ Built |
+| Model and effort pickers, dictation, voice mode | ✅ Built (silent; no audio) |
+| Camera, photos, image and video viewers | ✅ Built (your app supplies the media) |
+| Markdown, syntax-highlighted code, tables | ✅ Built |
+| Settings: profile, notifications, time & focus, privacy, usage, billing, shared links, capabilities, memory, Claude Code, connectors | ✅ Built; About, Account, Gift, Permissions and Voice pages are placeholders |
+| Claude Code: sessions, new session, environments, repositories, branches, connectors, routines | ✅ Built |
+| Dispatch, Devices, Projects, Artifacts, feature announcement | ✅ Built; some populated and detail states not yet captured |
+| Home Screen widgets | ✅ Built as a real WidgetKit extension |
+| Customize, Lock Screen, Live Activities, Dynamic Island | ⬜ Not yet |
 
+The full record of what was captured from the real app, and how closely each screen matches it, is in [docs/fidelity](docs/fidelity/ROUTE_COVERAGE.md).
 
-The package renders app-owned `SessionState` and sends `ClaudeAction` intents. The reducer supports drafts, streaming, stop, dictation recording/paused/cancel/commit, attachments, models, effort, approval mode, device choice, new sessions, reversible message editing, and inline voice controls. There are no imports of an automation project or backend SDK.
+## Project layout
 
-Use `ClaudeTypography(serifName: "YourLicensedFont")` to replace the bundled Newsreader approximation. All package resources are located via `Bundle.module`.
+```text
+Sources/ClaudeUI/           The interface: views and presentation state
+Sources/ClaudeWidgets/      Widget views and deep links
+Tests/ClaudeUITests/        Unit tests (run on the Mac with `swift test`)
+Examples/ClaudeUIDemo/      Demo app, widget extension, screenshot and UI tests
+docs/                       Integration guide, feature guides, fidelity records
+```
 
-## Contribute
+## Contributing
 
-Attach the reference app version, iOS version, device dimensions, color scheme, Dynamic Type size, and before/after evidence to visual changes. Test the complete interaction state, not only its idle screenshot. Never commit private conversations or account data. Fixture conversations and photos here are synthetic.
+Contributions are welcome — especially updates when the real app changes. Every visual change needs before-and-after evidence: a screenshot or recording of the real app next to the same screen in the recreation, captured on the same device size and appearance, with personal information removed. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full process and [TESTING.md](TESTING.md) for updating screenshot references.
 
-Source code is available under the [MIT License](LICENSE). See [third-party notices](THIRD_PARTY.md) for bundled fonts, artwork and dependencies, which keep their own terms.
+## License
 
-## Offline camera presentation
-
-`ClaudeCameraView(onCancel:onCapture:preview:)` accepts any SwiftUI preview supplied by the host. `CameraCapture` contains mode, zoom, and front/back selection; it contains no media bytes. The demo uses an original synthetic scene and attaches a named sample on capture. Photo layout follows the supplied camera reference; video recording and flash/flip transitions are local demo behavior, with exact production motion still unverified. No uncaptured photo review screen is invented.
-
-For editing, the view emits `.beginEditing(messageID)` and `.cancelEditing`; committing emits `.send(text)`. `visibleMessages` hides future content without changing `messages` until commit. Hosts may capture `editingMessageID` before reducing Send to route an edit request to their own backend.
-
-## Dictation waveform contract
-
-The host may update `session.dictationLevels` with normalized sample amplitudes. The UI retains the newest 256 samples, clamps finite values to 0…1, and maps NaN/infinity to silence. Bars remain inside a 24pt maximum height within the 36pt controls row; silence preserves the observed 2.6pt dots at 6pt spacing. The 24pt audible cap and 80ms interpolation are **provisional design bounds**, not measurements of Claude's speaking animation. Supply recorded mobile evidence before treating them as a fidelity target. Reduced Motion disables interpolation.
-
-Silent Stop restores the prior draft and normal composer, matching the observed mobile behavior. Stop with a nonempty transcript retains an unverified paused preview state; no microphone capture/transcription is implemented.
-
-`SessionState.projects` and `.openProjects` expose the observed Projects empty state and feature setup. `.projects(ProjectAction)` carries local edits, icon/context choices and a host-only creation request. No project or Drive connection is created automatically; hosts can acknowledge accepted creation with `state.projects.acknowledgeCreated(_:)`. See [Projects reference limits](docs/PROJECTS_REFERENCE.md) for unobserved populated states, icon approximations and validation details.
-
-`SessionState.artifacts` and `.openArtifacts` present the captured Artifacts list and document viewer. Inject `ClaudeArtifact` rows with optional `ArtifactDocument` content, or provide a custom document renderer to `ClaudeArtifactsView`. Local filters/search/collapse work without services. `.artifacts(...)` emits typed share, comment, tab and history intents; no real document or account is modified. Unobserved non-document viewers remain host responsibilities. See [Artifacts reference coverage](docs/ARTIFACTS_REFERENCE.md).
-
-The independent `ClaudeWidgets` product provides the three captured Home Screen layouts and typed deep links. The demo includes a real embedded WidgetKit extension; build/install the app, then add “Claude UI Demo” from the system widget gallery. Launch with `--widgets` for an interactive in-app preview. See [widget scope, routing and validation](docs/WIDGETS_REFERENCE.md).
-
-Assistant responses and artifact paragraphs render through `ClaudeMarkdownView` and the pinned official Swift Markdown AST parser. Inject Markdown, a theme, optional image/unsupported-content views, and typed host callbacks. Initial SwiftPM resolution downloads the parser and the pinned HighlighterSwift syntax-coloring dependency; rendering itself is offline. Code blocks use native attributed token colors, with the existing host override available. `--markdown` opens a synthetic formatting fixture. See [supported syntax, host contracts and unverified styling](docs/MARKDOWN.md).
-
-Inject photo metadata through `SessionState.media` and pixels through `ClaudeSessionView(mediaContent:)`. The Recent selection, draft thumbnails, sent-image bubble, file-name context menu, and full-screen viewer are local UI; Photos/Edit/Share emit host intents. See [media contracts and unobserved states](docs/MEDIA.md).
-
-Video descriptors (`ClaudeMedia(kind: .video)`) use the captured file-card/large-sheet route. Supply `.videoViewer` content and handle Download/playback lifecycle intents in the host. `--video` demonstrates a bundled original silent clip, with no upload or external media access. Details and provenance are in [media contracts](docs/MEDIA.md).
+The source code is available under the [MIT License](LICENSE). Bundled fonts, artwork and dependencies keep their own terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
