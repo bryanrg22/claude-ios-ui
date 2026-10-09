@@ -11,7 +11,9 @@ public struct ClaudeBillingState: Equatable, Sendable {
     public var managementURL: URL?
     public private(set) var showsWebsiteNotice = false
     public init(planLabel: String = "—", origin: ClaudeSubscriptionOrigin = .unknown, managementURL: URL? = nil) {
-        self.planLabel = planLabel; self.origin = origin; self.managementURL = managementURL
+        self.planLabel = planLabel
+        self.origin = origin
+        self.managementURL = managementURL
     }
     public mutating func reduce(_ action: ClaudeBillingAction) {
         switch action {

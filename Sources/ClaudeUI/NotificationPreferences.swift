@@ -24,7 +24,10 @@ public enum ClaudeNotificationPreference: String, CaseIterable, Codable, Sendabl
         case .productUpdates: "Get notified about new features, tips, and occasional promotions"
         }
     }
-    public static let groups: [[Self]] = [[.replies, .scheduledTasks, .researchComplete], [.codeUpdates, .codePermissions, .dispatchMessages], [.productUpdates]]
+    public static let groups: [[Self]] = [
+        [.replies, .scheduledTasks, .researchComplete], [.codeUpdates, .codePermissions, .dispatchMessages],
+        [.productUpdates]
+    ]
 }
 /// Host-persistable presentation preferences. Does not read or write system notification settings.
 public struct ClaudeNotificationPreferences: Equatable, Codable, Sendable {

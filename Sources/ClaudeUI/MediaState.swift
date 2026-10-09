@@ -9,9 +9,14 @@ public struct ClaudeMedia: Identifiable, Equatable, Sendable {
     public var accessibilityDescription: String
     public var kind: ClaudeMediaKind
     public var aspectRatio: Double
-    public init(id: String, fileName: String, accessibilityDescription: String = "Photo", aspectRatio: Double = 1, kind: ClaudeMediaKind = .image) {
+    public init(
+        id: String, fileName: String, accessibilityDescription: String = "Photo", aspectRatio: Double = 1,
+        kind: ClaudeMediaKind = .image
+    ) {
         self.kind = kind
-        self.id = id; self.fileName = fileName; self.accessibilityDescription = accessibilityDescription
+        self.id = id
+        self.fileName = fileName
+        self.accessibilityDescription = accessibilityDescription
         self.aspectRatio = aspectRatio.isFinite && aspectRatio > 0 ? aspectRatio : 1
     }
     public var fileExtension: String { (fileName as NSString).pathExtension.uppercased() }
@@ -39,12 +44,20 @@ public struct ClaudeMediaState: Equatable, Sendable {
             guard recent.contains(where: { $0.id == id }) else { return }
             if selectedIDs.contains(id) { selectedIDs.removeAll { $0 == id } } else { selectedIDs.append(id) }
         case .attachSelected:
-            for item in selected where !draft.contains(where: { $0.id == item.id }) { draft.append(item) }; selectedIDs = []
-        case .removeDraft(let id): draft.removeAll { $0.id == id }; if viewer?.id == id { viewer = nil }
-        case .open(let item): viewer = item; controlsVisible = true
-        case .close: viewer = nil; controlsVisible = true
+            for item in selected where !draft.contains(where: { $0.id == item.id }) { draft.append(item) }
+            selectedIDs = []
+        case .removeDraft(let id):
+            draft.removeAll { $0.id == id }
+            if viewer?.id == id { viewer = nil }
+        case .open(let item):
+            viewer = item
+            controlsVisible = true
+        case .close:
+            viewer = nil
+            controlsVisible = true
         case .toggleControls: if viewer?.kind == .image { controlsVisible.toggle() }
-        case .requestPhotos, .copyFileName, .edit, .share, .download, .videoViewerAppeared, .videoViewerDisappeared: break
+        case .requestPhotos, .copyFileName, .edit, .share, .download, .videoViewerAppeared, .videoViewerDisappeared:
+            break
         }
     }
 }

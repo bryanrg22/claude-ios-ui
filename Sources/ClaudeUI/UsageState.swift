@@ -10,7 +10,10 @@ public struct ClaudeUsageMeter: Identifiable, Equatable, Sendable {
     public let usedPercentage: Double?
     public let resetLabel: String
     public init(id: String, title: String, usedPercentage: Double? = nil, resetLabel: String = "") {
-        self.id = id; self.title = title; self.usedPercentage = normalizedUsage(usedPercentage); self.resetLabel = resetLabel
+        self.id = id
+        self.title = title
+        self.usedPercentage = normalizedUsage(usedPercentage)
+        self.resetLabel = resetLabel
     }
     public var fractionUsed: Double? { usedPercentage.map { $0 / 100 } }
     public var usageLabel: String { usedPercentage.map { "\(Int($0.rounded()))% used" } ?? "—" }
@@ -22,7 +25,11 @@ public struct ClaudeUsageCredit: Identifiable, Equatable, Sendable {
     public let badge: String
     public let usedPercentage: Double?
     public init(id: String, title: String, subtitle: String = "", badge: String = "", usedPercentage: Double? = nil) {
-        self.id = id; self.title = title; self.subtitle = subtitle; self.badge = badge; self.usedPercentage = normalizedUsage(usedPercentage)
+        self.id = id
+        self.title = title
+        self.subtitle = subtitle
+        self.badge = badge
+        self.usedPercentage = normalizedUsage(usedPercentage)
     }
     public var fractionUsed: Double? { usedPercentage.map { $0 / 100 } }
 }
@@ -41,7 +48,17 @@ public struct ClaudeUsageState: Equatable, Sendable {
     public var credits: [ClaudeUsageCredit]
     public var usageHelpURL: URL?
     public var creditsHelpURL: URL?
-    public init(currentSession: ClaudeUsageMeter? = nil, weekly: [ClaudeUsageMeter] = [], creditsEnabled: Bool = false, balanceLabel: String = "—", credits: [ClaudeUsageCredit] = [], usageHelpURL: URL? = nil, creditsHelpURL: URL? = nil) {
-        self.currentSession = currentSession; self.weekly = weekly; self.creditsEnabled = creditsEnabled; self.balanceLabel = balanceLabel; self.credits = credits; self.usageHelpURL = usageHelpURL; self.creditsHelpURL = creditsHelpURL
+    public init(
+        currentSession: ClaudeUsageMeter? = nil, weekly: [ClaudeUsageMeter] = [], creditsEnabled: Bool = false,
+        balanceLabel: String = "—", credits: [ClaudeUsageCredit] = [], usageHelpURL: URL? = nil,
+        creditsHelpURL: URL? = nil
+    ) {
+        self.currentSession = currentSession
+        self.weekly = weekly
+        self.creditsEnabled = creditsEnabled
+        self.balanceLabel = balanceLabel
+        self.credits = credits
+        self.usageHelpURL = usageHelpURL
+        self.creditsHelpURL = creditsHelpURL
     }
 }

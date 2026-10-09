@@ -21,19 +21,48 @@ public struct ClaudeSettingsConnectorState: Equatable, Sendable {
     public var catalog = ClaudeConnectorCatalogState()
     public var connector: CodeConnector? { connectors.first { $0.id == connectorID && $0.connected } }
     public var tool: CodeConnectorTool? { connector?.tools.first { $0.id == toolID } }
-    public var toolDescription: String { guard let connector, let tool else { return "" }; return toolDescriptions[connector.id]?[tool.id] ?? "" }
-    public init(discovery: Bool = false, connectors: [CodeConnector] = [], toolDescriptions: [String: [String: String]] = [:]) { self.discovery = discovery; self.connectors = connectors; self.toolDescriptions = toolDescriptions }
+    public var toolDescription: String {
+        guard let connector, let tool else { return "" }
+        return toolDescriptions[connector.id]?[tool.id] ?? ""
+    }
+    public init(
+        discovery: Bool = false, connectors: [CodeConnector] = [], toolDescriptions: [String: [String: String]] = [:]
+    ) {
+        self.discovery = discovery
+        self.connectors = connectors
+        self.toolDescriptions = toolDescriptions
+    }
     public mutating func reduce(_ action: ClaudeSettingsConnectorAction) {
         switch action {
-        case .openConnector(let id): guard connectors.contains(where: { $0.id == id && $0.connected }) else { return }; connectorID = id; toolID = nil; allTools = false
-        case .openAllTools: guard connector != nil else { return }; allTools = true; toolID = nil
+        case .openConnector(let id):
+            guard connectors.contains(where: { $0.id == id && $0.connected }) else { return }
+            connectorID = id
+            toolID = nil
+            allTools = false
+        case .openAllTools:
+            guard connector != nil else { return }
+            allTools = true
+            toolID = nil
         case .openCatalog: presentation = .catalog
         case .openCustom: presentation = .custom
-        case .catalog(let action): guard presentation != nil else { return }; catalog.reduce(action); if case .dismiss = action { presentation = nil }
-        case .openTool(let id): guard connector?.tools.contains(where: { $0.id == id }) == true else { return }; toolID = id; allTools = false
-        case .back: if showingAllTools { allTools = false } else if toolID != nil { toolID = nil } else { connectorID = nil }
+        case .catalog(let action):
+            guard presentation != nil else { return }
+            catalog.reduce(action)
+            if case .dismiss = action { presentation = nil }
+        case .openTool(let id):
+            guard connector?.tools.contains(where: { $0.id == id }) == true else { return }
+            toolID = id
+            allTools = false
+        case .back:
+            if showingAllTools { allTools = false } else if toolID != nil { toolID = nil } else { connectorID = nil }
         default: break
         }
     }
-    public mutating func close() { connectorID = nil; toolID = nil; allTools = false; presentation = nil; catalog.reduce(.dismiss) }
+    public mutating func close() {
+        connectorID = nil
+        toolID = nil
+        allTools = false
+        presentation = nil
+        catalog.reduce(.dismiss)
+    }
 }

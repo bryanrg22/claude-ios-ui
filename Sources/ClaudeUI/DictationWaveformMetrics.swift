@@ -18,7 +18,8 @@ public enum DictationWaveformMetrics {
         let samples = normalized(levels)
         guard !samples.isEmpty else { return Array(repeating: dotDiameter, count: count) }
         return (0..<count).map { column in
-            let index = count == 1 ? samples.count - 1 : Int(Double(column) * Double(samples.count - 1) / Double(count - 1))
+            let index =
+                count == 1 ? samples.count - 1 : Int(Double(column) * Double(samples.count - 1) / Double(count - 1))
             return max(dotDiameter, samples[index] * maximumBarHeight)
         }
     }

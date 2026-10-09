@@ -6,7 +6,12 @@ public struct DispatchMessage: Identifiable, Equatable, Sendable {
     public var text: String
     public var timestamp: String
     public var isUser: Bool
-    public init(id: UUID = UUID(), text: String, timestamp: String = "", isUser: Bool = false) { self.id = id; self.text = text; self.timestamp = timestamp; self.isUser = isUser }
+    public init(id: UUID = UUID(), text: String, timestamp: String = "", isUser: Bool = false) {
+        self.id = id
+        self.text = text
+        self.timestamp = timestamp
+        self.isUser = isUser
+    }
 }
 public enum DispatchAction: Equatable, Sendable { case reload, close, attach, submit(String) }
 /// Host-provided presentation only. Online is never inferred from messages or a timer.
@@ -20,17 +25,26 @@ public struct DispatchState: Equatable, Sendable {
     public init() {}
     public mutating func reduce(_ action: DispatchAction) {
         switch action {
-        case .reload: loading = true; loadID = UUID(); error = nil
-        case .close: loading = false; loadID = nil
+        case .reload:
+            loading = true
+            loadID = UUID()
+            error = nil
+        case .close:
+            loading = false
+            loadID = nil
         case .attach, .submit: break
         }
     }
     public mutating func finishLoading(_ messages: [DispatchMessage], requestID: UUID) {
         guard loading, loadID == requestID else { return }
-        self.messages = messages; loading = false; loadID = nil
+        self.messages = messages
+        loading = false
+        loadID = nil
     }
     public mutating func failLoading(_ error: String, requestID: UUID) {
         guard loading, loadID == requestID else { return }
-        self.error = error; loading = false; loadID = nil
+        self.error = error
+        loading = false
+        loadID = nil
     }
 }

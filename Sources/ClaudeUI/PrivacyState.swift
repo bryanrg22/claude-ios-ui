@@ -3,7 +3,11 @@ import Foundation
 public enum ClaudePrivacyLink: String, CaseIterable, Codable, Sendable {
     case privacyCenter, privacyPolicy, learnMore
     public var title: String {
-        switch self { case .privacyCenter: "Privacy Center"; case .privacyPolicy: "Privacy Policy"; case .learnMore: "Learn More" }
+        switch self {
+        case .privacyCenter: "Privacy Center"
+        case .privacyPolicy: "Privacy Policy"
+        case .learnMore: "Learn More"
+        }
     }
 }
 public enum ClaudePrivacyAction: Equatable, Sendable {
@@ -14,5 +18,8 @@ public enum ClaudePrivacyAction: Equatable, Sendable {
 public struct ClaudePrivacyState: Equatable, Sendable {
     public var allowsModelImprovement: Bool
     public var links: [ClaudePrivacyLink: URL]
-    public init(allowsModelImprovement: Bool = false, links: [ClaudePrivacyLink: URL] = [:]) { self.allowsModelImprovement = allowsModelImprovement; self.links = links }
+    public init(allowsModelImprovement: Bool = false, links: [ClaudePrivacyLink: URL] = [:]) {
+        self.allowsModelImprovement = allowsModelImprovement
+        self.links = links
+    }
 }

@@ -19,13 +19,19 @@ public struct ClaudeTimeFocusState: Equatable, Codable, Sendable {
     private enum CodingKeys: String, CodingKey { case hours, minutes }
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        self.init(hours: try values.decodeIfPresent(Int.self, forKey: .hours), minutes: try values.decodeIfPresent(Int.self, forKey: .minutes))
+        self.init(
+            hours: try values.decodeIfPresent(Int.self, forKey: .hours),
+            minutes: try values.decodeIfPresent(Int.self, forKey: .minutes))
     }
     public mutating func reduce(_ action: ClaudeTimeFocusAction) {
         switch action {
-        case .selectHours(let value): if let value, !(1...12).contains(value) { return }; hours = value
-        case .selectMinutes(let value): if let value, ![15, 30, 45].contains(value) { return }; minutes = value
-        case .quietDayTapped: break // The selected-day expansion has not been captured; host owns this route.
+        case .selectHours(let value):
+            if let value, !(1...12).contains(value) { return }
+            hours = value
+        case .selectMinutes(let value):
+            if let value, ![15, 30, 45].contains(value) { return }
+            minutes = value
+        case .quietDayTapped: break  // The selected-day expansion has not been captured; host owns this route.
         }
     }
 }
