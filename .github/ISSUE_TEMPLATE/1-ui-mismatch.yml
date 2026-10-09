@@ -1,7 +1,8 @@
 name: Screen doesn't match the app
 description: A screen in the recreation looks or behaves differently from the real Claude app.
-title: "[Mismatch] "
-labels: ["parity"]
+title: '[Mismatch] '
+labels:
+  - parity
 body:
   - type: markdown
     attributes:
@@ -12,7 +13,8 @@ body:
     id: screen
     attributes:
       label: Screen
-      description: Where in the app, for example "Settings → Privacy". Add the demo's `--screen` name if there is one.
+      description: Where in the app, for example "Settings → Privacy". Add the demo's `--screen` name if there
+        is one.
       placeholder: Settings → Privacy (settingsPrivacy)
     validations:
       required: true
@@ -23,6 +25,14 @@ body:
       description: Spacing, colors, text, icons, motion, or behavior after a tap.
     validations:
       required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected result
+      description: Starting screen, taps/holds, keyboard state, expected result and actual result. For motion,
+        include a short recording and what timing looks wrong.
+    validations:
+      required: true
   - type: upload
     id: reference
     attributes:
@@ -30,7 +40,7 @@ body:
       description: A screenshot or short screen recording of the real Claude app.
     validations:
       required: true
-      accept: ".png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm"
+      accept: .png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm
   - type: upload
     id: recreation
     attributes:
@@ -38,7 +48,7 @@ body:
       description: The same screen in this project, if you can run it.
     validations:
       required: false
-      accept: ".png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm"
+      accept: .png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm
   - type: input
     id: app-version
     attributes:
@@ -52,6 +62,8 @@ body:
     attributes:
       label: Device and iOS version
       placeholder: iPhone 15 Pro, iOS 27.0
+      description: Record the reference phone and demo simulator separately, including iOS build numbers. Use
+        unknown for unverified metadata.
     validations:
       required: true
   - type: dropdown
@@ -64,6 +76,22 @@ body:
         - Both
     validations:
       required: true
+  - type: input
+    id: capture-configuration
+    attributes:
+      label: Capture date and display settings
+      description: Date observed; locale; light/dark; text size; display zoom; keyboard shown/hidden; relevant
+        accessibility settings. Unknown is acceptable.
+    validations:
+      required: true
+  - type: input
+    id: demo-version
+    attributes:
+      label: Demo commit and Xcode version/build
+      description: If you ran the skeleton, paste its commit or release and xcodebuild -version output. Otherwise
+        write not run.
+    validations:
+      required: false
   - type: checkboxes
     id: privacy
     attributes:

@@ -1,7 +1,9 @@
 name: Bug in the package or demo
-description: Something crashes, doesn't compile, or behaves wrongly when you use ClaudeUI in your app or run the demo.
-title: "[Bug] "
-labels: ["bug"]
+description: Something crashes, doesn't compile, or behaves wrongly when you use ClaudeUI in your app or run
+  the demo.
+title: '[Bug] '
+labels:
+  - bug
 body:
   - type: textarea
     id: what-happened
@@ -15,7 +17,6 @@ body:
     attributes:
       label: How to reproduce
       description: The smallest code or steps that show the problem.
-      render: swift
     validations:
       required: true
   - type: input
@@ -24,6 +25,26 @@ body:
       label: Versions
       description: The commit or release you use, Xcode version, and iOS version.
       placeholder: main @ 1c4516f, Xcode 27.0, iOS 27.0 simulator
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: When does it fail?
+      options:
+        - Every run
+        - Intermittently
+        - Only in a full suite
+        - Only on a fresh simulator
+        - Unknown
+    validations:
+      required: true
+  - type: textarea
+    id: configuration
+    attributes:
+      label: Test and device configuration
+      description: Command/test name, device model, iOS version/build, locale, appearance, keyboard, accessibility
+        settings, fresh or reused simulator, and CI/result-bundle link if available.
     validations:
       required: true
   - type: upload

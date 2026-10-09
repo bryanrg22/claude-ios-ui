@@ -15,13 +15,13 @@ the package. All three follow the same path.
 4. **Run the tests** described in [TESTING.md](docs/TESTING.md). For an intended visual change, re-record the affected
    screenshot references and look at every changed image.
 5. **Open a pull request.** The template asks for a before/after table: the real app, the recreation before, and the
-   recreation after. CI runs every test suite, and the maintainer reviews and merges.
+   recreation after. The maintainer reviews the evidence and test results before approving and merging. Simulator suites need a manual Actions run while the repository is private; a green checks-only run is not full UI verification.
 
 ## Evidence
 
 A comparison is only meaningful like for like. Capture the real app and the recreation with the same:
 
-- device size (the references use an iPhone 15 Pro) and iOS version;
+- device size and iOS version (the screenshot-test baseline uses iPhone 15 Pro; the physical reference may differ, so record both);
 - appearance (light or dark) and text size;
 - starting screen and steps, including what you tapped.
 
@@ -31,6 +31,19 @@ transitions, attach a short screen recording.
 **Remove personal information** before uploading: names, email addresses, conversation text, photos and file names.
 Use a fresh conversation with neutral content when you can. Upload reference captures to the issue or pull request;
 don't commit screenshots of the real app to the repository.
+
+## What to include in your pull request
+
+- The issue number and the specific screen or interaction that changed.
+- Real-app reference, recreation before, and recreation after, with light/dark comparisons when the affected screen supports both.
+- Device model and viewport, iOS version **and build**, Xcode version **and build**, source app version, locale, text size, keyboard state and relevant accessibility settings. Write **unknown** for unverified reference metadata.
+- For animation changes: short before/after recordings, reference recording, frame rate, measured start/end, duration/easing and any remaining difference. Do not substitute an idle screenshot for motion evidence.
+- Commands and results for the relevant tests, plus a CI run link and an `.xcresult` artifact when available. State what was not run and why.
+- A regression check for the existing path: opening, interacting, dismissing and returning to the conversation. Include long text, keyboard and selected/disabled/error states when they are affected.
+
+Do not re-record snapshots just to turn a failure green. First establish whether the code, reference environment or intended design changed. Snapshot updates belong in the same PR as the justified change. Unrelated changes and a new backend belong in separate work.
+
+The [review guide](docs/REVIEW_GUIDE.md) is the maintainer's acceptance checklist. Its evidence requirements are reviewed by a human; a checked PR box does not prove that a test ran.
 
 ## Implementation guidelines
 

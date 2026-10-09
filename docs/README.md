@@ -3,6 +3,8 @@
 - [Integration guide](INTEGRATION.md) — connect the package to your backend, feature by feature.
 - [Testing](TESTING.md) — the four test suites, screenshot references and the accessibility baseline.
 
+- [Contribution review](REVIEW_GUIDE.md) — before/after evidence, motion measurements and approval checks.
+
 ## Feature guides
 
 Host contracts, supported states and known limits for each area:
