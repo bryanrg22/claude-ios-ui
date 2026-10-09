@@ -69,7 +69,7 @@ Use `ClaudeTypography(serifName: "YourLicensedFont")` to replace the bundled New
 
 Attach the reference app version, iOS version, device dimensions, color scheme, Dynamic Type size, and before/after evidence to visual changes. Test the complete interaction state, not only its idle screenshot. Never commit private conversations or account data. Fixture conversations and photos here are synthetic.
 
-See [third-party notices](THIRD_PARTY.md) before redistribution. This repository does not assign a license to Anthropic trademarks or copied brand artwork. No public upload has been performed by this implementation.
+Source code is available under the [MIT License](LICENSE). See [third-party notices](THIRD_PARTY.md) for bundled fonts, artwork and dependencies, which keep their own terms.
 
 ## Offline camera presentation
 
