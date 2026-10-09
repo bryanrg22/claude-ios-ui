@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  # Pinned so local results reproduce in CI. Update all three together.
+  DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
+  SIMULATOR_RUNTIME: iOS-26-4
+  XCODEGEN_VERSION: 2.45.4
+  PROJECT: ClaudeUIDemo.xcodeproj
+  SCHEME: ClaudeUIDemo
+
+jobs:
+  checks:
+    name: Format, project sync, unit tests, build
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check formatting
+        run: swift format lint --strict --recursive --parallel .
+
+      - name: Check Xcode project matches project.yml
+        run: |
+          curl -fsSL -o "$RUNNER_TEMP/xcodegen.zip" \
+            "https://github.com/yonaskolb/XcodeGen/releases/download/$XCODEGEN_VERSION/xcodegen.zip"
+          unzip -q "$RUNNER_TEMP/xcodegen.zip" -d "$RUNNER_TEMP"
+          "$RUNNER_TEMP/xcodegen/bin/xcodegen" generate --quiet
+          if ! git diff --exit-code -- "$PROJECT"; then
+            echo "::error::$PROJECT is out of date. Run 'xcodegen generate' and commit the result."
+            exit 1
+          fi
+
+      - name: Unit tests
+        run: swift test
+
+      - name: Build app and widget extension
+        run: |
+          xcodebuild build -project "$PROJECT" -scheme "$SCHEME" \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO | tail -n 50
+          exit "${PIPESTATUS[0]}"
+
+  ui-tests:
+    name: UI tests
+    # macOS minutes are free for public repositories. While the repository is
+    # private, run this job manually from the Actions tab.
+    if: ${{ !github.event.repository.private || github.event_name == 'workflow_dispatch' }}
+    needs: checks
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Pick simulator
+        run: |
+          UDID=$(xcrun simctl list devices available --json | jq -r --arg rt "$SIMULATOR_RUNTIME" \
+            '.devices | to_entries[] | select(.key | endswith($rt)) | .value[]
+             | select(.name == "iPhone 17 Pro") | .udid' | head -n 1)
+          test -n "$UDID" || { echo "::error::No iPhone 17 Pro simulator for $SIMULATOR_RUNTIME"; exit 1; }
+          echo "SIMULATOR_UDID=$UDID" >> "$GITHUB_ENV"
+
+      - name: Run UI tests
+        run: |
+          xcodebuild test -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "id=$SIMULATOR_UDID" \
+            -resultBundlePath "$RUNNER_TEMP/UITests.xcresult" \
+            CODE_SIGNING_ALLOWED=NO | tail -n 100
+          exit "${PIPESTATUS[0]}"
+
+      - name: Upload test results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-test-results
+          path: ${{ runner.temp }}/UITests.xcresult
