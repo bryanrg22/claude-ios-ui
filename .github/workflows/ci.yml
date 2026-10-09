@@ -6,8 +6,8 @@ on:
   pull_request:
   workflow_dispatch:
     inputs:
-      record_snapshots:
-        description: Re-record every screenshot reference and upload them as an artifact (UI tests are skipped)
+      record_references:
+        description: Re-record screenshot references and the accessibility baseline, and upload them as artifacts
         type: boolean
         default: false
 
@@ -91,7 +91,7 @@ jobs:
 
       - name: Screenshot tests
         env:
-          TEST_RUNNER_SNAPSHOT_TESTING_RECORD: ${{ inputs.record_snapshots && 'all' || 'never' }}
+          TEST_RUNNER_SNAPSHOT_TESTING_RECORD: ${{ inputs.record_references && 'all' || 'never' }}
         run: |
           xcodebuild test-without-building -project "$PROJECT" -scheme "$SCHEME" \
             -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \
@@ -99,17 +99,34 @@ jobs:
             | tail -n 100
           status="${PIPESTATUS[0]}"
           # Recording always reports failures; the recorded images are the output.
-          [ "${{ inputs.record_snapshots }}" = "true" ] || exit "$status"
+          [ "${{ inputs.record_references }}" = "true" ] || exit "$status"
 
       - name: Upload recorded screenshots
-        if: ${{ inputs.record_snapshots }}
+        if: ${{ inputs.record_references }}
         uses: actions/upload-artifact@v4
         with:
           name: recorded-snapshots
           path: ${{ env.DEMO_DIR }}/SnapshotTests/__Snapshots__
 
+      - name: Record accessibility audit baseline
+        if: ${{ inputs.record_references }}
+        env:
+          TEST_RUNNER_ACCESSIBILITY_AUDIT_RECORD: "1"
+        run: |
+          xcodebuild test-without-building -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            -only-testing:ClaudeUIDemoUITests/AccessibilityAuditUITests | tail -n 50
+          exit "${PIPESTATUS[0]}"
+
+      - name: Upload recorded accessibility baseline
+        if: ${{ inputs.record_references }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: recorded-accessibility-baseline
+          path: ${{ env.DEMO_DIR }}/UITests/AccessibilityAuditBaseline.txt
+
       - name: UI tests and accessibility audits
-        if: ${{ !inputs.record_snapshots }}
+        if: ${{ !inputs.record_references }}
         run: |
           xcodebuild test-without-building -project "$PROJECT" -scheme "$SCHEME" \
             -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \

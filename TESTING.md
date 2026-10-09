@@ -62,8 +62,9 @@ When a change is meant to alter how a screen looks:
 2. Open every changed PNG under `SnapshotTests/__Snapshots__` and check it shows what you intended.
 3. Commit the images together with the code change, and include before/after images in the pull request.
 
-References in this repository are recorded by CI (Actions → CI → Run workflow → *Re-record every screenshot
-reference*), so they match the CI machine exactly. Images recorded with a different Xcode or iOS version will not match.
+CI can re-record every reference on its own machine: Actions → CI → Run workflow → *Re-record screenshot references
+and the accessibility baseline*. The recorded files are uploaded as artifacts. Images recorded with a different Xcode or
+iOS version will not match.
 
 Each capture waits 2 seconds before rendering, because Liquid Glass over a freshly shown card keeps adapting for about
 1.5 seconds (measured).
