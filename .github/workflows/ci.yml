@@ -5,24 +5,33 @@ on:
     branches: [main]
   pull_request:
   workflow_dispatch:
+    inputs:
+      record_snapshots:
+        description: Re-record every screenshot reference and upload them as an artifact (UI tests are skipped)
+        type: boolean
+        default: false
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 env:
-  # Pinned so local results reproduce in CI. Update all three together.
-  DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
-  SIMULATOR_RUNTIME: iOS-26-4
   XCODEGEN_VERSION: 2.45.4
+  DEMO_DIR: Examples/ClaudeUIDemo
   PROJECT: ClaudeUIDemo.xcodeproj
   SCHEME: ClaudeUIDemo
+  # Screenshot references are recorded on exactly this simulator. Changing it means re-recording them.
+  SIMULATOR_DEVICE: iPhone 15 Pro
+  SIMULATOR_RUNTIME: com.apple.CoreSimulator.SimRuntime.iOS-27-0
 
 jobs:
   checks:
-    name: Format, project sync, unit tests, build
+    name: Format, project sync, unit tests, iOS 26 SDK build
     runs-on: macos-26
     timeout-minutes: 30
+    env:
+      # The package supports iOS 26, so it must keep building with the iOS 26 SDK.
+      DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
     steps:
       - uses: actions/checkout@v5
 
@@ -34,9 +43,9 @@ jobs:
           curl -fsSL -o "$RUNNER_TEMP/xcodegen.zip" \
             "https://github.com/yonaskolb/XcodeGen/releases/download/$XCODEGEN_VERSION/xcodegen.zip"
           unzip -q "$RUNNER_TEMP/xcodegen.zip" -d "$RUNNER_TEMP"
-          "$RUNNER_TEMP/xcodegen/bin/xcodegen" generate --quiet
-          if ! git diff --exit-code -- "$PROJECT"; then
-            echo "::error::$PROJECT is out of date. Run 'xcodegen generate' and commit the result."
+          (cd "$DEMO_DIR" && "$RUNNER_TEMP/xcodegen/bin/xcodegen" generate --quiet)
+          if ! git diff --exit-code -- "$DEMO_DIR/$PROJECT"; then
+            echo "::error::$PROJECT is out of date. Run 'xcodegen generate' in $DEMO_DIR and commit the result."
             exit 1
           fi
 
@@ -44,42 +53,73 @@ jobs:
         run: swift test
 
       - name: Build app and widget extension
+        working-directory: ${{ env.DEMO_DIR }}
         run: |
           xcodebuild build -project "$PROJECT" -scheme "$SCHEME" \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED=NO | tail -n 50
           exit "${PIPESTATUS[0]}"
 
-  ui-tests:
-    name: UI tests
-    # macOS minutes are free for public repositories. While the repository is
-    # private, run this job manually from the Actions tab.
+  simulator-tests:
+    name: Screenshot and UI tests (iOS 27)
+    # macOS minutes are free for public repositories. While the repository is private, run this job
+    # manually from the Actions tab.
     if: ${{ !github.event.repository.private || github.event_name == 'workflow_dispatch' }}
     needs: checks
-    runs-on: macos-26
-    timeout-minutes: 60
+    runs-on: xcode-27
+    timeout-minutes: 90
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_27.0.app/Contents/Developer
+    defaults:
+      run:
+        working-directory: ${{ env.DEMO_DIR }}
     steps:
       - uses: actions/checkout@v5
 
-      - name: Pick simulator
+      - name: Create simulator
         run: |
-          UDID=$(xcrun simctl list devices available --json | jq -r --arg rt "$SIMULATOR_RUNTIME" \
-            '.devices | to_entries[] | select(.key | endswith($rt)) | .value[]
-             | select(.name == "iPhone 17 Pro") | .udid' | head -n 1)
-          test -n "$UDID" || { echo "::error::No iPhone 17 Pro simulator for $SIMULATOR_RUNTIME"; exit 1; }
+          UDID=$(xcrun simctl create "CI $SIMULATOR_DEVICE" "$SIMULATOR_DEVICE" "$SIMULATOR_RUNTIME")
           echo "SIMULATOR_UDID=$UDID" >> "$GITHUB_ENV"
+          xcrun simctl boot "$UDID"
 
-      - name: Run UI tests
+      - name: Build for testing
         run: |
-          xcodebuild test -project "$PROJECT" -scheme "$SCHEME" \
-            -destination "id=$SIMULATOR_UDID" \
-            -resultBundlePath "$RUNNER_TEMP/UITests.xcresult" \
-            CODE_SIGNING_ALLOWED=NO | tail -n 100
+          xcodebuild build-for-testing -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO | tail -n 50
+          exit "${PIPESTATUS[0]}"
+
+      - name: Screenshot tests
+        env:
+          TEST_RUNNER_SNAPSHOT_TESTING_RECORD: ${{ inputs.record_snapshots && 'all' || 'never' }}
+        run: |
+          xcodebuild test-without-building -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            -only-testing:ClaudeUISnapshotTests -resultBundlePath "$RUNNER_TEMP/SnapshotTests.xcresult" \
+            | tail -n 100
+          status="${PIPESTATUS[0]}"
+          # Recording always reports failures; the recorded images are the output.
+          [ "${{ inputs.record_snapshots }}" = "true" ] || exit "$status"
+
+      - name: Upload recorded screenshots
+        if: ${{ inputs.record_snapshots }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: recorded-snapshots
+          path: ${{ env.DEMO_DIR }}/SnapshotTests/__Snapshots__
+
+      - name: UI tests and accessibility audits
+        if: ${{ !inputs.record_snapshots }}
+        run: |
+          xcodebuild test-without-building -project "$PROJECT" -scheme "$SCHEME" \
+            -destination "id=$SIMULATOR_UDID" -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            -only-testing:ClaudeUIDemoUITests -resultBundlePath "$RUNNER_TEMP/UITests.xcresult" \
+            | tail -n 100
           exit "${PIPESTATUS[0]}"
 
       - name: Upload test results
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: ui-test-results
-          path: ${{ runner.temp }}/UITests.xcresult
+          name: simulator-test-results
+          path: ${{ runner.temp }}/*.xcresult
