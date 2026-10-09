@@ -12,7 +12,7 @@ the package. All three follow the same path.
 2. **Capture the reference.** Screenshot or record the real app (see [Evidence](#evidence) below).
 3. **Make the change** in `Sources/ClaudeUI`. Use the demo's `--screen <name>` launch argument to open the screen
    directly while you work.
-4. **Run the tests** described in [TESTING.md](TESTING.md). For an intended visual change, re-record the affected
+4. **Run the tests** described in [TESTING.md](docs/TESTING.md). For an intended visual change, re-record the affected
    screenshot references and look at every changed image.
 5. **Open a pull request.** The template asks for a before/after table: the real app, the recreation before, and the
    recreation after. CI runs every test suite, and the maintainer reviews and merges.
@@ -54,7 +54,7 @@ don't commit screenshots of the real app to the repository.
 
 Code contributions are accepted under the [MIT License](LICENSE). Never extract fonts, icons, illustrations or other
 files from the app's install package. Use system fonts and SF Symbols through Apple's APIs, or original artwork you have the right
-to share. Record every new font, image or media file in [THIRD_PARTY.md](THIRD_PARTY.md) with its source, license and whether it
+to share. Record every new font, image or media file in [THIRD_PARTY.md](THIRD_PARTY_NOTICES.md) with its source, license and whether it
 may be redistributed.
 
 This project is unofficial and must not suggest endorsement by Anthropic.

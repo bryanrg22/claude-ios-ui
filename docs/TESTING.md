@@ -1,6 +1,6 @@
 # Testing
 
-Four test suites guard this project. CI runs all of them (see [`.github/workflows/ci.yml`](.github/workflows/ci.yml)).
+Four test suites guard this project. CI runs all of them (see [`.github/workflows/ci.yml`](../.github/workflows/ci.yml)).
 
 | Suite | Location | What it checks | Runs on |
 |---|---|---|---|
@@ -11,7 +11,7 @@ Four test suites guard this project. CI runs all of them (see [`.github/workflow
 
 ## One list of screens
 
-[`Examples/ClaudeUIDemo/Shared/DemoScreen.swift`](Examples/ClaudeUIDemo/Shared/DemoScreen.swift) names every screen the
+[`Examples/ClaudeUIDemo/Shared/DemoScreen.swift`](../Examples/ClaudeUIDemo/Shared/DemoScreen.swift) names every screen the
 demo can open directly. The same list drives three things:
 
 - the demo app: `--screen <name>` opens that screen (for example `--screen settingsPrivacy --light`);
@@ -21,7 +21,7 @@ demo can open directly. The same list drives three things:
 
 To add a screen, add a case to `DemoScreen` and describe how to open it in `configureDemoScreen` (state) or
 `DemoScreenView.view(for:state:)` (sheets and full-screen views) in
-[`Demo/DemoScreens.swift`](Examples/ClaudeUIDemo/Demo/DemoScreens.swift). Then record its
+[`Demo/DemoScreens.swift`](../Examples/ClaudeUIDemo/Demo/DemoScreens.swift). Then record its
 reference images and audit baseline as described below.
 
 ## Running the tests
@@ -76,7 +76,7 @@ same plain `.sheet` presentation `ClaudeSessionView` uses, so they include the r
 
 ## Accessibility audit
 
-[`AccessibilityAuditBaseline.txt`](Examples/ClaudeUIDemo/UITests/AccessibilityAuditBaseline.txt) lists every issue
+[`AccessibilityAuditBaseline.txt`](../Examples/ClaudeUIDemo/UITests/AccessibilityAuditBaseline.txt) lists every issue
 the audit finds today, one per line: screen, appearance, issue and element. The test fails on any issue that is not in
 the file, so a change cannot make accessibility worse. The file is also a to-do list: fix an issue, delete its line.
 
