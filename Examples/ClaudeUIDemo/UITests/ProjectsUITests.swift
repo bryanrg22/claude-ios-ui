@@ -25,7 +25,7 @@ final class ProjectsUITests: XCTestCase {
         capture("projects-icons")
         let search = app.textFields["project.icons.search"]
         search.tap()
-        search.typeText("book")
+        search.typeTextVerified("book")
         app.buttons["project.icons.book"].tap()
         app.buttons["project.icons.save"].tap()
         XCTAssertEqual(name.value as? String, "Garden plan")

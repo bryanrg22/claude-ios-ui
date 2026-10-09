@@ -61,7 +61,9 @@ final class CodeUITests: XCTestCase {
         app.buttons["sheet.close.Add context"].tap()
         let draft = app.textFields["code.draft.text"]
         draft.tap()
-        draft.typeText("Keep this local task")
+        // Typing before the keyboard finishes appearing can drop keystrokes.
+        XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 3))
+        draft.typeTextVerified("Keep this local task")
         XCTAssertTrue(app.buttons["code.draft.send"].isEnabled)
         app.buttons["code.draft.send"].tap()
         XCTAssertEqual(draft.value as? String, "Keep this local task")
@@ -81,9 +83,12 @@ final class CodeUITests: XCTestCase {
         capture("code-environment-create")
         XCTAssertFalse(app.buttons["code.environment.submit"].isEnabled)
         app.buttons["code.environment.network"].tap()
-        XCTAssertTrue(app.buttons["Full network access"].waitForExistence(timeout: 2))
+        // Released iOS 27 labels menu items "Title, subtitle", so match on the title prefix.
+        let fullAccess = app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Full network access"))
+            .firstMatch
+        XCTAssertTrue(fullAccess.waitForExistence(timeout: 2))
         capture("code-environment-network")
-        app.buttons["Full network access"].tap()
+        fullAccess.tap()
         XCTAssertTrue(app.buttons["code.environment.network"].label.contains("Full network access"))
         app.buttons["sheet.close.New cloud environment"].tap()
         app.buttons["code.environment.cloud"].tap()
@@ -102,6 +107,7 @@ final class CodeUITests: XCTestCase {
         app.launchArguments = ["--code-new-session"]
         app.launch()
         app.buttons["code.draft.attach"].tap()
+        XCTAssertTrue(app.buttons["code.context.connectors"].waitForExistence(timeout: 3))
         app.buttons["code.context.connectors"].tap()
         XCTAssertTrue(app.switches["code.connectors.discovery"].waitForExistence(timeout: 2))
         capture("code-connectors")
