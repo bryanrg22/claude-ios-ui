@@ -42,7 +42,7 @@ final class SettingsCapabilitiesUITests: XCTestCase {
             app.alerts.buttons["Cancel"].tap()
             XCTAssertTrue(app.buttons["settings.memory.delete"].isEnabled)
             let draft = app.descendants(matching: .any).matching(identifier: "settings.memory.draft").firstMatch
-            draft.tap()
+            draft.tapToFocus()
             draft.typeText("Remember herbs.")
             XCTAssertEqual(draft.value as? String, "Remember herbs.")
             app.buttons["settings.memory.send"].tap()

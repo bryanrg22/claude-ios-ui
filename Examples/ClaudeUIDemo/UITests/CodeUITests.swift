@@ -60,7 +60,7 @@ final class CodeUITests: XCTestCase {
         XCTAssertTrue(app.buttons["code.context.permission"].label.contains("Plan"))
         app.buttons["sheet.close.Add context"].tap()
         let draft = app.textFields["code.draft.text"]
-        draft.tap()
+        draft.tapToFocus()
         // Typing before the keyboard finishes appearing can drop keystrokes.
         XCTAssertTrue(app.keyboards.firstMatch.waitForExistence(timeout: 3))
         draft.typeTextVerified("Keep this local task")

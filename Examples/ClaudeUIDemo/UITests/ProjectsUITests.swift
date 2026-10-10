@@ -18,13 +18,13 @@ final class ProjectsUITests: XCTestCase {
         XCTAssertFalse(app.buttons["project.create"].isEnabled)
         capture("projects-setup")
         let name = app.textFields["project.name"]
-        name.tap()
+        name.tapToFocus()
         name.typeText("Garden plan\n")
         XCTAssertTrue(app.buttons["project.create"].isEnabled)
         app.buttons["project.icon"].tap()
         capture("projects-icons")
         let search = app.textFields["project.icons.search"]
-        search.tap()
+        search.tapToFocus()
         search.typeTextVerified("book")
         app.buttons["project.icons.book"].tap()
         app.buttons["project.icons.save"].tap()

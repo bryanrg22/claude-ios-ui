@@ -70,7 +70,7 @@ final class SettingsConnectorsUITests: XCTestCase {
             app.buttons["settings.catalog.connect.research"].tap()
             XCTAssertTrue(app.buttons["settings.catalog.connect.research"].exists)
             let search = app.textFields["settings.catalog.search"]
-            search.tap()
+            search.tapToFocus()
             search.typeText("Trail")
             XCTAssertTrue(app.buttons["settings.catalog.connect.trails"].exists)
             XCTAssertFalse(app.buttons["settings.catalog.connect.research"].exists)
@@ -83,11 +83,11 @@ final class SettingsConnectorsUITests: XCTestCase {
             Thread.sleep(forTimeInterval: 2)
             capture("settings-custom-empty-" + appearance)
             XCTAssertFalse(app.buttons["settings.custom.continue"].isEnabled)
-            name.tap()
+            name.tapToFocus()
             name.typeText("Example tools")
             XCTAssertEqual(name.value as? String, "Example tools")
             let url = app.textFields["settings.custom.url"]
-            url.tap()
+            url.tapToFocus()
             url.typeText("https://example.com/mcp")
             XCTAssertEqual(url.value as? String, "https://example.com/mcp")
             XCTAssertTrue(app.buttons["settings.custom.continue"].isEnabled)

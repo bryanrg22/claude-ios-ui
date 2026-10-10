@@ -17,10 +17,11 @@
                                 if index > 0 { Divider().padding(.horizontal, 16) }
                                 HStack(spacing: 8) {
                                     VStack(alignment: .leading, spacing: 4) {
-                                        Text(preference.title).font(.system(size: 17))
-                                        Text(preference.subtitle).font(.system(size: 13.3)).foregroundStyle(
-                                            ClaudePalette.secondary
-                                        ).fixedSize(horizontal: false, vertical: true)
+                                        Text(preference.title).scaledFont(17)
+                                        Text(preference.subtitle).scaledFont(13, relativeTo: .footnote)
+                                            .foregroundStyle(
+                                                ClaudePalette.secondary
+                                            ).fixedSize(horizontal: false, vertical: true)
                                     }.frame(maxWidth: .infinity, alignment: .leading)
                                     Toggle(
                                         preference.title,
