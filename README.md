@@ -62,7 +62,7 @@ Add the package in Xcode (**File → Add Package Dependencies…**) with this re
 
 ```swift
 // While the package is 0.x, take patches only (visual fixes); choose minors deliberately.
-.package(url: "https://github.com/bryanrg22/claude-ios-ui", .upToNextMinor(from: "0.1.0"))
+.package(url: "https://github.com/bryanrg22/claude-ios-ui", .upToNextMinor(from: "0.2.0"))
 ```
 
 Then own a `SessionState`, show `ClaudeSessionView`, and answer the actions it sends you. This example streams a reply from your own backend:

@@ -8,6 +8,10 @@ each release notes how many screenshot references were re-recorded.
 
 ## [Unreleased]
 
+### Changed
+
+- The install line in the README and the integration guide now starts new adopters on 0.2.0.
+
 ### Fixed
 
 - UI tests wait for an element to stop moving before a tap that directly follows another tap. A tap sent while a
