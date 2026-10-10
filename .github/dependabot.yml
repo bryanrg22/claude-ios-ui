@@ -1,0 +1,22 @@
+# Keeps this repository's own dependencies current. Each ecosystem is grouped into one pull request per week,
+# because every pull request runs the full simulator suite.
+version: 2
+updates:
+  # The actions used by the workflows in .github/workflows.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions:
+        patterns: ["*"]
+
+  # The library's Swift package dependencies (Package.swift and Package.resolved). The demo project's
+  # swift-snapshot-testing pin lives in project.yml and is changed by hand, since a new version can change rendering.
+  - package-ecosystem: "swift"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      swift-packages:
+        patterns: ["*"]

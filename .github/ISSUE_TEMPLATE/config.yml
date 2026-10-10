@@ -3,3 +3,6 @@ contact_links:
   - name: How do I connect my own backend?
     url: https://github.com/bryanrg22/claude-ios-ui/blob/main/docs/INTEGRATION.md
     about: Read the integration guide first; it covers every feature area.
+  - name: Question or idea
+    url: https://github.com/bryanrg22/claude-ios-ui/discussions
+    about: Ask how something works or float an idea in Discussions; issues are for mismatches, app updates and bugs.
