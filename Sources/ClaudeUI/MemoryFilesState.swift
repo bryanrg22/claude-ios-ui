@@ -32,7 +32,7 @@ public struct ClaudeMemoryDeletionRequest: Equatable, Sendable {
         self.fileID = fileID
     }
 }
-public enum ClaudeMemoryFilesAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeMemoryFilesAction: Equatable, Sendable {
     case open(String), back, close, editDraft(String), replaceDraft(String)
     case submitInstruction(fileID: String?, text: String)
     case askDelete, cancelDelete, confirmDelete

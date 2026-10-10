@@ -2,10 +2,24 @@
 
 All notable changes to this project are recorded here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and the project uses
-[Semantic Versioning](https://semver.org/spec/v2.0.0.html). Until 1.0.0, minor
-versions may change the public API; see each entry.
+[Semantic Versioning](https://semver.org/spec/v2.0.0.html) as described in `docs/VERSIONING.md`. Until 1.0.0,
+minor versions may change the public API; see each entry. Entries tagged `(visual)` change how a screen looks, and
+each release notes how many screenshot references were re-recorded.
 
 ## [Unreleased]
+
+### Changed
+
+- **Breaking for exhaustive switches.** Every public action enum is now `@nonexhaustive`. An exhaustive `switch`
+  over one of them no longer compiles; add `@unknown default` (or `default`). From now on a case added by a later
+  release is a warning at that fallback rather than a build error. See `docs/VERSIONING.md`.
+- The README now recommends `.upToNextMinor(from:)` while the package is 0.x, so updates deliver patches only.
+
+### Added
+
+- `docs/VERSIONING.md` and `docs/UPDATING.md`: what each version number promises, and how to update, pin, roll back
+  and automate updates in an app.
+- CI compares the public API with the latest release on every pull request; API changes need the `breaking` label.
 
 ## [0.1.0] - 2026-10-09
 

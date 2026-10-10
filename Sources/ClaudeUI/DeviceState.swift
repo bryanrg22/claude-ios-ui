@@ -41,7 +41,7 @@ public struct DeviceAccountProfile: Equatable, Sendable {
 }
 public enum DeviceAccountLoadState: Equatable, Sendable { case idle, loading, loaded, failed(String) }
 public enum DeviceAccountOutcome: Equatable, Sendable { case none, success(String), failure(String) }
-public enum DeviceAction: Equatable, Sendable {
+@nonexhaustive public enum DeviceAction: Equatable, Sendable {
     case openManage, closeManage, requestTab(DeviceAccountTab), editProfile(DeviceProfileField, String)
     case openAPIDashboard, chooseProfilePhoto, openGuidelines, learnAboutInstructions
     case logOutAllDevices, requestDeleteAccount, copyOrganizationID

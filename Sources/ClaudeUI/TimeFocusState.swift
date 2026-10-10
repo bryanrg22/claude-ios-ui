@@ -5,7 +5,7 @@ public enum ClaudeWeekday: String, CaseIterable, Codable, Sendable {
     case sunday, monday, tuesday, wednesday, thursday, friday, saturday
     public var initial: String { String(rawValue.prefix(1)).uppercased() }
 }
-public enum ClaudeTimeFocusAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeTimeFocusAction: Equatable, Sendable {
     case selectHours(Int?), selectMinutes(Int?), quietDayTapped(ClaudeWeekday)
 }
 /// Values displayed by the captured embedded form, without scheduling or account persistence.

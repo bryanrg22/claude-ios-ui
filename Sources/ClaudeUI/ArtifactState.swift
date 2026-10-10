@@ -64,7 +64,7 @@ public struct ClaudeArtifact: Identifiable, Equatable, Sendable {
         self.canRedo = canRedo
     }
 }
-public enum ArtifactAction: Equatable, Sendable {
+@nonexhaustive public enum ArtifactAction: Equatable, Sendable {
     case ownership(ArtifactOwnership), kind(ArtifactKind), search(String), open(String), close, toggleTitle,
         toggleSection(String)
     case markdown(MarkdownAction)

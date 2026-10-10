@@ -49,7 +49,7 @@ public enum ClaudeConnectorPresentation: String, Identifiable, Sendable {
     case catalog, custom
     public var id: String { rawValue }
 }
-public enum ClaudeConnectorCatalogAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeConnectorCatalogAction: Equatable, Sendable {
     case search(String), sort(ClaudeConnectorCatalogSort), category(String?)
     case requestConnect(String), editName(String), editURL(String)
     case requestCustom(name: String, url: URL), dismiss

@@ -43,7 +43,7 @@ public enum ClaudeSettingsInfoLink: String, Equatable, Sendable, CaseIterable {
     case usagePolicy = "Usage Policy", consumerTerms = "Consumer Terms", privacyPolicy = "Privacy Policy", licenses =
         "Licenses", support = "Help & Support"
 }
-public enum ClaudeSettingsAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeSettingsAction: Equatable, Sendable {
     case infoLink(ClaudeSettingsInfoLink)
     case open(ClaudeSettingsDestination), back, close
     case editProfile(ClaudeProfileField, String), submitProfile, editPhoto

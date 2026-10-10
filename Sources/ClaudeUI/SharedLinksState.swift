@@ -24,7 +24,9 @@ public struct ClaudeSharedLinkGroup: Identifiable, Equatable, Sendable {
         self.snapshots = snapshots
     }
 }
-public enum ClaudeSharedLinksAction: Equatable, Sendable { case open(String), back, markdown(MarkdownAction) }
+@nonexhaustive public enum ClaudeSharedLinksAction: Equatable, Sendable {
+    case open(String), back, markdown(MarkdownAction)
+}
 public struct ClaudeSharedLinksState: Equatable, Sendable {
     public var groups: [ClaudeSharedLinkGroup]
     public private(set) var selectedID: String?

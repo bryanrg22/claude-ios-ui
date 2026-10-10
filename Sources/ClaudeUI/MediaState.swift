@@ -23,7 +23,7 @@ public struct ClaudeMedia: Identifiable, Equatable, Sendable {
     public var fileStem: String { (fileName as NSString).deletingPathExtension }
     public var displayAspectRatio: Double { aspectRatio.isFinite && aspectRatio > 0 ? aspectRatio : 1 }
 }
-public enum ClaudeMediaAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeMediaAction: Equatable, Sendable {
     case beginSelection, toggleRecent(String), attachSelected, cancelSelection
     case removeDraft(String), open(ClaudeMedia), close, toggleControls
     case requestPhotos, copyFileName(ClaudeMedia), edit(ClaudeMedia), share(ClaudeMedia), download(ClaudeMedia)

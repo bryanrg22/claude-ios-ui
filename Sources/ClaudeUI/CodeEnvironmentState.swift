@@ -25,7 +25,7 @@ public struct CodeEnvironmentDraft: Equatable, Sendable {
     public var network: CodeNetworkAccess = .trusted
     public init() {}
 }
-public enum CodeEnvironmentAction: Equatable, Sendable {
+@nonexhaustive public enum CodeEnvironmentAction: Equatable, Sendable {
     case begin, cancel, editName(String), editVariables(String), selectNetwork(CodeNetworkAccess), create(
         CodeEnvironmentDraft), formatHelp, help
 }

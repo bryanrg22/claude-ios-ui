@@ -34,7 +34,7 @@ public struct ClaudeUsageCredit: Identifiable, Equatable, Sendable {
     public var fractionUsed: Double? { usedPercentage.map { $0 / 100 } }
 }
 public enum ClaudeUsageLink: String, Sendable { case usageHelp, creditsHelp }
-public enum ClaudeUsageAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeUsageAction: Equatable, Sendable {
     case refresh, requestCreditsEnabled(Bool), requestPurchase
     case openLink(ClaudeUsageLink, URL?)
 }

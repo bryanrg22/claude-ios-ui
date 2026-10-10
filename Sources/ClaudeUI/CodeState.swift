@@ -35,7 +35,7 @@ public struct CodeDevice: Identifiable, Equatable, Sendable {
         self.detail = detail
     }
 }
-public enum CodeAction: Equatable, Sendable {
+@nonexhaustive public enum CodeAction: Equatable, Sendable {
     case selectFilter(CodeFilter), openSession(String), openDevice(String), addDevice, copyRemoteCommand, newSession,
         closeNewSession, editor(CodeDraftAction), search, openRoutines, closeRoutines, routines(RoutineAction)
 }

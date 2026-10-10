@@ -33,7 +33,7 @@ public struct RoutineDraft: Equatable, Sendable {
     public var schedule: RoutineSchedule?
     public init() {}
 }
-public enum RoutineAction: Equatable, Sendable {
+@nonexhaustive public enum RoutineAction: Equatable, Sendable {
     case newRoutine, cancel, manualSetup, backToDescription, edit(RoutineField, String)
     case draftRoutine(String), openOption(RoutineOption), selectFilter(RoutineFilter), create(RoutineDraft)
     case addSchedule, removeSchedule, toggleSchedule, setRepeat(RoutineRepeat), setTime(hour: Int, minute: Int)

@@ -42,7 +42,7 @@ public struct FeedbackSubmission: Equatable, Sendable {
     }
 }
 /// Intents are delivered to the integrating app; the UI has no networking or device access.
-public enum ClaudeAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeAction: Equatable, Sendable {
     case send(String), stop, startDictation, stopDictation, cancelDictation, commitDictation
     case newSession, selectModel(ClaudeModel), selectEffort(Effort), setAutomaticApproval(Bool)
     case setDeviceEnabled(Bool), toggleTemporary, startVoice, attach(String), removeAttachment(String)

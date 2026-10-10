@@ -12,7 +12,7 @@ public struct CameraCapture: Equatable, Sendable {
         self.frontFacing = frontFacing
     }
 }
-public enum CameraAction: Equatable, Sendable {
+@nonexhaustive public enum CameraAction: Equatable, Sendable {
     case selectMode(CameraMode), selectZoom(Double), cycleFlash, flip, shutter, cancel
 }
 /// Offline presentation state only. No camera or microphone access is performed.
