@@ -35,7 +35,7 @@ jobs:
       # The package supports iOS 26, so it must keep building with the iOS 26 SDK.
       DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
     steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Check formatting
         run: swift format lint --strict --recursive --parallel .
@@ -69,7 +69,7 @@ jobs:
     env:
       DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
     steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
 
@@ -117,7 +117,7 @@ jobs:
       run:
         working-directory: ${{ env.DEMO_DIR }}
     steps:
-      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Create simulator
         run: |
@@ -146,7 +146,7 @@ jobs:
 
       - name: Upload recorded screenshots
         if: ${{ inputs.record_references }}
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: recorded-snapshots
           path: ${{ env.DEMO_DIR }}/SnapshotTests/__Snapshots__
@@ -163,7 +163,7 @@ jobs:
 
       - name: Upload recorded accessibility baseline
         if: ${{ inputs.record_references }}
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: recorded-accessibility-baseline
           path: ${{ env.DEMO_DIR }}/UITests/AccessibilityAuditBaseline.txt
@@ -179,7 +179,7 @@ jobs:
 
       - name: Upload test results
         if: failure()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: simulator-test-results
           path: ${{ runner.temp }}/*.xcresult
