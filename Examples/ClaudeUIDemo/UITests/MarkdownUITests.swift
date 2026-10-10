@@ -21,7 +21,7 @@ final class MarkdownUITests: XCTestCase {
             XCTAssertLessThan(app.staticTexts["markdown.code.expandedContent"].frame.minY, 220)
             capture("markdown-expanded-" + appearance)
             app.buttons["markdown.code.close"].tap()
-            app.buttons["markdown.code.copy"].tap()
+            app.buttons["markdown.code.copy"].tapWhenSettled()
             let draft = app.textFields["composer.draft"]
             draft.tap()
             draft.press(forDuration: 1.1)

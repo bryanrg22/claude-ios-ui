@@ -8,7 +8,7 @@ final class SettingsConnectorsUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
             let route = app.buttons["settings.route.Connectors"]
             if !route.isHittable { app.scrollViews["settings.root.scroll"].swipeUp() }
             route.tap()
@@ -30,7 +30,7 @@ final class SettingsConnectorsUITests: XCTestCase {
             app.buttons["settings.connector.policy.Always allow"].tap()
             XCTAssertFalse(app.buttons["settings.connector.policy.Always allow"].isSelected)
             app.buttons["settings.back"].tap()
-            app.buttons["settings.connector.tool.create"].tap()
+            app.buttons["settings.connector.tool.create"].tapWhenSettled()
             XCTAssertTrue(app.buttons["settings.connector.policy.Needs approval"].waitForExistence(timeout: 3))
             capture("settings-connector-policy-" + appearance)
             XCTAssertTrue(app.buttons["settings.connector.policy.Needs approval"].isSelected)
@@ -52,11 +52,11 @@ final class SettingsConnectorsUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
             let route = app.buttons["settings.route.Connectors"]
             if !route.isHittable { app.scrollViews["settings.root.scroll"].swipeUp() }
             route.tap()
-            app.buttons["settings.connectors.add"].tap()
+            app.buttons["settings.connectors.add"].tapWhenSettled()
             capture("settings-connectors-add-" + appearance)
             app.buttons["Browse connectors"].tap()
             XCTAssertTrue(app.buttons["settings.catalog.sort"].waitForExistence(timeout: 3))
@@ -75,8 +75,8 @@ final class SettingsConnectorsUITests: XCTestCase {
             XCTAssertTrue(app.buttons["settings.catalog.connect.trails"].exists)
             XCTAssertFalse(app.buttons["settings.catalog.connect.research"].exists)
             app.buttons["settings.catalog.close"].tap()
-            app.buttons["settings.connectors.add"].tap()
-            app.buttons["Add custom connector"].tap()
+            app.buttons["settings.connectors.add"].tapWhenSettled()
+            app.buttons["Add custom connector"].tapWhenSettled()
             let name = app.textFields["settings.custom.name"]
             XCTAssertTrue(name.waitForExistence(timeout: 3))
             XCTAssertTrue(app.buttons["settings.catalog.close"].isHittable)
@@ -92,8 +92,8 @@ final class SettingsConnectorsUITests: XCTestCase {
             XCTAssertEqual(url.value as? String, "https://example.com/mcp")
             XCTAssertTrue(app.buttons["settings.custom.continue"].isEnabled)
             app.buttons["settings.catalog.close"].tap()
-            app.buttons["settings.connectors.add"].tap()
-            app.buttons["Add custom connector"].tap()
+            app.buttons["settings.connectors.add"].tapWhenSettled()
+            app.buttons["Add custom connector"].tapWhenSettled()
             XCTAssertFalse(app.buttons["settings.custom.continue"].isEnabled)
             XCTAssertEqual(app.textFields["settings.custom.name"].value as? String, "Name")
             app.buttons["settings.catalog.close"].tap()

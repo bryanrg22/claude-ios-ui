@@ -8,6 +8,11 @@ each release notes how many screenshot references were re-recorded.
 
 ## [Unreleased]
 
+### Fixed
+
+- UI tests wait for an element to stop moving before a tap that directly follows another tap. A tap sent while a
+  menu was still animating open could land beside its target, which failed a test intermittently.
+
 ## [0.2.0] - 2026-10-10
 
 Screenshot references re-recorded: 1 screen (light and dark).

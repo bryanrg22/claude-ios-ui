@@ -45,8 +45,8 @@ final class WidgetUITests: XCTestCase {
         }
         icon.press(forDuration: 1.2)
         springboard.buttons["Edit Home Screen"].tap()
-        springboard.buttons["Edit"].tap()
-        springboard.buttons["Add Widget"].tap()
+        springboard.buttons["Edit"].tapWhenSettled()
+        springboard.buttons["Add Widget"].tapWhenSettled()
         XCTAssertTrue(springboard.cells["Claude UI Demo"].waitForExistence(timeout: 4))
         springboard.cells["Claude UI Demo"].tap()
         guard let page = springboard.pageIndicators.allElementsBoundByIndex.first(where: { $0.frame.width > 300 })

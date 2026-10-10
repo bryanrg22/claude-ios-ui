@@ -8,8 +8,8 @@ final class SettingsAccountUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
-            app.buttons["settings.route.Usage"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
+            app.buttons["settings.route.Usage"].tapWhenSettled()
             let creditToggle = app.switches["settings.usage.creditsEnabled"]
             XCTAssertTrue(creditToggle.waitForExistence(timeout: 3))
             XCTAssertEqual(creditToggle.value as? String, "0")
@@ -19,7 +19,7 @@ final class SettingsAccountUITests: XCTestCase {
             creditToggle.tap()
             XCTAssertEqual(creditToggle.value as? String, "0")
             app.buttons["settings.usage.refresh"].tap()
-            app.buttons["settings.usage.info"].tap()
+            app.buttons["settings.usage.info"].tapWhenSettled()
             XCTAssertTrue(app.staticTexts["12% used"].exists)
             app.scrollViews["settings.usage.scroll"].swipeUp()
             XCTAssertTrue(app.buttons["settings.usage.buy"].waitForExistence(timeout: 3))
@@ -27,7 +27,7 @@ final class SettingsAccountUITests: XCTestCase {
             app.buttons["settings.usage.buy"].tap()
             XCTAssertEqual(app.staticTexts["settings.usage.balance"].label, "18 credits")
             app.buttons["settings.back"].tap()
-            app.buttons["settings.route.Usage"].tap()
+            app.buttons["settings.route.Usage"].tapWhenSettled()
             XCTAssertEqual(creditToggle.value as? String, "0")
             app.terminate()
         }
@@ -39,8 +39,8 @@ final class SettingsAccountUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
-            app.buttons["settings.route.Billing"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
+            app.buttons["settings.route.Billing"].tapWhenSettled()
             XCTAssertTrue(app.buttons["settings.billing.manage"].waitForExistence(timeout: 3))
             capture("settings-billing-" + appearance)
             app.buttons["settings.billing.restore"].tap()
@@ -51,7 +51,7 @@ final class SettingsAccountUITests: XCTestCase {
             app.alerts.buttons["OK"].tap()
             XCTAssertTrue(app.alerts.firstMatch.waitForNonExistence(timeout: 3))
             app.buttons["settings.billing.manage"].tap()
-            app.alerts.buttons["Manage on claude.ai"].tap()
+            app.alerts.buttons["Manage on claude.ai"].tapWhenSettled()
             XCTAssertEqual(app.staticTexts["settings.billing.plan"].label, "Max")
             app.terminate()
         }
@@ -62,7 +62,7 @@ final class SettingsAccountUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
             let route = app.buttons["settings.route.Shared links"]
             if !route.isHittable { app.scrollViews["settings.root.scroll"].swipeUp() }
             route.tap()

@@ -6,8 +6,8 @@ final class SettingsPreferencesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         app.buttons["sidebar.open"].tap()
-        app.buttons["sidebar.settings"].tap()
-        app.buttons["settings.route.Notifications"].tap()
+        app.buttons["sidebar.settings"].tapWhenSettled()
+        app.buttons["settings.route.Notifications"].tapWhenSettled()
         XCTAssertTrue(app.switches["settings.notification.replies"].waitForExistence(timeout: 3))
         capture("settings-notifications-dark")
         for key in [
@@ -21,18 +21,18 @@ final class SettingsPreferencesUITests: XCTestCase {
             XCTAssertEqual(toggle.value as? String, "0")
         }
         app.buttons["settings.back"].tap()
-        app.buttons["settings.back"].tap()
-        app.buttons["sidebar.settings"].tap()
-        app.buttons["settings.route.Notifications"].tap()
+        app.buttons["settings.back"].tapWhenSettled()
+        app.buttons["sidebar.settings"].tapWhenSettled()
+        app.buttons["settings.route.Notifications"].tapWhenSettled()
         XCTAssertEqual(app.switches["settings.notification.replies"].value as? String, "0")
         app.buttons["settings.back"].tap()
-        app.buttons["settings.back"].tap()
+        app.buttons["settings.back"].tapWhenSettled()
         app.terminate()
         app.launchArguments = ["--light"]
         app.launch()
         app.buttons["sidebar.open"].tap()
-        app.buttons["sidebar.settings"].tap()
-        app.buttons["settings.route.Notifications"].tap()
+        app.buttons["sidebar.settings"].tapWhenSettled()
+        app.buttons["settings.route.Notifications"].tapWhenSettled()
         XCTAssertTrue(app.switches["settings.notification.replies"].waitForExistence(timeout: 3))
         capture("settings-notifications-light")
     }
@@ -41,8 +41,8 @@ final class SettingsPreferencesUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         app.buttons["sidebar.open"].tap()
-        app.buttons["sidebar.settings"].tap()
-        app.buttons["settings.route.Time & focus"].tap()
+        app.buttons["sidebar.settings"].tapWhenSettled()
+        app.buttons["settings.route.Time & focus"].tapWhenSettled()
         let hours = app.buttons["settings.focus.hours"]
         let minutes = app.buttons["settings.focus.minutes"]
         XCTAssertTrue(hours.waitForExistence(timeout: 3))
@@ -62,21 +62,21 @@ final class SettingsPreferencesUITests: XCTestCase {
         app.buttons["settings.focus.day.sunday"].tap()
         XCTAssertEqual(hours.value as? String, "2 hr")
         app.buttons["settings.back"].tap()
-        app.buttons["settings.route.Time & focus"].tap()
+        app.buttons["settings.route.Time & focus"].tapWhenSettled()
         XCTAssertEqual(hours.value as? String, "2 hr")
         XCTAssertEqual(minutes.value as? String, "30 min")
         hours.tap()
-        app.buttons["settings.focus.choice.none"].tap()
-        minutes.tap()
-        app.buttons["settings.focus.choice.none"].tap()
+        app.buttons["settings.focus.choice.none"].tapWhenSettled()
+        minutes.tapWhenSettled()
+        app.buttons["settings.focus.choice.none"].tapWhenSettled()
         XCTAssertEqual(hours.value as? String, "-")
         XCTAssertEqual(minutes.value as? String, "-")
         app.terminate()
         app.launchArguments = ["--light"]
         app.launch()
         app.buttons["sidebar.open"].tap()
-        app.buttons["sidebar.settings"].tap()
-        app.buttons["settings.route.Time & focus"].tap()
+        app.buttons["sidebar.settings"].tapWhenSettled()
+        app.buttons["settings.route.Time & focus"].tapWhenSettled()
         XCTAssertTrue(hours.waitForExistence(timeout: 3))
         capture("settings-time-focus-light")
     }
@@ -87,8 +87,8 @@ final class SettingsPreferencesUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
-            app.buttons["settings.route.Privacy"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
+            app.buttons["settings.route.Privacy"].tapWhenSettled()
             let consent = app.switches["settings.privacy.modelImprovement"]
             XCTAssertTrue(consent.waitForExistence(timeout: 3))
             XCTAssertEqual(consent.value as? String, "1")
@@ -97,7 +97,7 @@ final class SettingsPreferencesUITests: XCTestCase {
             XCTAssertEqual(consent.value as? String, "1")
             XCTAssertTrue(app.staticTexts["Data privacy"].exists)
             app.buttons["settings.back"].tap()
-            app.buttons["settings.route.Privacy"].tap()
+            app.buttons["settings.route.Privacy"].tapWhenSettled()
             XCTAssertEqual(consent.value as? String, "1")
             app.terminate()
         }
@@ -109,7 +109,7 @@ final class SettingsPreferencesUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
             let route = app.buttons["settings.route.Claude Code"]
             if !route.isHittable { app.scrollViews["settings.root.scroll"].swipeUp() }
             route.tap()
