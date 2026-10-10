@@ -6,7 +6,7 @@ public enum ClaudeTranscriptFontChoice: String, CaseIterable, Codable, Sendable 
 public enum ClaudeCodeFontChoice: String, CaseIterable, Codable, Sendable {
     case sfMono = "SF Mono", jetBrainsMono = "JetBrains Mono"
 }
-public enum ClaudeCodePreferenceAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeCodePreferenceAction: Equatable, Sendable {
     case transcriptSizePosition(Double), transcriptFont(ClaudeTranscriptFontChoice), codeFont(ClaudeCodeFontChoice),
         wrapLongLines(Bool)
 }

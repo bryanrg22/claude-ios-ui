@@ -28,10 +28,10 @@ public struct CodeBranch: Identifiable, Equatable, Sendable {
 public enum CodePermission: String, CaseIterable, Sendable {
     case auto = "Auto", acceptEdits = "Accept edits", plan = "Plan"
 }
-public enum CodeContextAction: Equatable, Sendable {
+@nonexhaustive public enum CodeContextAction: Equatable, Sendable {
     case photos, camera, files, connectors, samplePhoto(Int), selectPermission(CodePermission)
 }
-public enum CodeDraftAction: Equatable, Sendable {
+@nonexhaustive public enum CodeDraftAction: Equatable, Sendable {
     case connectors(CodeConnectorAction), context(CodeContextAction), selectBranch(String)
     case environment(CodeEnvironmentAction), selectEnvironment(String), selectRepository(String), changeBranch,
         searchRepositories, connectRepositories

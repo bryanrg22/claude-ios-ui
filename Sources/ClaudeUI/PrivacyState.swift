@@ -10,7 +10,7 @@ public enum ClaudePrivacyLink: String, CaseIterable, Codable, Sendable {
         }
     }
 }
-public enum ClaudePrivacyAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudePrivacyAction: Equatable, Sendable {
     case requestModelImprovement(Bool)
     case openLink(ClaudePrivacyLink, URL?)
 }

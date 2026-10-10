@@ -1,6 +1,6 @@
 import Foundation
 
-public enum ClaudeSettingsConnectorAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeSettingsConnectorAction: Equatable, Sendable {
     case openConnector(String), openTool(String), openAllTools, openCatalog, openCustom, back
     case catalog(ClaudeConnectorCatalogAction)
     case requestAllPermissions(connector: String, permission: CodeToolPermission)

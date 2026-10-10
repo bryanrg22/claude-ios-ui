@@ -1,6 +1,8 @@
 # Documentation
 
 - [Integration guide](INTEGRATION.md) — connect the package to your backend, feature by feature.
+- [Versioning](VERSIONING.md) — what patch, minor and major releases promise, and the deprecation policy.
+- [Updating](UPDATING.md) — how to take, pin, roll back and automate updates in your app.
 - [Testing](TESTING.md) — the four test suites, screenshot references and the accessibility baseline.
 
 - [Contribution review](REVIEW_GUIDE.md) — before/after evidence, motion measurements and approval checks.

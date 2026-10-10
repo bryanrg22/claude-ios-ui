@@ -1,7 +1,7 @@
 import Foundation
 
 public enum ClaudeSubscriptionOrigin: Equatable, Sendable { case unknown, website, appStore, other(String) }
-public enum ClaudeBillingAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeBillingAction: Equatable, Sendable {
     case requestManage, dismissNotice, requestWebsiteManagement(URL?), requestRestore
 }
 /// Subscription truth belongs to the host. Only the observed website notice is local presentation state.

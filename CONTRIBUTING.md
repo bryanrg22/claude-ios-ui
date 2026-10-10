@@ -63,6 +63,20 @@ The [review guide](docs/REVIEW_GUIDE.md) is the maintainer's acceptance checklis
 - **Code style** is enforced by `swift format lint --strict`. Run `swift format format --in-place --recursive .`
   before committing.
 
+## Public API, versions and deprecation
+
+Apps depend on this package's public API: the state types, the action enums and the view initializers. CI compares
+that API with the latest release on every pull request. The rules, with the reasoning, are in
+[docs/VERSIONING.md](docs/VERSIONING.md); the short version:
+
+- A visual or behavioral fix with no public API change is a **patch**. Tag such CHANGELOG entries `(visual)`.
+- New screens, actions, state fields (with defaults) and theme properties are **minor**. New action enums must be
+  marked `@nonexhaustive` like the existing ones.
+- Never remove or rename a public symbol directly. Mark it `@available(*, deprecated, message: "Use X instead")`,
+  list it under **Deprecated** in the CHANGELOG, and leave it for at least one minor release. Removal happens only
+  in a major release, with a migration guide under `docs/migration/`.
+- A pull request whose API check fails needs the `breaking` label and a CHANGELOG entry, or a change of approach.
+
 ## Assets and licensing
 
 Code contributions are accepted under the [MIT License](LICENSE). Never extract fonts, icons, illustrations or other

@@ -112,7 +112,7 @@ extension MarkdownInline {
 }
 
 /// No action performs I/O. The host owns links, images, clipboard and unsupported extensions.
-public enum MarkdownAction: Equatable, Sendable {
+@nonexhaustive public enum MarkdownAction: Equatable, Sendable {
     case openLink(URL), image(MarkdownImage), copyCode(String)
     case expandCode(language: String?, content: String)
     case unsupported(kind: MarkdownUnsupportedKind, source: String)

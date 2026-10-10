@@ -26,7 +26,7 @@ public struct ProjectDraft: Equatable, Sendable {
 }
 public enum ProjectFilter: String, CaseIterable, Sendable { case pinned = "Pinned", yours = "Yours" }
 public enum ProjectEditor: Equatable, Sendable { case introduction, setup }
-public enum ProjectAction: Equatable, Sendable {
+@nonexhaustive public enum ProjectAction: Equatable, Sendable {
     case begin, continueIntroduction, cancel, selectFilter(ProjectFilter), openArchived
     case editName(String), editGoal(String), selectIcon(String), selectIconColor(String)
     case addContext(String), removeContext(String), selectEnvironment(String)

@@ -50,7 +50,7 @@ public struct ClaudeCapabilityValue: Equatable, Sendable {
         self.dependencyLabel = dependencyLabel
     }
 }
-public enum ClaudeCapabilityAction: Equatable, Sendable {
+@nonexhaustive public enum ClaudeCapabilityAction: Equatable, Sendable {
     case requestEnabled(ClaudeCapability, Bool), openHelp(ClaudeCapability, URL?), openMemoryFiles
 }
 /// No capability or memory-consent value is mutated automatically by a request.

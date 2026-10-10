@@ -49,7 +49,7 @@ public struct CodeConnector: Identifiable, Equatable, Sendable {
         return first
     }
 }
-public enum CodeConnectorAction: Equatable, Sendable {
+@nonexhaustive public enum CodeConnectorAction: Equatable, Sendable {
     case discovery(Bool), add, connect(String), permission(connector: String, tool: String?, value: CodeToolPermission)
 }
 public struct CodeConnectorState: Equatable, Sendable {

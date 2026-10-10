@@ -13,7 +13,7 @@ public struct DispatchMessage: Identifiable, Equatable, Sendable {
         self.isUser = isUser
     }
 }
-public enum DispatchAction: Equatable, Sendable { case reload, close, attach, submit(String) }
+@nonexhaustive public enum DispatchAction: Equatable, Sendable { case reload, close, attach, submit(String) }
 /// Host-provided presentation only. Online is never inferred from messages or a timer.
 public struct DispatchState: Equatable, Sendable {
     public var connection: DispatchConnection = .unknown

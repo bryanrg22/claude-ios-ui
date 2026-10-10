@@ -62,6 +62,47 @@ jobs:
             CODE_SIGNING_ALLOWED=NO | tail -n 50
           exit "${PIPESTATUS[0]}"
 
+  api-compat:
+    name: Public API unchanged since the last release
+    runs-on: macos-26
+    timeout-minutes: 20
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_26.4.1.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Compare the public API with the latest tag
+        id: diff
+        run: |
+          baseline=$(git describe --tags --abbrev=0 origin/main 2>/dev/null || git describe --tags --abbrev=0)
+          echo "Comparing against $baseline"
+          set +e
+          swift package diagnose-api-breaking-changes "$baseline" --products ClaudeUI --products ClaudeWidgets | tee api-diff.txt
+          status="${PIPESTATUS[0]}"
+          set -e
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+          echo "baseline=$baseline" >> "$GITHUB_OUTPUT"
+
+      - name: Require the 'breaking' label when the API changed
+        if: ${{ steps.diff.outputs.status != '0' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo "::warning::The public API differs from ${{ steps.diff.outputs.baseline }} (see the step above)."
+          if [ "${{ github.event_name }}" != "pull_request" ]; then
+            echo "Push to main: recorded as a warning only."
+            exit 0
+          fi
+          labels=$(gh pr view "${{ github.event.pull_request.number }}" --json labels --jq '.labels[].name')
+          if echo "$labels" | grep -qx "breaking"; then
+            echo "The pull request carries the 'breaking' label; the change is intentional. Make sure CHANGELOG.md and docs/VERSIONING.md cover it."
+            exit 0
+          fi
+          echo "::error::This pull request changes the public API (an added, removed or renamed public symbol). Either revert the API change, or add the 'breaking' label and document the change in CHANGELOG.md (an added action also needs a note that adopters' switches will warn)."
+          exit 1
+
   simulator-tests:
     name: Screenshot and UI tests (iOS 27)
     # macOS minutes are free for public repositories. While the repository is private, run this job
