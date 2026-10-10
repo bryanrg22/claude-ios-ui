@@ -38,6 +38,7 @@
 		539FD77ABF99F0D31AD7242A /* screen.conversation-light.png in Resources */ = {isa = PBXBuildFile; fileRef = A835DF4791C2AE74139DF12A /* screen.conversation-light.png */; };
 		56E397A37525F7187A4BC12B /* Garden-Motion.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = B026435A14A023E7A1909166 /* Garden-Motion.mp4 */; };
 		576BFF7BCE42011EC1986256 /* screen.camera-dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BF1BE04B6DD9E3422FC8A775 /* screen.camera-dark.png */; };
+		57775B15D8074246311DF6F2 /* DemoScreenPreviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D32899CA6892A3CF9342035 /* DemoScreenPreviews.swift */; };
 		5AC469AD3C4834F3C262BE31 /* screen.videoDraft-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 3439DCE32925A8B6E4866228 /* screen.videoDraft-light.png */; };
 		5BEC1C131C2613F8728CFF5C /* screen.home-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 52CB86240726F4F49C5DDED7 /* screen.home-light.png */; };
 		5D6B44CB55BFBD39738026C5 /* screen.widgets-light.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E330DD2C02B1CD56B9CEA /* screen.widgets-light.png */; };
@@ -218,6 +219,7 @@
 		978FBF4788D4782649DF7A7C /* screen.settingsMemoryFiles-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsMemoryFiles-dark.png"; sourceTree = "<group>"; };
 		99BCA70E905A498616344940 /* screen.settingsPrivacy-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsPrivacy-dark.png"; sourceTree = "<group>"; };
 		9B723A2F80B2419CAD7B2F30 /* screen.temporary-light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.temporary-light.png"; sourceTree = "<group>"; };
+		9D32899CA6892A3CF9342035 /* DemoScreenPreviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoScreenPreviews.swift; sourceTree = "<group>"; };
 		9DA2FC8389466BA3D8498C15 /* claude-ios-ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "claude-ios-ui"; path = ../..; sourceTree = SOURCE_ROOT; };
 		9E6F8CF43CCDCB717F8B2F58 /* AccessibilityAuditBaseline.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = AccessibilityAuditBaseline.txt; sourceTree = "<group>"; };
 		9F74710A6439E3248BE42AC0 /* screen.settingsCode-dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "screen.settingsCode-dark.png"; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 			children = (
 				8FCCBB598354D57CD17D02C5 /* ClaudeDemoApp.swift */,
 				C23ECABA8AB0C2D2EEF2E535 /* DemoFixtures.swift */,
+				9D32899CA6892A3CF9342035 /* DemoScreenPreviews.swift */,
 				6B542144C728CCC8BFB0DB67 /* DemoScreens.swift */,
 				E98F5B354B042E577D297C5F /* Info.plist */,
 				1098609504779142EC7096EC /* MarkdownFixture.swift */,
@@ -758,6 +761,7 @@
 				FA84EC5984054244CA389F77 /* ClaudeDemoApp.swift in Sources */,
 				B53587606E5350C94AB9D750 /* DemoFixtures.swift in Sources */,
 				6DCE7AB9DEF36B614C404212 /* DemoScreen.swift in Sources */,
+				57775B15D8074246311DF6F2 /* DemoScreenPreviews.swift in Sources */,
 				749FBA72B71DCDAB96A1832E /* DemoScreens.swift in Sources */,
 				9EB04ACD600E4A31B9F93AFE /* MarkdownFixture.swift in Sources */,
 				8CA8A55B544121EBDD6ED5E1 /* VideoFixture.swift in Sources */,
