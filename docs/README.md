@@ -20,5 +20,4 @@ Host contracts, supported states and known limits for each area:
 
 [`fidelity/`](fidelity) holds the records kept while the recreation was built from the real app: which screens and
 interactions were captured, how closely each one was matched, asset research, and validation history. They are kept
-for traceability. Some were shared between this project and its sibling (the ChatGPT and Claude recreations were built
-together), so they occasionally mention both apps, and their test counts describe the state at the time of writing.
+for traceability, and their test counts describe the state at the time of writing.

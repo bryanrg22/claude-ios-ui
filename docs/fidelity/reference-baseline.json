@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "capturedDate": "2026-10-07",
   "timeZone": "America/Los_Angeles",
-  "referenceSource": "Installed apps inspected through iPhone Mirroring, supplemented by user-supplied direct iPhone screenshots. Portable filenames only; private source images excluded from distribution.",
+  "referenceSource": "Installed app inspected through iPhone Mirroring, supplemented by user-supplied direct iPhone screenshots. Portable filenames only; private source images excluded from distribution.",
   "referenceMediaRedistributable": false,
   "configuration": {
     "iosVersion": {
@@ -94,7 +94,7 @@
         393,
         852
       ],
-      "dimensionsStatus": "verified-PNG-IHDR-for-all-nine-files",
+      "dimensionsStatus": "verified-PNG-IHDR",
       "scaleStatus": "supplied-by-reference-collector",
       "capturedDate": null,
       "receivedDate": "2026-10-07",
@@ -103,37 +103,18 @@
   ],
   "waveformReference": {
     "guide": "WAVEFORM_REFERENCE.md",
-    "dictationBarMaximum": "unmeasured-both-apps",
-    "chatgptTalkingRecording": {
-      "stableLargeDiameterPixels": [
-        494,
-        654
-      ],
-      "sampledStartupDiameterPixels": 674,
-      "compactDiameterPixels": [
-        208,
-        272
-      ],
-      "approximateSamplingSeconds": 0.085,
-      "hardCapEstablished": false,
-      "amplitudeMappingEstablished": false,
-      "source": "private/video-talking derived measurements; raw footage excluded"
-    },
-    "claudeSpeakingGeometry": "unmeasured",
-    "desktopStillPeak": "50px in one frame only; not iOS evidence"
+    "dictationBarMaximum": "unmeasured",
+    "claudeSpeakingGeometry": "unmeasured"
   },
   "assetReference": "ASSET_REFERENCE.md: official general typography/brand/platform resources; native per-screen fonts and custom icon mappings remain unverified.",
   "routeCoverage": "ROUTE_COVERAGE.md",
   "lastUpdatedDate": "2026-10-08",
   "systemSurfaceCoverage": {
-    "homeWidgets": "12 original gallery variants captured and inspected (ChatGPT9, Claude3); native WidgetKit extensions implemented, simulator gallery/route checks and final generic builds passed.",
+    "homeWidgets": "3 original gallery variants captured and inspected; native WidgetKit extension implemented, simulator gallery/route checks and final generic build passed.",
     "lockScreenLiveActivities": "Lock Screen surface still uncaptured; no custom ActivityKit implementation proven",
-    "dynamicIsland": "Dot compact and expanded native/system call surfaces captured and inspected; selected mute white/red reference included. Underlying framework not proven; CallKit is the research-backed candidate, not confirmed vendor implementation.",
-    "dotCallPanel": "Expanded/minimized in-app Calling, connected timers and failure captured; separate from system Dynamic Island and widget gallery.",
+    "dynamicIsland": "No reference captured; not implemented.",
     "widgetGalleryLimitations": [
       "Original-account gallery session added/rearranged no widgets; native skeleton widgets were installed/tested only in simulators",
-      "Codex loaded usage appearance unknown; only placeholder bars captured",
-      "Tall Codex tasks family unsupported/unconfirmed in installed SDK",
       "Original app configuration/tap outcomes and alternate appearances unverified"
     ]
   },
@@ -150,47 +131,8 @@
     "exportStatus": "final independent tests, generic app/widget builds and packaging checks passed",
     "observations": "New captures do not supersede previous version metadata. Geometry is desktop Mirroring capture; exact animation timing and private content redistribution are not established.",
     "validation": {
-      "chatgptStateTests": {
-        "passed": 153,
-        "suites": 23,
-        "evidence": "chatgpt-table-state.log"
-      },
-      "workStateReview": "Stop retry host seam added; current question/draft retention, removed question/option pruning and extreme index bounds tested. Native motion and VoiceOver/Dynamic Type not measured.",
       "uiStatus": "Final affected scoped UI passed; no final all-route suite or exact parity claim",
       "exportStatus": "passed final known-scope snapshot",
-      "chatgptUI": {
-        "status": "3 of 3 passed",
-        "durationSeconds": 54.227,
-        "evidence": "chatgpt-phase2-art-qa.xcresult",
-        "flows": {
-          "ExploreSites": 10.481,
-          "ImagesWork": 23.216,
-          "Projects": 20.53
-        }
-      },
-      "chatgptFinalUI": {
-        "sites": {
-          "passed": true,
-          "seconds": 14.788,
-          "evidence": "chatgpt-phase2-search-qa.xcresult",
-          "bundleStatus": "mixed; Sites passed, Projects failed in this bundle and passed later"
-        },
-        "projects": {
-          "passed": true,
-          "seconds": 35.433,
-          "evidence": "chatgpt-phase2-project-settled-qa.xcresult"
-        },
-        "imagesWork": {
-          "passed": true,
-          "seconds": 23.703,
-          "evidence": "chatgpt-phase2-hero-qa.xcresult"
-        }
-      },
-      "chatgptGenericBuild": {
-        "passed": true,
-        "evidence": "chatgpt-final-generic.log",
-        "scope": "app and WidgetKit extension"
-      },
       "claudeStateTests": {
         "passed": 127,
         "suites": 2,
@@ -255,37 +197,15 @@
         "status": "build-for-testing passed; independent generic build pending",
         "evidence": "claude-table-build.log"
       },
-      "chatgptAboutUI": {
-        "passed": true,
-        "seconds": 25.919,
-        "evidence": "chatgpt-settings-about-qa.xcresult",
-        "scope": "About route/metadata/legal intents/dark-light; original About dark appearance inferred, not separately captured"
-      },
-      "chatgptPreferencesUI": {
-        "passed": true,
-        "seconds": 36.654,
-        "evidence": "chatgpt-preferences-framed-qa.xcresult"
-      },
       "finalKnownScopeUI": {
-        "chatgpt": {
-          "tableSeconds": 27.285,
-          "tableEvidence": "chatgpt-table-copy-qa.xcresult",
-          "markdownSeconds": 14.19,
-          "imageSeconds": 27.002,
-          "copyEvidence": "chatgpt-copy-final-qa.xcresult",
-          "previousVoiceSeconds": 22.663,
-          "previousVoiceEvidence": "chatgpt-priority-qa.xcresult"
-        },
-        "claude": {
-          "markdownSeconds": 68.248,
-          "markdownEvidence": "claude-table-markdown-verified.xcresult",
-          "videoSeconds": 58.549,
-          "chatSeconds": 10.507,
-          "regressionEvidence": "claude-table-final-ui.xcresult",
-          "regressionBundleStatus": "mixed; two stale Markdown scroll assertions corrected in subsequent passing rerun",
-          "cumulativeDistinctFlows": 35,
-          "allRerunTogether": false
-        }
+        "markdownSeconds": 68.248,
+        "markdownEvidence": "claude-table-markdown-verified.xcresult",
+        "videoSeconds": 58.549,
+        "chatSeconds": 10.507,
+        "regressionEvidence": "claude-table-final-ui.xcresult",
+        "regressionBundleStatus": "mixed; two stale Markdown scroll assertions corrected in subsequent passing rerun",
+        "cumulativeDistinctFlows": 35,
+        "allRerunTogether": false
       }
     },
     "stillCaptureCount": 92,
@@ -300,10 +220,7 @@
     },
     "priorityValidation": {
       "status": "final source frozen; see finalKnownScopeUI",
-      "stateCounts": {
-        "chatgpt": 153,
-        "claude": 127
-      }
+      "stateCounts": 127
     },
     "excludedMislabelledCapture": {
       "filename": "claude-markdown-heading-quote-light.png",
@@ -323,16 +240,13 @@
     "deferredTODO": [
       "remaining feature pages",
       "additional system surfaces",
-      "Claude speaking waveform capture/reconstruction"
+      "speaking waveform capture/reconstruction"
     ],
     "historicalIndependentSnapshot": "exports/2026-10-08-120705"
   },
   "independentExport": {
     "snapshot": "exports/2026-10-08-132836",
-    "stateTests": {
-      "chatgpt": 153,
-      "claude": 127
-    },
+    "stateTests": 127,
     "appAndWidgetArchitectures": [
       "arm64",
       "x86_64"
@@ -2579,7 +2493,7 @@
         "detectedMediaFormat": "JPEG",
         "dimensionsVerification": "decoded-image-header",
         "sha256": "2ae8b28f9b5c1abea77eb716d9425e225528b4507767e243aa28c2b07c26c183",
-        "inspectionNote": "Priority reference: Light video file viewer retains status, material filename header with black text/Close/ellipsis ink. Dot call controls are recorded movie content, not viewer controls. Actual private recording pixels excluded from distribution."
+        "inspectionNote": "Priority reference: Light video file viewer retains status, material filename header with black text/Close/ellipsis ink. Call controls from another app are recorded movie content, not viewer controls. Actual private recording pixels excluded from distribution."
       },
       {
         "filename": "phase2/claude-relaunch-motion/frame-000.png",
