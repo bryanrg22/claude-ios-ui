@@ -1,0 +1,67 @@
+name: Release
+
+# Pushing a version tag (see RELEASING.md) publishes the GitHub Release, with that version's CHANGELOG section as the
+# notes. Running the workflow by hand is a dry run: it prints the notes and runs the same checks, and publishes nothing.
+on:
+  push:
+    tags: ["[0-9]+.[0-9]+.[0-9]+"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to preview, for example 0.2.0 (dry run; publishes nothing)
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    name: Publish the GitHub Release
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      actions: read
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERSION: ${{ github.event_name == 'push' && github.ref_name || inputs.version }}
+      DRY_RUN: ${{ github.event_name != 'push' }}
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5.1.0
+        with:
+          fetch-depth: 0
+
+      - name: The released commit must be on main
+        run: |
+          # HEAD is the commit the tag points at (GITHUB_SHA can be the tag object for an annotated tag).
+          commit=$(git rev-parse "HEAD^{commit}")
+          echo "COMMIT=$commit" >> "$GITHUB_ENV"
+          git fetch --quiet origin main
+          if ! git merge-base --is-ancestor "$commit" origin/main; then
+            echo "::error::$commit is not on main. Release tags go on main only."
+            exit 1
+          fi
+
+      - name: CI must have passed on the released commit
+        run: |
+          passed=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow ci.yml --commit "$COMMIT" \
+            --status success --json databaseId --jq length)
+          if [ "$passed" -gt 0 ]; then
+            echo "CI passed on $COMMIT."
+          elif [ "$DRY_RUN" = "true" ]; then
+            echo "::warning::No successful CI run for $COMMIT yet. A real release would stop here."
+          else
+            echo "::error::No successful CI run for $COMMIT. Wait for CI on main to pass, then re-run this job."
+            exit 1
+          fi
+
+      - name: Release notes from CHANGELOG.md
+        run: |
+          .github/scripts/release-notes.sh "$VERSION" > "$RUNNER_TEMP/notes.md"
+          tee -a "$GITHUB_STEP_SUMMARY" < "$RUNNER_TEMP/notes.md"
+
+      - name: Publish
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          gh release create "$VERSION" --repo "$GITHUB_REPOSITORY" --verify-tag --title "$VERSION" \
+            --notes-file "$RUNNER_TEMP/notes.md"
