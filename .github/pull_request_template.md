@@ -38,6 +38,8 @@
 - [ ] Relevant tests passed; failures/skips and the tested commit are recorded above
 - [ ] Visual evidence includes reference, before and after; motion evidence is included where needed
 - [ ] Snapshot changes are intentional, individually reviewed and explained; no baseline was updated solely to hide a failure
+- [ ] CHANGELOG.md updated under *Unreleased*, with `(visual)` on entries that change how a screen looks
+- [ ] If the public API changed: the `breaking` label is set and `docs/VERSIONING.md` still holds
 - [ ] New screens have `DemoScreen` coverage; relevant fidelity/feature notes are updated
 - [ ] The package stays UI-only; new assets have provenance and uploads contain no personal information
 

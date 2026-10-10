@@ -61,7 +61,8 @@ Sending a message streams a canned local reply. To jump to a screen, add a launc
 Add the package in Xcode (**File → Add Package Dependencies…**) with this repository's URL, or in `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/bryanrg22/claude-ios-ui", from: "0.1.0")
+// While the package is 0.x, take patches only (visual fixes); choose minors deliberately.
+.package(url: "https://github.com/bryanrg22/claude-ios-ui", .upToNextMinor(from: "0.1.0"))
 ```
 
 Then own a `SessionState`, show `ClaudeSessionView`, and answer the actions it sends you. This example streams a reply from your own backend:
@@ -99,6 +100,8 @@ struct ContentView: View {
     }
 }
 ```
+
+To update later, see [docs/UPDATING.md](docs/UPDATING.md); what each version number promises is in [docs/VERSIONING.md](docs/VERSIONING.md).
 
 ## How it works
 
