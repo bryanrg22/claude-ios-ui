@@ -47,3 +47,34 @@ extension XCUIElement {
         return text == placeholderValue ? "" : text
     }
 }
+
+extension XCUIElement {
+    /// Taps a text field and waits until it has keyboard focus, so the typing that follows is not sent too early.
+    ///
+    /// `typeText` fails with "Neither element nor any descendant has keyboard focus" when it runs before the tap has
+    /// taken effect, which happens intermittently on slower machines such as CI runners. If focus does not arrive the
+    /// tap is repeated; after that the helper returns anyway and leaves the verdict to `typeText`, so it never fails
+    /// a test that would have passed without it.
+    @MainActor func tapToFocus(timeout: TimeInterval = 3) {
+        for _ in 1...3 {
+            tap()
+            let deadline = Date().addingTimeInterval(timeout)
+            while Date() < deadline {
+                if ownsKeyboardFocus { return }
+                RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+            }
+        }
+    }
+
+    /// Whether this element, or a text input inside it, has keyboard focus.
+    @MainActor private var ownsKeyboardFocus: Bool {
+        func focused(_ element: XCUIElement) -> Bool {
+            element.exists && (element.value(forKey: "hasKeyboardFocus") as? Bool) == true
+        }
+        if focused(self) { return true }
+        let inputs = [
+            descendants(matching: .textField), descendants(matching: .textView), descendants(matching: .searchField)
+        ]
+        return inputs.contains { query in focused(query.firstMatch) }
+    }
+}

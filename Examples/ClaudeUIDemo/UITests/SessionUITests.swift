@@ -6,7 +6,7 @@ final class SessionUITests: XCTestCase {
         app.launch()
         XCTAssertTrue(app.buttons["composer.voice"].waitForExistence(timeout: 5))
         let draft = app.textFields["composer.draft"]
-        draft.tap()
+        draft.tapToFocus()
         draft.typeText("Hello")
         XCTAssertTrue(app.buttons["composer.send"].exists)
         app.buttons["composer.send"].tap()

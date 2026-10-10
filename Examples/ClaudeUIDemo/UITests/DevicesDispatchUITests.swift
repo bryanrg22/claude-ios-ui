@@ -38,7 +38,7 @@ final class DevicesDispatchUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Oct 7, 2026 at 9:11 PM"].waitForExistence(timeout: 3))
         XCTAssertFalse(app.buttons["dispatch.send"].isEnabled)
         capture("dispatch-online")
-        app.textFields["dispatch.draft"].tap()
+        app.textFields["dispatch.draft"].tapToFocus()
         app.textFields["dispatch.draft"].typeText("Organize sample files")
         XCTAssertTrue(app.buttons["dispatch.send"].isEnabled)
         app.buttons["dispatch.send"].tap()
