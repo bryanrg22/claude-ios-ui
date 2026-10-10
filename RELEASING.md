@@ -7,6 +7,8 @@ minor for additions, major for breaks.
 1. **CHANGELOG.** Move the *Unreleased* entries under a new `## [X.Y.Z] - YYYY-MM-DD` heading. Entries that change
    how a screen looks carry `(visual)`. Add a line "Screenshot references re-recorded: N screens" if any were.
    Update the link references at the bottom.
+   For a new minor or major version, also change the version in the install line in `README.md` and
+   `docs/INTEGRATION.md`, so a new adopter starts on the current release.
 2. **API check.** On `main`, run:
 
    ```bash
