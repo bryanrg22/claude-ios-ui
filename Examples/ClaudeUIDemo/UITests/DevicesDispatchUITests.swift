@@ -24,7 +24,7 @@ final class DevicesDispatchUITests: XCTestCase {
         XCTAssertTrue(app.buttons["devices.organization.copy"].exists)
         capture("manage-devices-bottom")
         app.buttons["sheet.close.Manage devices"].tap()
-        app.buttons["sheet.close.Devices"].tap()
+        app.buttons["sheet.close.Devices"].tapWhenSettled()
         XCTAssertTrue(app.staticTexts["Hey Jordan! What's on your mind tonight?"].waitForExistence(timeout: 2))
     }
 
@@ -32,7 +32,7 @@ final class DevicesDispatchUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         app.buttons["sidebar.open"].tap()
-        app.buttons.containing(.staticText, identifier: "Dispatch").firstMatch.tap()
+        app.buttons.containing(.staticText, identifier: "Dispatch").firstMatch.tapWhenSettled()
         XCTAssertTrue(app.textFields["dispatch.draft"].waitForExistence(timeout: 3))
         XCTAssertTrue(app.staticTexts["Online"].exists)
         XCTAssertTrue(app.staticTexts["Oct 7, 2026 at 9:11 PM"].waitForExistence(timeout: 3))
@@ -44,7 +44,7 @@ final class DevicesDispatchUITests: XCTestCase {
         app.buttons["dispatch.send"].tap()
         XCTAssertEqual(app.textFields["dispatch.draft"].value as? String, "Organize sample files")
         app.buttons["sidebar.open"].tap()
-        app.buttons.containing(.staticText, identifier: "New session").firstMatch.tap()
+        app.buttons.containing(.staticText, identifier: "New session").firstMatch.tapWhenSettled()
         XCTAssertTrue(app.buttons["composer.voice"].waitForExistence(timeout: 3))
     }
 }

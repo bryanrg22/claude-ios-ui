@@ -78,3 +78,24 @@ extension XCUIElement {
         return inputs.contains { query in focused(query.firstMatch) }
     }
 }
+
+extension XCUIElement {
+    /// Taps once the element has stopped moving.
+    ///
+    /// A menu or sheet that is still animating in reports its frame of that instant, so a tap sent straight after
+    /// the tap that opened it is aimed at a position the element then moves away from. Measured on CI: a menu row
+    /// whose settled frame spans y 502-546 was tapped at y 547.5 and the tap was lost. This waits until two readings
+    /// of the frame, 0.1 seconds apart, agree and the element is hittable, then taps. If that never happens within
+    /// `timeout` it taps anyway, so it never fails a test that would have passed without it.
+    @MainActor func tapWhenSettled(timeout: TimeInterval = 3) {
+        let deadline = Date().addingTimeInterval(timeout)
+        var previous = CGRect.null
+        while Date() < deadline {
+            let current = exists ? frame : .null
+            if !current.isEmpty, current == previous, isHittable { break }
+            previous = current
+            RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+        }
+        tap()
+    }
+}

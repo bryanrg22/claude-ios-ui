@@ -8,7 +8,7 @@ final class SettingsCapabilitiesUITests: XCTestCase {
             app.launchArguments = appearance == "light" ? ["--light", "--memory-clear-after-submit"] : []
             app.launch()
             app.buttons["sidebar.open"].tap()
-            app.buttons["sidebar.settings"].tap()
+            app.buttons["sidebar.settings"].tapWhenSettled()
             let route = app.buttons["settings.route.Capabilities"]
             if !route.isHittable { app.scrollViews["settings.root.scroll"].swipeUp() }
             route.tap()
@@ -48,7 +48,7 @@ final class SettingsCapabilitiesUITests: XCTestCase {
             app.buttons["settings.memory.send"].tap()
             XCTAssertEqual(draft.value as? String, appearance == "light" ? "" : "Remember herbs.")
             app.buttons["settings.memory.delete"].tap()
-            app.alerts.buttons["Delete"].tap()
+            app.alerts.buttons["Delete"].tapWhenSettled()
             XCTAssertTrue(app.buttons["settings.memory.delete"].exists)
             XCTAssertFalse(app.buttons["settings.memory.delete"].isEnabled)
             app.buttons["settings.back"].tap()
@@ -56,7 +56,7 @@ final class SettingsCapabilitiesUITests: XCTestCase {
             app.buttons["settings.memory.file.coding"].tap()
             XCTAssertTrue(app.buttons["settings.memory.delete"].isEnabled)
             app.buttons["settings.back"].tap()
-            app.buttons["settings.back"].tap()
+            app.buttons["settings.back"].tapWhenSettled()
             XCTAssertTrue(app.buttons["settings.capabilities.memoryFiles"].exists)
             app.terminate()
         }
