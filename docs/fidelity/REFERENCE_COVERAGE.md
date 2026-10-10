@@ -82,7 +82,7 @@ Cancel restores the original conversation and draft. Restoration of an initially
 
 `claude-dictation-reply-silent.png` plus the subsequent live Stop action establish a return to the normal composer after a silent recording; there is no paused state in that observed case. The reducer now restores the saved draft and clears transcript/levels on silent Stop. Stop with a nonempty transcript remains explicitly unverified.
 
-`SessionState.dictationLevels` accepts host-provided UI amplitudes only. Finite values clamp to 0…1; nonfinite values map to 0; the newest 256 samples are retained. `DictationWaveformMetrics` resamples within 2.6…24pt heights, preserving silent dots. Maximum audible height 24pt and interpolation80ms are PROVISIONAL implementation bounds until actual phone-speaking video can be captured. They are not copied from desktop Codex or asserted to match Claude mobile. No audio was recorded during this work.
+`SessionState.dictationLevels` accepts host-provided UI amplitudes only. Finite values clamp to 0…1; nonfinite values map to 0; the newest 256 samples are retained. `DictationWaveformMetrics` resamples within 2.6…24pt heights, preserving silent dots. Maximum audible height 24pt and interpolation80ms are PROVISIONAL implementation bounds until actual phone-speaking video can be captured. They are not copied from a desktop app or asserted to match Claude mobile. No audio was recorded during this work.
 
 Nineteen reducer tests passed including silent Stop, malformed/nonfinite/out-of-range levels, empty windows, bounded sample count, and level cleanup after cancel/commit/new session. Only the affected dictation UI flow is rerun for this change; prior unrelated UI results retain their stated scope.
 

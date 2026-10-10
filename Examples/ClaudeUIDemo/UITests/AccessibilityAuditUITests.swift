@@ -60,7 +60,7 @@ final class AccessibilityAuditUITests: XCTestCase {
     }
 
     /// `screen | appearance | audit type | element`, stable across runs for the same UI. Identifiers that embed a
-    /// per-launch UUID (for example `codex.task.<UUID>`) are normalized so the same element keeps the same key.
+    /// per-launch UUID (for example `row.<UUID>`) are normalized so the same element keeps the same key.
     private static func key(for issue: XCUIAccessibilityAuditIssue, screen: String, appearance: String) -> String {
         let element =
             issue.element.map {
