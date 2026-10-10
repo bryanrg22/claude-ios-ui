@@ -525,21 +525,7 @@ settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Upda
 settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated 3 weeks ago
 settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::Updated last month
 settingsMemoryFiles | light | Dynamic Type font sizes are unsupported | 48::You
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Code and project updates
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Code permission requests
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Dispatch messages
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified about new features, tips, and occasional promotions
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Claude finishes a reply.
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Claude messages you in Dispatch.
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions need your approval to use a tool
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions or projects have updates
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when research completes
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Get notified when scheduled tasks finish, can’t run, or need your input
 settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Notifications
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Product updates
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Replies
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Research complete
-settingsNotifications | dark | Dynamic Type font sizes are unsupported | 48::Scheduled tasks
 settingsNotifications | light | Contrast nearly passed | 48::Get notified about new features, tips, and occasional promotions
 settingsNotifications | light | Contrast nearly passed | 48::Get notified when Claude finishes a reply.
 settingsNotifications | light | Contrast nearly passed | 48::Get notified when Claude messages you in Dispatch.
@@ -547,21 +533,7 @@ settingsNotifications | light | Contrast nearly passed | 48::Get notified when C
 settingsNotifications | light | Contrast nearly passed | 48::Get notified when Code sessions or projects have updates
 settingsNotifications | light | Contrast nearly passed | 48::Get notified when research completes
 settingsNotifications | light | Contrast nearly passed | 48::Get notified when scheduled tasks finish, can’t run, or need your input
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Code and project updates
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Code permission requests
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Dispatch messages
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified about new features, tips, and occasional promotions
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Claude finishes a reply.
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Claude messages you in Dispatch.
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions need your approval to use a tool
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when Code sessions or projects have updates
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when research completes
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Get notified when scheduled tasks finish, can’t run, or need your input
 settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Notifications
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Product updates
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Replies
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Research complete
-settingsNotifications | light | Dynamic Type font sizes are unsupported | 48::Scheduled tasks
 settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Anthropic believes in transparent data practices.
 settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Data privacy
 settingsPrivacy | dark | Dynamic Type font sizes are unsupported | 48::Help improve our AI models
